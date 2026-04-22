@@ -1,0 +1,460 @@
+<!doctype html>
+
+<html lang="{{ request.locale.iso_code }}" dir="{% render 'direction' %}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0">
+
+    <title>
+      {% if page_title == blank -%}
+        {{- shop.name -}}
+      {%- else -%}
+        {{- page_title -}}
+        {%- if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif -%}
+      {%- endif %}
+    </title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 96 }}">
+      <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180 }}">
+    {%- endif -%}
+
+    {%- comment -%}Few prefetch to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+
+    {%- unless settings.heading_font.system? -%}
+      <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- unless settings.text_font.system? -%}
+      <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- render 'social-meta-tags' -%}
+    {%- render 'microdata-schema' -%}
+    {%- render 'css-variables' -%}
+    {%- render 'js-variables' -%}
+
+    {%- if request.page_type == 'gift_card' -%}
+      <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
+    {%- endif -%}
+
+    <script type="importmap">
+      {%- comment -%}On Safari 16.3 and lower, a polyfill is used to load importmap{%- endcomment -%}
+      {
+        "imports": {
+          "vendor": "{{ 'vendor.min.js' | asset_url }}",
+          "theme": "{{ 'theme.js' | asset_url }}",
+          "photoswipe": "{{ 'photoswipe.min.js' | asset_url }}"
+        }
+      }
+    </script>
+
+    <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
+    <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
+
+    {{ content_for_header }}
+
+    {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Lora:ital@1&display=swap" rel="stylesheet">
+  </head>
+
+  {% liquid
+    assign features_class = ''
+
+    if settings.show_button_transition
+      assign features_class = features_class | append: 'features--button-transition '
+    endif
+
+    if settings.show_image_zoom_on_hover
+      assign features_class = features_class | append: 'features--zoom-image '
+    endif
+  %}
+
+  <body class="{{ features_class }} color-scheme color-scheme--{{ settings.default_color_scheme.id }}">
+    {%- render 'shadow-dom-templates' -%}
+
+    <loading-bar class="loading-bar" aria-hidden="true"></loading-bar>
+    <a href="#main" allow-hash-change class="skip-to-content sr-only">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+    {%- comment -%}
+      This placeholder will be filled to screen readers for any kind of announcements
+    {%- endcomment -%}
+    <div class="sr-only" role="status" aria-live="polite" aria-atomic="true">
+      <span id="status-announcement"></span>
+    </div>
+
+    <div class="sr-only" role="alert" aria-live="assertive" aria-atomic="true">
+      <span id="error-announcement"></span>
+    </div>
+
+    <span id="header-scroll-tracker" style="position: absolute; width: 1px; height: 1px; top: var(--header-scroll-tracker-offset, 10px); left: 0;">
+      {%- comment -%}
+        This allows our theme to track when the user has scrolled a given amount of pixels, without relying on a global scroll listener. This helps
+        to improve performance and reduce reflows.
+      {%- endcomment -%}
+    </span>
+
+    {%- if request.page_type != 'password' -%}
+      {%- sections 'header-group' -%}
+      {%- sections 'overlay-group' -%}
+    {%- endif -%}
+
+    <main id="main" class="anchor">
+      {{ content_for_layout }}
+
+      {%- comment -%}
+        IMPLEMENTATION NOTE: For best semantics, having the footer group outside the main would be slightly better, but
+          moving it inside the main allows to have all the sections (including sections inside the footer group) to be
+          consecutive, and hence having a cleaner margin collapsing management.
+      {%- endcomment -%}
+      {%- if request.page_type != 'password' -%}
+        {%- sections 'footer-group' -%}
+      {%- endif -%}
+    </main>
+
+<a 
+  href="https://wa.me/972XXXXXXXXX" 
+  class="whatsapp-float" 
+  target="_blank"
+  aria-label="WhatsApp"
+>
+  <img src="https://cdn.shopify.com/s/files/1/0971/5145/1440/files/whatsapp.png?v=1776667891" height="70px" width="70px">
+</a>
+
+
+  </body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const desktopButtons = document.querySelectorAll(
+    '#shopify-section-template--26517561835824__shop-the-look .shop-the-look__item-content > .button'
+  );
+
+  const mobileButtons = document.querySelectorAll(
+    '#shopify-section-template--26517561835824__shop-the-look .md\\:hidden .button.w-full'
+  );
+
+  desktopButtons.forEach(button => {
+    button.textContent = 'לעמוד המוצר';
+  });
+
+  mobileButtons.forEach(button => {
+    button.textContent = 'ראה מוצרים';
+  });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const input = document.querySelector(
+    '#shopify-section-template--26517561835824__newsletter input[type="email"]'
+  );
+
+  if (input) {
+    input.placeholder = 'אימייל';
+  }
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  function updateProductButtonsText() {
+    const addToCartBtn = document.querySelector(
+      '#product-form-main-15052163809584-template--26517562065200__main button[type="submit"]'
+    );
+    if (addToCartBtn && addToCartBtn.textContent.trim() !== 'הוספה לסל') {
+      addToCartBtn.textContent = 'הוספה לסל';
+    }
+
+    const buyNowBtn = document.querySelector(
+      '#shopify-section-template--26517562065200__main .shopify-payment-button__button'
+    );
+    if (buyNowBtn && buyNowBtn.textContent.trim() !== 'לרכישה') {
+      buyNowBtn.textContent = 'לרכישה';
+    }
+  }
+
+  updateProductButtonsText();
+
+  let timeout;
+
+  const productContainer = document.querySelector(
+    '#shopify-section-template--26517562065200__main'
+  );
+
+  if (productContainer) {
+    const observer = new MutationObserver(function () {
+      clearTimeout(timeout);
+      timeout = setTimeout(updateProductButtonsText, 0.01);
+    });
+
+    observer.observe(productContainer, {
+      childList: true,
+      subtree: true
+    });
+  }
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  const mainImages = document.querySelectorAll('.main-image-item');
+
+  thumbnails.forEach((thumb, index) => {
+    thumb.addEventListener('click', () => {
+      thumbnails.forEach(t => t.setAttribute('aria-current', 'false'));
+      thumb.setAttribute('aria-current', 'true');
+
+      mainImages.forEach(img => img.classList.remove('is-active'));
+      if (mainImages[index]) {
+        mainImages[index].classList.add('is-active');
+      }
+    });
+  });
+});
+
+
+
+
+document.querySelectorAll('.product-gallery__thumbnail').forEach((thumb) => {
+  thumb.addEventListener('click', function () {
+    const mediaId = this.dataset.mediaId;
+    const medias = document.querySelectorAll('div[data-media-id]');
+    const target = document.querySelector(`div[data-media-id="${mediaId}"]`);
+
+    medias.forEach((media) => {
+      media.style.display = 'none';
+    });
+
+    if (target) {
+      target.style.display = 'block';
+    }
+
+    document.querySelectorAll('.product-gallery__thumbnail').forEach((btn) => {
+      btn.setAttribute('aria-current', 'false');
+    });
+
+    this.setAttribute('aria-current', 'true');
+  });
+});
+
+</script>
+
+<script>
+(function () {
+  const WRAPPER_ID = 'free-shipping-wrapper';
+  const MESSAGE_ID = 'free-shipping-message';
+  const THRESHOLD_DEFAULT = 500;
+
+  function formatAmount(value) {
+    return `₪${Math.ceil(value)}`;
+  }
+
+  function getMessageHtml(remaining) {
+    if (remaining > 0) {
+      return `עוד <span class="amount">${formatAmount(remaining)}</span> ומשלוח חינם בדרך אליך`;
+    } else {
+      return `מעולה! קיבלת משלוח חינם`;
+    }
+  }
+
+  async function updateFreeShippingBar() {
+    const wrapper = document.getElementById(WRAPPER_ID);
+    const message = document.getElementById(MESSAGE_ID);
+
+    if (!wrapper || !message) return;
+
+    const threshold = Number(wrapper.dataset.threshold || THRESHOLD_DEFAULT);
+
+    try {
+      const response = await fetch('/cart.js', {
+        method: 'GET',
+        cache: 'no-store',
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      const cart = await response.json();
+      const total = cart.total_price / 100;
+      const remaining = threshold - total;
+
+      message.innerHTML = getMessageHtml(remaining);
+    } catch (error) {
+      console.error('Free shipping bar error:', error);
+    }
+  }
+
+  function debounce(fn, delay) {
+    let timer;
+
+    return function () {
+      clearTimeout(timer);
+      timer = setTimeout(fn, delay);
+    };
+  }
+
+  const debouncedUpdate = debounce(updateFreeShippingBar, 150);
+
+  document.addEventListener('DOMContentLoaded', function () {
+    updateFreeShippingBar();
+  });
+
+  document.addEventListener('cart:updated', debouncedUpdate);
+  document.addEventListener('cart:refresh', debouncedUpdate);
+  document.addEventListener('cart:change', debouncedUpdate);
+  document.addEventListener('ajaxProduct:added', debouncedUpdate);
+
+  const originalFetch = window.fetch;
+
+  window.fetch = async function () {
+    const response = await originalFetch.apply(this, arguments);
+
+    try {
+      const requestUrl = arguments[0];
+      const url = typeof requestUrl === 'string' ? requestUrl : requestUrl.url;
+
+      if (
+        url &&
+        (
+          url.includes('/cart/add') ||
+          url.includes('/cart/change') ||
+          url.includes('/cart/update') ||
+          url.includes('/cart/clear')
+        )
+      ) {
+        setTimeout(updateFreeShippingBar, 250);
+      }
+    } catch (error) {
+      console.error('Fetch interception error:', error);
+    }
+
+    return response;
+  };
+
+  document.addEventListener('change', function (event) {
+    const target = event.target;
+
+    if (!target) return;
+
+    if (
+      target.matches('input[name="updates[]"]') ||
+      target.matches('[name="quantity"]') ||
+      target.matches('.quantity__input')
+    ) {
+      setTimeout(updateFreeShippingBar, 300);
+    }
+  });
+
+  document.addEventListener('click', function (event) {
+    const target = event.target.closest('button, a');
+
+    if (!target) return;
+
+    const text = (target.textContent || '').toLowerCase();
+    const name = (target.getAttribute('name') || '').toLowerCase();
+    const action = (target.getAttribute('data-action') || '').toLowerCase();
+
+    if (
+      name.includes('add') ||
+      action.includes('add') ||
+      action.includes('remove') ||
+      text.includes('add to cart') ||
+      text.includes('remove')
+    ) {
+      setTimeout(updateFreeShippingBar, 300);
+    }
+  });
+
+  const drawerTarget = document.querySelector('cart-drawer, .cart-drawer, #CartDrawer, .drawer');
+
+  if (drawerTarget) {
+    const observer = new MutationObserver(function () {
+      debouncedUpdate();
+    });
+
+    observer.observe(drawerTarget, {
+      childList: true,
+      subtree: true
+    });
+  }
+})();
+</script>
+
+
+<script>
+(function () {
+  function styleWishlistButtons() {
+    const buttons = document.querySelectorAll('ooo-wl-product-page-button');
+
+    buttons.forEach((el) => {
+      if (!el.shadowRoot) return;
+      if (el.shadowRoot.querySelector('[data-custom-wishlist-style]')) return;
+
+      const style = document.createElement('style');
+      style.setAttribute('data-custom-wishlist-style', '');
+
+      style.textContent = `
+        button {
+          background: #FFFFFF !important;
+          color: #000000 !important;
+          font-family: "Heebo", sans-serif !important;
+          font-weight: 700 !important;
+          font-size: 20px !important;
+          line-height: 20px !important;
+          letter-spacing: 0 !important;
+          padding: 12px 24px !important;
+          border: 1px solid #000000 !important;
+          border-radius: 0 !important;
+          text-align: center !important;
+          white-space: nowrap !important;
+          box-shadow: none !important;
+          width: 100% !important;
+          min-height: 48px !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          gap: 10px !important;
+          cursor: pointer !important;
+        }
+
+        button[aria-checked="true"] {
+          background: #000000 !important;
+          color: #FFFFFF !important;
+        }
+
+        .ooo-wl-button-icon,
+        svg {
+          width: 18px !important;
+          height: 18px !important;
+          flex: 0 0 18px !important;
+        }
+      `;
+
+      el.shadowRoot.appendChild(style);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', styleWishlistButtons);
+
+  const observer = new MutationObserver(() => {
+    styleWishlistButtons();
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+})();
+</script>
+
+</html>

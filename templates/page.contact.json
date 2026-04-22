@@ -1,0 +1,57 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "image_with_text_overlay_9b96mj": {
+      "type": "image-with-text-overlay",
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/2_132_1.png",
+        "mobile_image": "shopify://shop_images/2_132_1_a1f96469-8e02-41da-be38-0bf174173c3f.png",
+        "allow_transparent_header": true,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "custom_liquid_T7YtmK": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"contact-split-section\">\n  <div class=\"contact-split-section__inner\">\n\n    <div class=\"contact-split-section__form-col\">\n      <p class=\"contact-split-section__intro\">נשמח לעמוד לרשותכן – Galu</p>\n\n      {% form 'contact', class: 'contact-split-form' %}\n        {% if form.posted_successfully? %}\n          <p class=\"contact-split-form__success\">ההודעה נשלחה בהצלחה.</p>\n        {% endif %}\n\n        {{ form.errors | default_errors }}\n\n        <div class=\"contact-split-form__fields\">\n          <input\n            type=\"text\"\n            name=\"contact[name]\"\n            placeholder=\"שם מלא\"\n            value=\"{{ form.name }}\"\n          >\n\n          <input\n            type=\"tel\"\n            name=\"contact[phone]\"\n            placeholder=\"טלפון\"\n            value=\"{{ form.phone }}\"\n          >\n\n          <input\n            type=\"email\"\n            name=\"contact[email]\"\n            placeholder=\"אימייל\"\n            value=\"{{ form.email }}\"\n          >\n\n          <textarea\n            name=\"contact[body]\"\n            placeholder=\"נושא\"\n            rows=\"5\"\n          >{{ form.body }}</textarea>\n\n          <button type=\"submit\">שליחה</button>\n        </div>\n      {% endform %}\n    </div>\n\n    <div class=\"contact-split-section__info-col\">\n      <h2 class=\"contact-split-section__title\">We’d Love to Hear from You</h2>\n\n      <p class=\"contact-split-section__text\">\n        לכל שאלה, בקשה או פנייה לשירות הלקוחות<br>\n        אפשר ליצור איתנו קשר בטלפון או במייל\n      </p>\n\n      <div class=\"contact-split-section__contact-list\">\n        <a href=\"tel:0545012202\" class=\"contact-split-section__contact-item\">\n          <span class=\"contact-split-section__value\">0545012202</span>\n<img \n  class=\"contact-split-section__icon-img\"\n  src=\"https://cdn.shopify.com/s/files/1/0971/5145/1440/files/mdi-light_phone.png?v=1776325559\"\n  alt=\"Phone\"\n  width=\"24\"\n  height=\"24\"\n/>\n        </a>\n\n        <a href=\"mailto:galustudio111@gmail.com\" class=\"contact-split-section__contact-item\">\n          <span class=\"contact-split-section__value\">galustudio111@gmail.com</span>\n<img \n  class=\"contact-split-section__icon-img\"\n  src=\"https://cdn.shopify.com/s/files/1/0971/5145/1440/files/material-symbols-light_mail-outline.png?v=1776325558\"\n  alt=\"Enveloppe\"\n  width=\"24\"\n  height=\"24\"\n/>\n        </a>\n\n        <a href=\"https://wa.me/972545012202\" class=\"contact-split-section__contact-item text_to_underline\" target=\"_blank\" rel=\"noopener\">\n          <span class=\"contact-split-section__value\">שירות לקוחות בוואטאפ</span>\n<img \n  class=\"contact-split-section__icon-img\"\n  src=\"https://cdn.shopify.com/s/files/1/0971/5145/1440/files/streamline-logos_whatsapp-logo.png?v=1776325559\"\n  alt=\"WhatsApp\"\n  width=\"24\"\n  height=\"24\"\n/>\n        </a>\n      </div>\n\n      <div class=\"contact-split-section__hours\">\n        <p><strong>שעות פתיחה:</strong></p>\n        <p>ימי ראשון - חמישי: 9:00-17:00</p>\n        <p>ימי שישי: 9:00-13:00</p>\n        <p>שבת: סגור</p>\n      </div>\n    </div>\n\n  </div>\n</div>\n\n<style>\n  .contact-split-section {\ndirection:ltr;\n    background: #FFFFFF;\n    padding: 0px 24px;\n  }\n\n  .contact-split-section__inner {\n    max-width: 1300px;\n    margin: 0 auto;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 90px;\n    align-items: start;\n  }\n\n  .contact-split-section__form-col {\n    order: 1;\n    max-width: 500px;\n    width: 100%;\n    justify-self: start;\n    text-align: center;\n  }\n\n  .contact-split-section__info-col {\n    order: 2;\n    max-width: 600px;\n    width: 100%;\n    justify-self: end;\n    text-align: right;\n    direction: rtl;\n  }\n\n  .contact-split-section__intro {\n    font-family: 'Lora', serif;\n    font-style: italic;\n    font-weight: 400;\n    font-size: 24px;\n    line-height: 1.3;\n    color: #000;\n    margin: 0 0 28px;\n    text-align: center;\ndirection:rtl;\n  }\n\n  .contact-split-form__fields {\n    display: flex;\n    flex-direction: column;\n    gap: 16px;\n  }\n\n  .contact-split-form input,\n  .contact-split-form textarea {\n    width: 100%;\n    border: 1px solid #6f6f6f;\n    background: transparent;\n    border-radius: 0;\n    box-shadow: none;\n    padding: 0 18px;\n    font-family: 'Heebo', sans-serif;\n    font-weight: 400;\n    font-size: 18px;\n    color: #000;\n    text-align: right;\n    direction: rtl;\n  }\n\n  .contact-split-form input {\n    height: 42px;\n  }\n\n  .contact-split-form textarea {\n    height: 78px;\n    padding-top: 14px;\n    resize: none;\n  }\n\n  .contact-split-form input::placeholder,\n  .contact-split-form textarea::placeholder {\n    color: #8b8b8b;\n    opacity: 1;\n  }\n\n  .contact-split-form button {\n    width: 100%;\n    height: 42px;\n    border: none;\n    background: #171314;\n    color: #fff;\n    border-radius: 0;\n    font-family: 'Heebo', sans-serif;\n    font-weight: 700;\n    font-size: 18px;\n    cursor: pointer;\n  }\n\n  .contact-split-form__success {\n    font-family: 'Heebo', sans-serif;\n    margin-bottom: 16px;\n  }\n\n  .contact-split-section__title {\n    font-family: 'Lora', serif;\n    font-style: italic;\n    font-weight: 400;\n    font-size: 32px;\n    line-height: 1.2;\n    color: #000;\n    margin: 0 0 26px;\n    text-align: end;\n    direction: ltr;\n  }\n\n  .contact-split-section__text {\n    font-family: 'Heebo', sans-serif;\n    font-weight: 400;\n    font-size: 18px;\n    line-height: 1.7;\n    color: #000;\n    margin: 0 0 28px;\n    text-align: start;\n  }\n\n  .contact-split-section__contact-list {\n    display: flex;\n    flex-direction: column;\n    gap: 18px;\n    margin-bottom: 30px;\n  }\n\n  .contact-split-section__contact-item {\n    display: flex;\nflex-direction: row-reverse;\n    align-items: center;\n    justify-content: flex-end;\n    gap: 14px;\n    font-family: 'Heebo', sans-serif;\n    font-size: 18px;\n    color: #000;\n    text-decoration: none;\n  }\n\n  .contact-split-section__icon {\n    color: #c51f46;\n    font-size: 28px;\n    line-height: 1;\n    min-width: 28px;\n    text-align: center;\n  }\n\n  .contact-split-section__hours {\n    font-family: 'Heebo', sans-serif;\n    font-size: 18px;\n    line-height: 1.6;\n    color: #000;\n  }\n\n  .contact-split-section__hours p {\n    margin: 0;\n  }\n\n  @media screen and (max-width: 768px) {\n    .contact-split-section {\n      padding: 40px 20px;\n    }\n\n    .contact-split-section__inner {\n      grid-template-columns: 1fr;\n      gap: 40px;\n    }\n\n    .contact-split-section__form-col,\n    .contact-split-section__info-col {\n      max-width: 100%;\n      justify-self: stretch;\n    }\n\n    .contact-split-section__form-col {\n      order: 2;\n    }\n\n    .contact-split-section__info-col {\n      order: 1;\n    }\n\n    .contact-split-section__title {\n      font-size: 23px;\ntext-align:center;\n    }\n\n    .contact-split-section__intro,\n    .contact-split-section__text,\n    .contact-split-section__contact-item,\n    .contact-split-section__hours,\n    .contact-split-form input,\n    .contact-split-form textarea,\n    .contact-split-form button {\n      font-size: 16px;\ntext-align:center;\n\n    }\n  .contact-split-section__contact-item {\njustify-content: center;\n}\n  }\n\n.text_to_underline{\ntext-decoration:underline;\n}\n\n</style>",
+        "text_alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_9b96mj",
+    "custom_liquid_T7YtmK"
+  ]
+}
