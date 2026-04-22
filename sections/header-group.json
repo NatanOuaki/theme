@@ -1,0 +1,62 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "custom_liquid_APPYwy": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "scheme-28e87872-58ce-4176-818a-66d009294f96",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div id=\"free-shipping-wrapper\" class=\"free-shipping-wrapper\" data-threshold=\"500\">\n  <span id=\"free-shipping-message\"></span>\n</div>",
+        "text_alignment": "center"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "color_scheme": "schema-2",
+        "enable_sticky": true,
+        "hide_on_scroll": false,
+        "show_separation_border": true,
+        "reduce_padding": false,
+        "logo": "shopify://shop_images/LOGOS_R_copy_3_1.png",
+        "logo_max_width": 200,
+        "logo_mobile_max_width": 140,
+        "menu": "header-menu",
+        "sidebar_menu": "",
+        "customer_account_menu": "customer-account-main-menu",
+        "menu_open_trigger": "hover",
+        "menu_text_font": "body",
+        "enable_search": true,
+        "sidebar_color_scheme": "schema-2",
+        "sidebar_text_font": "heading",
+        "sidebar_show_dividers": false,
+        "sidebar_open_second_level_menus": false,
+        "layout": "logo_center_navigation_inline",
+        "show_icons": true,
+        "show_country_selector": true,
+        "show_country_name": false,
+        "show_country_flag": true,
+        "show_locale_selector": false,
+        "transparent_header_text_color": "#000000",
+        "transparent_logo": "shopify://shop_images/LOGOS_R_copy_3_1.png"
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_APPYwy",
+    "header"
+  ]
+}
