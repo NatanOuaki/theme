@@ -12,7 +12,7 @@
     "main": {
       "type": "main-cart",
       "custom_css": [
-        "*{font-family: \"Heebo\", sans-serif !important;}"
+        "*{font-family: \"Montserrat\", sans-serif !important;}"
       ],
       "settings": {
         "color_scheme": "scheme-2",

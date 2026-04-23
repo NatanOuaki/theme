@@ -8361,7 +8361,7 @@ ul {
 
 .free-shipping-wrapper{
   color:white;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   font-weight: 600; /* Regular */
   font-size: 18px;
 }
@@ -8385,7 +8385,7 @@ gap:20px;
 
 .header__primary-nav a,
 .header__secondary-nav a {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400; /* Regular */
   font-size: 18px;
   color: #000000;
@@ -8424,7 +8424,7 @@ sale-price {
 #shopify-section-template--26517561835824__featured-collections-1 .product-card .button,
 #shopify-section-template--26517561835824__featured-collections-1 .product-card input[type="submit"],
 #shopify-section-template--26517561835824__featured-collections-1 .product-card [role="button"] {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: 700 !important; /* Bold */
   font-size: 20px !important;
 }
@@ -8757,7 +8757,7 @@ sale-price {
 #shopify-section-template--21538767995126__main .buy-buttons button[type="submit"] {
   background: #000000 !important;
   color: #FFFFFF !important;
-  font-family: "Heebo", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 700 !important;
   font-size: 20px !important;
   line-height: 43px !important;
@@ -8774,7 +8774,7 @@ sale-price {
 #shopify-section-template--21538767995126__main .shopify-payment-button__button--unbranded{
   background: #FFFFFF !important;
   color: #000000 !important;
-  font-family: "Heebo", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 700 !important;
   font-size: 20px !important;
   line-height: 30px !important;
@@ -8890,7 +8890,7 @@ sale-price {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: 700 !important;
   font-size: 16px !important;
   line-height: 1.4 !important;
@@ -8938,7 +8938,7 @@ sale-price {
 
 [id*="faq"] .accordion__content .prose,
 [id*="faq"] .accordion__content p {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: 1.7 !important;
