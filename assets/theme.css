@@ -8826,7 +8826,8 @@ sale-price {
 
 #shopify-section-template--21538767995126__main .shopify-payment-button__button,
 #shopify-section-template--21538767995126__main .shopify-payment-button__button--unbranded{
-    line-height: 20px !important;
+    line-height: 15px !important;
+    margin-top:-10px;
 
 }
 }
