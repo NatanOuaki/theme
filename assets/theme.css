@@ -8684,8 +8684,8 @@ sale-price {
 /* PRODUCT PAGE TYPO + ALIGNMENT */
 #shopify-section-template--21538767995126__main .product-title {
   font-family: "Montserrat", sans-serif !important;
-  font-size: 40px !important;
-  text-align: right !important;
+  font-size: 30px !important;
+  font-weight: 600  !important;
 }
 
 #shopify-section-template--26517562065200__main .price-list,
