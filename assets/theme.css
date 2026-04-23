@@ -8410,10 +8410,10 @@ gap:20px;
 .price-list,
 .price-list .h6,
 sale-price {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: 400 !important; /* Regular */
-  font-size: 16px !important;
-  line-height: 1.2;
+  font-size: 13px !important;
+  line-height: 20px;
   color: #000000 !important;
 }
 
