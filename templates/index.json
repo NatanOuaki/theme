@@ -16,6 +16,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Group_43.png",
+            "mobile_image": "shopify://shop_images/Group_44.png",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-center text-center",
