@@ -8359,10 +8359,6 @@ ul {
 /* ------------------------------- AJOUTS nodev ------------------------------------*/
 
 
-.color-swatch{
-  border-radius:30px !important;
-}
-
 .free-shipping-wrapper{
   color:white;
     font-family: 'Heebo', sans-serif;
@@ -8395,16 +8391,12 @@ gap:20px;
   color: #000000;
 }
 
-/* LOGO (optionnel si besoin de contraste) */
-.header__logo-image {
-  filter: none;
-}
 
 /* SECTION BEST-SELLERS */
 .product-title{
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 500 !important; 
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-style:normal;
   line-height: 30px;
   color: #000000 !important;
@@ -8415,12 +8407,16 @@ gap:20px;
 sale-price {
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 400 !important; /* Regular */
-  font-size: 13px !important;
+  font-size: 15px !important;
   line-height: 20px;
   text-align:left;
   color: #000000 !important;
 }
 
+.color-swatch{
+  border-radius:30px !important;
+  width:20px;
+}
 
 /* Boutons sur les cartes produit - uniquement cette section */
 #shopify-section-template--26517561835824__featured-collections-1 .product-card button,
