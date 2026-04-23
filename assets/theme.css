@@ -8430,44 +8430,16 @@ sale-price {
 }
 
 
-/* SECTION ABOUT UNIQUEMENT */
-
-/* Titre "About" */
-#shopify-section-template--26517561835824__image-with-text-overlay-1 .prose > .h3 {
-  font-family: 'Lora', serif !important;
-  font-style: italic !important;
-  font-size: 36px !important;
-  line-height: 1.2 !important;
-  color: #BC002D !important;
-  font-weight: 400 !important;
-  margin-bottom: 20px !important;
-}
-
-/* Paragraphe uniquement */
-#shopify-section-template--26517561835824__image-with-text-overlay-1 .prose > div p {
-  font-family: 'Heebo', sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 24px !important;
-  line-height: 1.6 !important;
-  color: #000000 !important;
-  margin: 0 !important;
-  direction: rtl;
-  width: 910px;
-}
-
-/* Galu uniquement */
-#shopify-section-template--26517561835824__image-with-text-overlay-1 .prose > div span {
-  font-family: 'Lora', sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 24px !important;
-  line-height: 1.6 !important;
-  color: #000000 !important;
-  text-decoration:none !important;
-}
-
-
 /* Bouton */
 #shopify-section-template--26517561835824__image-with-text-overlay-1 .button, #shopify-section-template--26517561835824__shop-the-look .shop-the-look__item-content > .button {
+  font-size: 16px !important;
+  line-height: 43px !important;
+  padding: 0px 147px !important;
+  margin-top: 24px !important;
+}
+
+
+#shopify-section-template--21538757214454__shop_the_look_bgDRzc .md\:hidden .button.w-full {
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 700 !important;
   font-size: 18px !important;
@@ -8479,19 +8451,6 @@ sale-price {
   padding: 0px 30px !important;
   margin-top: 24px !important;
   text-decoration: none !important;
-}
-
-
-
-/* Slideshow H1 style */
-#shopify-section-template--26517561835824__slideshow .h1 {
-  font-family: 'Lora', serif !important;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 62px;
-  color: #F6F7F7;
-
-  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.46);
 }
 
 
