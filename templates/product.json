@@ -50,24 +50,6 @@
             "size_chart_page": ""
           }
         },
-        "wishlist_power_block_wishlist_product_page_button_mXHG8C": {
-          "type": "shopify://apps/wishlist-power/blocks/block-wishlist-product-page-button/c6cb23f2-39d1-403f-9967-53314ebdad10",
-          "settings": {
-            "add_to_wishlist_label": "שמור למועדפים",
-            "remove_from_wishlist_label": "הוסר מהמועדפים",
-            "button_style": "fill",
-            "button_height": 40,
-            "button_vertical_spacing": 0,
-            "button_stretch": true,
-            "button_justify_self": "start",
-            "border_radius": 0,
-            "icon_name": "heart",
-            "icon_size": 18,
-            "icon_thickness": 1,
-            "button_background": "#000000",
-            "button_text": "#ffffff"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -97,7 +79,6 @@
         "separator",
         "description",
         "variant_picker",
-        "wishlist_power_block_wishlist_product_page_button_mXHG8C",
         "buy_buttons",
         "complementary_products"
       ],
@@ -125,7 +106,7 @@
       "type": "related-products",
       "custom_css": [
         "{direction: ltr; margin-top: -10px;}",
-        "h2 {font-size: 36px;}",
+        "h2 {font-family: \"Playfair Display\", sans-serif !important; font-weight: 600 !important; font-size: 30px !important; font-style: italic; line-height: 30px; color: #000000 !important;}",
         "@media screen and (max-width: 769px) {h2 {font-size: 24px; }}"
       ],
       "settings": {
