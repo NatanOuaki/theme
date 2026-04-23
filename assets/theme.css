@@ -8399,9 +8399,9 @@ gap:20px;
 
 /* SECTION BEST-SELLERS */
 .product-title{
-  font-family: 'Heebo', sans-serif !important;
-  font-weight: 400 !important; /* Regular */
-  font-size: 20px !important;
+  font-family: 'Playfair Display', sans-serif !important;
+  font-weight: 600 !important; 
+  font-size: 28px !important;
   line-height: 1.2;
   color: #000000 !important;
 }
