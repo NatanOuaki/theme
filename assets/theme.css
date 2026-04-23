@@ -8414,6 +8414,7 @@ sale-price {
   font-weight: 400 !important; /* Regular */
   font-size: 13px !important;
   line-height: 20px;
+  text-align:left;
   color: #000000 !important;
 }
 
