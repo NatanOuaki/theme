@@ -8747,11 +8747,6 @@ sale-price {
   border: 1px solid #ccc;
 }
 
-/* SELECTED VARIANT */
-#shopify-section-template--21538767995126__main input[type="radio"]:checked + .block-swatch {
-  border: 1px solid #BC002D !important;
-}
-
 /* ADD TO CART BUTTON */
 #shopify-section-template--21538767995126__main .buy-buttons > .button,
 #shopify-section-template--21538767995126__main .buy-buttons button[type="submit"] {
