@@ -8399,11 +8399,10 @@ gap:20px;
 
 /* SECTION BEST-SELLERS */
 .product-title{
-  font-family: 'Playfair Display', sans-serif !important;
-  font-weight: 600 !important; 
-  font-size: 28px !important;
-  font-style:italic;
-  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500 !important; 
+  font-size: 18px !important;
+  line-height: 30px;
   color: #000000 !important;
 }
 
