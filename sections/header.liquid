@@ -272,16 +272,6 @@
           </li>
         {%- endif -%}
 
-        <ooo-wl-access-button>
-  <li class="relative">
-    <a href="{% if routes.root_url != '/' %}{{ routes.root_url }}{% endif %}/pages/wishlist">
-        <span class="sr-only">{{ 'header.general.open_wishlist' | t }}</span>
-        {%- render 'icon' with 'heart', class: 'header__nav-icon' -%}
-        <ooo-wl-wishlist-count block-start="auto" inline-end="auto" show-zero="false" hide-count="true" hidden class="header__cart-dot is-visible"></ooo-wl-wishlist-count>
-    </a>
-  </li>
-</ooo-wl-access-button>
-
         {%- if section.settings.enable_search -%}
           <li class="header__search-link">
             <a href="{{ routes.search_url }}" aria-controls="header-search-{{ section.id }}">
