@@ -8466,172 +8466,19 @@ sale-price {
 
 /* Bouton */
 #shopify-section-template--26517561835824__image-with-text-overlay-1 .button, #shopify-section-template--26517561835824__shop-the-look .shop-the-look__item-content > .button {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 22px !important;
-  line-height: 43px !important;
-  letter-spacing: 0px !important;
+  font-size: 18px !important;
+  line-height: 35px !important;
+  letter-spacing: -2% !important;
   background-color: #000000 !important;
   color: #FFFFFF !important;
   border: none !important;
-  padding: 5px 47px !important;
+  padding: 0px 30px !important;
   margin-top: 24px !important;
-}
-
-
-
-/* NEWSLETTER UNIQUEMENT */
-#shopify-section-template--26517561835824__newsletter .prose .h6 {
-  font-family: 'Lora', serif !important;
-  font-style: italic !important;
-  font-weight: 400 !important;
-  font-size: 24px !important;
-  line-height: 1.2 !important;
-  color: #000000 !important;
-}
-
-#shopify-section-template--26517561835824__newsletter .prose .h2 {
-  font-family: 'Lora', serif !important;
-  font-style: italic !important;
-  font-weight: 400 !important;
-  font-size: 40px !important;
-  line-height: 1.2 !important;
-  color: #BC002D !important;
-}
-
-#shopify-section-template--26517561835824__newsletter .prose > p:last-of-type {
-  direction: rtl !important;
-  text-align: center !important;
-  font-family: 'Heebo', sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 24px !important;
-  line-height: 1.6 !important;
-  color: #000000 !important;
-}
-
-/* Mot Galu seulement */
-#shopify-section-template--26517561835824__newsletter .prose > p:last-of-type em {
-  font-family: 'Lora', serif !important;
-  font-style: italic !important;
-  font-weight: 400 !important;
-  font-size: 24px !important;
-  color: #000000 !important;
-}
-
-/* NEWSLETTER - fix input + button sur une seule ligne */
-#shopify-section-template--26517561835824__newsletter .form {
-  width: 100% !important;
-  max-width: 760px !important;
-}
-
-#shopify-section-template--26517561835824__newsletter .form-row {
-  display: flex !important;
-  flex-direction: row-reverse !important; /* input à droite / bouton à gauche */
-  align-items: stretch !important;
-  justify-content: center !important;
-  gap: 8px !important;
-  width: 100% !important;
-  flex-wrap: nowrap !important;
-}
-
-#shopify-section-template--26517561835824__newsletter .form-control {
-  flex: 1 1 auto !important;
-  width: auto !important;
-  min-width: 0 !important;
-  margin: 0 !important;
-}
-
-#shopify-section-template--26517561835824__newsletter .input {
-  width: 100% !important;
-  height: 53px !important;
-  min-height: 53px !important;
-  font-family: 'Heebo', sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 22px !important;
-  color: #000000 !important;
-  text-align: right !important;
-  direction: rtl !important;
-  background: #FFFFFF !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 20px !important;
-  margin: 0 !important;
-}
-
-#shopify-section-template--26517561835824__newsletter .button {
-  flex: 0 0 auto !important;
-  width: 228px !important;
-  min-width: 228px !important;
-  height: 53px !important;
-  min-height: 53px !important;
-  margin: 0 !important;
-  padding: 5px 47px !important;
-
-  font-family: 'Heebo', sans-serif !important;
-  font-weight: 700 !important;
-  font-size: 22px !important;
-  line-height: 43px !important;
-  letter-spacing: 0 !important;
-  background-color: #000000 !important;
-  color: #FFFFFF !important;
-  border: none !important;
   text-decoration: none !important;
-
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
 }
 
-
-#shopify-section-template--26517561835824__newsletter .prose > p:last-of-type {
-  white-space: nowrap !important;
-  text-align: center !important;
-  direction: rtl !important;
-
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-}
-
-/* FORM LAYOUT */
-#shopify-section-template--26517561835824__newsletter .form-row {
-  display: flex !important;
-  flex-direction: row-reverse !important;
-  align-items: stretch !important;
-  justify-content: center !important;
-  gap: 8px !important;
-}
-
-/* INPUT PLUS PETIT */
-#shopify-section-template--26517561835824__newsletter .form-control {
-  flex: 0 0 420px !important;
-  max-width: 450px !important;
-}
-
-/* BOUTON PLUS GRAND */
-#shopify-section-template--26517561835824__newsletter .button {
-  flex: 0 0 320px !important;
-  max-width: 300px !important;
-  width: 320px !important;
-
-  height: 53px !important;
-
-  font-family: 'Heebo', sans-serif !important;
-  font-weight: 700 !important;
-  font-size: 22px !important;
-  line-height: 43px !important;
-  background-color: #000000 !important;
-  color: #FFFFFF !important;
-
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-#shopify-section-template--26517561835824__newsletter .prose > p:last-of-type em {
-  margin-left: 6px !important;
-  display: inline-block;
-}
 
 
 /* Slideshow H1 style */
