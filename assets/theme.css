@@ -8416,6 +8416,7 @@ sale-price {
 .color-swatch{
   border-radius:30px !important;
   width:20px;
+  height:20px;
 }
 
 /* Boutons sur les cartes produit - uniquement cette section */
