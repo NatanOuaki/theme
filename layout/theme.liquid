@@ -167,6 +167,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script>
 
+document.addEventListener('DOMContentLoaded', () => {
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  const mainImages = document.querySelectorAll('.main-image-item');
+
+  thumbnails.forEach((thumb, index) => {
+    thumb.addEventListener('click', () => {
+      thumbnails.forEach(t => t.setAttribute('aria-current', 'false'));
+      thumb.setAttribute('aria-current', 'true');
+
+      mainImages.forEach(img => img.classList.remove('is-active'));
+      if (mainImages[index]) {
+        mainImages[index].classList.add('is-active');
+      }
+    });
+  });
+});
+
+
+
+
 document.querySelectorAll('.product-gallery__thumbnail').forEach((thumb) => {
   thumb.addEventListener('click', function () {
     const mediaId = this.dataset.mediaId;
