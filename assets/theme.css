@@ -8356,8 +8356,10 @@ ul {
 
 
 
-/* ------------------------------- AJOUTS LP DIGITAL ------------------------------------*/
+/* ------------------------------- AJOUTS nodev ------------------------------------*/
 
+
+color-swatch
 
 .free-shipping-wrapper{
   color:white;
@@ -8369,8 +8371,7 @@ ul {
 
 /* HEADER - état initial (avant scroll) */
 .header {
-  background-color: rgba(255, 255, 255, 0.8); /* #FFFFFF à 80% */
-  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 1); /* #FFFFFF à 80% */
   height: 70px;
   margin-top:0;
   padding-top:0;
