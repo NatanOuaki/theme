@@ -166,65 +166,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  function updateProductButtonsText() {
-    const addToCartBtn = document.querySelector(
-      '#product-form-main-15052163809584-template--26517562065200__main button[type="submit"]'
-    );
-    if (addToCartBtn && addToCartBtn.textContent.trim() !== 'הוספה לסל') {
-      addToCartBtn.textContent = 'הוספה לסל';
-    }
-
-    const buyNowBtn = document.querySelector(
-      '#shopify-section-template--21538767995126__main .shopify-payment-button__button'
-    );
-    if (buyNowBtn && buyNowBtn.textContent.trim() !== 'לרכישה') {
-      buyNowBtn.textContent = 'לרכישה';
-    }
-  }
-
-  updateProductButtonsText();
-
-  let timeout;
-
-  const productContainer = document.querySelector(
-    '#shopify-section-template--21538767995126__main'
-  );
-
-  if (productContainer) {
-    const observer = new MutationObserver(function () {
-      clearTimeout(timeout);
-      timeout = setTimeout(updateProductButtonsText, 0.01);
-    });
-
-    observer.observe(productContainer, {
-      childList: true,
-      subtree: true
-    });
-  }
-});
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const thumbnails = document.querySelectorAll('.thumbnail');
-  const mainImages = document.querySelectorAll('.main-image-item');
-
-  thumbnails.forEach((thumb, index) => {
-    thumb.addEventListener('click', () => {
-      thumbnails.forEach(t => t.setAttribute('aria-current', 'false'));
-      thumb.setAttribute('aria-current', 'true');
-
-      mainImages.forEach(img => img.classList.remove('is-active'));
-      if (mainImages[index]) {
-        mainImages[index].classList.add('is-active');
-      }
-    });
-  });
-});
-
-
-
 
 document.querySelectorAll('.product-gallery__thumbnail').forEach((thumb) => {
   thumb.addEventListener('click', function () {
