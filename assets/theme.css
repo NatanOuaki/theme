@@ -8688,13 +8688,13 @@ sale-price {
   font-weight: 500  !important;
 }
 
-#shopify-section-template--26517562065200__main .price-list,
-#shopify-section-template--26517562065200__main .price-list .h4,
-#shopify-section-template--26517562065200__main sale-price {
-  font-family: "Heebo", sans-serif !important;
+#shopify-section-template--21538767995126__main .price-list,
+#shopify-section-template--21538767995126__main .price-list .h4,
+#shopify-section-template--21538767995126__main sale-price {
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 400 !important;
   font-size: 22px !important;
-  text-align: right !important;
+  text-align: left !important;
   display: block;
 }
 
