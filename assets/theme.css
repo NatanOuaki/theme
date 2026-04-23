@@ -8359,7 +8359,9 @@ ul {
 /* ------------------------------- AJOUTS nodev ------------------------------------*/
 
 
-color-swatch
+color-swatch{
+  border-radius:30px;
+}
 
 .free-shipping-wrapper{
   color:white;
