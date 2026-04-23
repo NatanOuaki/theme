@@ -1,422 +1,260 @@
 <style>
-  #shopify-section-{{ section.id }} .custom-footer {
-    background: #FFFFFF;
-    padding: 48px 0 20px;
-    border-top: solid black 1px;
+  .km-footer-custom {
+    width: 100%;
+    background: #f3f3f3;
+    padding: 70px 60px 40px;
+    border-top: 1px solid #8f8f8f;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__inner {
-    max-width: 1240px;
+  .km-footer-inner {
+    max-width: 1800px;
     margin: 0 auto;
-    padding: 51px 24px 0 24px;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__grid {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr 1fr 1.1fr;
-    gap: 100px;
-    align-items: start;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__brand {
-    margin-top:-35px;
+  .km-footer-top {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
+    gap: 80px;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__logo-mark {
-    margin-bottom: 12px;
+  .km-footer-newsletter {
+    flex: 1 1 60%;
+    max-width: 900px;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__logo {
-    max-width: 279px;
-    height: auto;
-    display: block;
+  .km-footer-info {
+    flex: 0 0 320px;
+    text-align: center;
   }
 
-  .custom-footer__social {
+  .km-footer-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #000;
+    margin: 0 0 22px;
+    text-transform: uppercase;
+  }
+
+  .km-footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #000;
+    margin: 0 0 42px;
+    max-width: 900px;
+  }
+
+  .km-footer-form {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 32px;
+    flex-wrap: wrap;
   }
 
-  .custom-footer__social a {
+  .km-footer-input {
+    width: 100%;
+    max-width: 565px;
+    height: 60px;
+    border: 1px solid #7f7f7f;
+    background: transparent;
+    padding: 0 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  .km-footer-input::placeholder {
+    color: #7a7a7a;
+    opacity: 1;
+  }
+
+  .km-footer-button {
+    min-width: 233px;
+    height: 60px;
+    border: none;
+    background: #000000;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 30px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: -0.02em;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #000;
-    text-decoration: none;
+    transition: opacity 0.2s ease;
   }
 
-  .custom-footer__social svg {
-    width: 24px;
-    height: 24px;
-    display: block;
+  .km-footer-button:hover {
+    opacity: 0.9;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__heading {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.2;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    color: #000;
-    margin: 0 0 24px;
-    text-align: center;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__col {
-    text-align: center;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__menu,
-  #shopify-section-{{ section.id }} .custom-footer__menu ul {
+  .km-footer-menu {
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__menu li {
-    margin-bottom: 16px;
+  .km-footer-menu li {
+    margin-bottom: 8px;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__menu a,
-  #shopify-section-{{ section.id }} .custom-footer__text {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.4;
+  .km-footer-menu li:last-child {
+    margin-bottom: 0;
+  }
+
+  .km-footer-menu a {
+    text-decoration: none;
     color: #000;
-    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    transition: opacity 0.2s ease;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__menu a:hover {
-    text-decoration: none;
+  .km-footer-menu a:hover {
     opacity: 0.7;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__newsletter-text {
-    font-family: 'Heebo', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.4;
-    color: #000;
-    margin: 0 0 16px;
-    text-align: right;
-    direction: rtl;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__newsletter {
+  .km-footer-bottom {
     text-align: center;
+    margin-top: 90px;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__newsletter .form {
-    margin-top: 12px;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__newsletter .form-row {
+  .km-footer-socials {
     display: flex;
-    flex-direction: column;
-    gap: 14px;
-    align-items: center;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__newsletter input[type="email"] {
-    width: 100%;
-    max-width: 342px;
-    height: 41px;
-    border: 1px solid #6f6f6f;
-    background: transparent;
-    padding: 0 16px;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: #000;
-    text-align: right;
-    direction: rtl;
-    box-shadow: none;
-    border-radius: 0;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__newsletter input[type="email"]::placeholder {
-    color: #8c8c8c;
-    opacity: 1;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__newsletter button {
-    width: 232px;
-    height: 41px;
-    border: none;
-    border-radius: 0;
-    background: #171314;
-    color: #fff;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1;
-    cursor: pointer;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__newsletter button:hover {
-    opacity: 0.92;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__social {
-    display: flex;
-    gap: 14px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__social a {
-    color: #000;
-    display: inline-flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 26px;
+  }
+
+  .km-footer-socials a {
+    color: #000;
     text-decoration: none;
+    font-size: 22px;
+    line-height: 1;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__social svg {
-    width: 24px;
-    height: 24px;
-    display: block;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__bottom {
-    margin-top: 42px;
-    text-align: center;
-  }
-
-  #shopify-section-{{ section.id }} .custom-footer__copyright {
-    font-family: 'Heebo', sans-serif;
+  .km-footer-copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 1.4;
+    line-height: 22px;
+    letter-spacing: -0.02em;
     color: #000;
     margin: 0;
   }
 
-  #shopify-section-{{ section.id }} .custom-footer__copyright a {
-    color: #000;
-    text-decoration: none;
-  }
-
-  @media screen and (max-width: 999px) {
-    #shopify-section-{{ section.id }} .custom-footer__grid {
-      grid-template-columns: 1fr 1fr;
-      gap: 40px 24px;
+  @media screen and (max-width: 990px) {
+    .km-footer-custom {
+      padding: 50px 24px 30px;
     }
 
-    #shopify-section-{{ section.id }} .custom-footer__brand {
-      grid-column: 1 / -1;
-      align-items: center;
+    .km-footer-top {
+      flex-direction: column;
+      gap: 50px;
     }
 
-    #shopify-section-{{ section.id }} .custom-footer__social {
-      justify-content: center;
-    }
-  }
-
-  @media screen and (max-width: 699px) {
-    #shopify-section-{{ section.id }} .custom-footer {
-      padding: 36px 0 20px;
-    }
-
-    #shopify-section-{{ section.id }} .custom-footer__grid {
-      grid-template-columns: 1fr;
-      gap: 28px;
-    }
-
-    #shopify-section-{{ section.id }} .custom-footer__col,
-    #shopify-section-{{ section.id }} .custom-footer__newsletter {
-      text-align: center;
-    }
-
-    #shopify-section-{{ section.id }} .custom-footer__newsletter-text {
-      text-align: center;
-    }
-
-    #shopify-section-{{ section.id }} .custom-footer__newsletter input[type="email"] {
+    .km-footer-newsletter,
+    .km-footer-info {
       max-width: 100%;
+      flex: 1 1 100%;
+    }
+
+    .km-footer-info {
+      text-align: left;
+    }
+
+    .km-footer-form {
+      gap: 18px;
+    }
+
+    .km-footer-input,
+    .km-footer-button {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .km-footer-bottom {
+      margin-top: 60px;
+    }
+
+    .km-footer-title {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    .km-footer-text {
+      font-size: 18px;
+      line-height: 28px;
     }
   }
 </style>
 
-<div class="custom-footer">
-  <div class="custom-footer__inner">
-    <div class="custom-footer__grid">
+<div class="km-footer-custom">
+  <div class="km-footer-inner">
+    <div class="km-footer-top">
+      
+      <div class="km-footer-newsletter">
+        <h2 class="km-footer-title">NEWSLETTER</h2>
+        <p class="km-footer-text">
+          Rejoignez Koahatsniout et recevez 5% sur votre prochaine commande.
+        </p>
 
-      <div class="custom-footer__brand">
-        <img
-          class="custom-footer__logo"
-          src="https://cdn.shopify.com/s/files/1/0971/5145/1440/files/LOGOS_R_copy_4_1.png?v=1776255757"
-          alt="Galu"
-          width="220"
-          height="auto"
-        >
-
-        <div class="custom-footer__social">
-          <a href="https://www.tiktok.com/@galustudio_" target="_blank" rel="noopener" aria-label="TikTok">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0971/5145/1440/files/icon-tiktok.svg?v=1776256535"
-              alt="TikTok"
-              width="40"
-              height="40"
-            >
-          </a>
-
-          <a href="https://www.instagram.com/galustudio_/" target="_blank" rel="noopener" aria-label="Instagram">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0971/5145/1440/files/icon-instagram.svg?v=1776256535"
-              alt="TikTok"
-              width="40"
-              height="40"
-            >
-          </a>
-
-          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0971/5145/1440/files/icon-facebook.svg?v=1776256535"
-              alt="TikTok"
-              width="40"
-              height="40"
-            >
-          </a>
-
-          <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0971/5145/1440/files/icon-youtube.svg?v=1776256535"
-              alt="TikTok"
-              width="47"
-              height="47"
-            >
-          </a>
-        </div>
+        <form class="km-footer-form" method="post" action="/contact#contact_form" accept-charset="UTF-8">
+          <input type="hidden" name="form_type" value="customer">
+          <input type="hidden" name="utf8" value="✓">
+          <input 
+            type="email"
+            name="contact[email]"
+            class="km-footer-input"
+            placeholder="E-mail"
+            required
+          >
+          <button type="submit" class="km-footer-button">REJOINDRE</button>
+        </form>
       </div>
 
-      <div class="custom-footer__col custom-footer__col--info">
-        <h3 class="custom-footer__heading">INFORMATION</h3>
-
-        {% assign info_menu = linklists['information-menu'] %}
-        {% if info_menu != blank and info_menu.links.size > 0 %}
-          <ul class="custom-footer__menu custom-footer__menu__infos ">
-            {% for link in info_menu.links %}
-              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </div>
-
-      <div class="custom-footer__col custom-footer__col--shop">
-        <h3 class="custom-footer__heading">SHOP</h3>
-
-        {% assign shop_menu = linklists['shop-menu'] %}
-        {% if shop_menu != blank and shop_menu.links.size > 0 %}
-          <ul class="custom-footer__menu">
-            {% for link in shop_menu.links %}
-              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </div>
-
-      <div class="custom-footer__newsletter">
-        <h3 class="custom-footer__heading">{{ section.settings.newsletter_title }}</h3>
-        <p class="custom-footer__newsletter-text">{{ section.settings.newsletter_text }}</p>
-
-        {% form 'customer', class: 'form' %}
-          <input type="hidden" name="contact[tags]" value="newsletter">
-
-          <div class="form-row">
-            <input
-              type="email"
-              name="contact[email]"
-              placeholder="אימייל"
-              autocomplete="email"
-              required
-            >
-
-            <button type="submit">{{ section.settings.newsletter_button_label }}</button>
-          </div>
-
-          {% if form.posted_successfully? %}
-            <p class="custom-footer__text" style="margin-top:12px;">נרשמת בהצלחה</p>
-          {% endif %}
-
-          {% if form.errors %}
-            <p class="custom-footer__text" style="margin-top:12px;">{{ form.errors | default_errors }}</p>
-          {% endif %}
-        {% endform %}
+      <div class="km-footer-info">
+        <h2 class="km-footer-title">INFORMATIONS</h2>
+        <ul class="km-footer-menu">
+          <li><a href="/pages/retours-et-echanges">Retours et échanges</a></li>
+          <li><a href="/pages/conditions-d-utilisation">Conditions d’utilisation</a></li>
+          <li><a href="/pages/conditions-generales-de-vente">Conditions générales de vente</a></li>
+          <li><a href="/pages/politique-de-confidentialite">Politique de confidentialité</a></li>
+          <li><a href="/pages/mentions-legales">Mentions légales</a></li>
+          <li><a href="/pages/accessibilite">Accessibilité</a></li>
+          <li><a href="/pages/contact">Contactez-nous</a></li>
+        </ul>
       </div>
 
     </div>
 
-    <div class="custom-footer__bottom">
-      <p class="custom-footer__copyright">
-        © {{ 'now' | date: '%Y' }} - GALU | BUILT AND DESIGNED BY
-        <a href="https://lpdigital.co.il/he/" target="_blank" rel="noopener">LPDIGITAL</a>
+    <div class="km-footer-bottom">
+      <div class="km-footer-socials">
+        <a href="#" aria-label="TikTok">TikTok</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+
+      <p class="km-footer-copyright">
+        © 2026 - Koahatsniout | Designed and Built by nodev
       </p>
     </div>
   </div>
 </div>
-
-
-{% schema %}
-{
-  "name": "Custom footer",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "logo_mark",
-      "label": "Logo mark"
-    },
-    {
-      "type": "image_picker",
-      "id": "footer_logo",
-      "label": "Footer logo"
-    },
-    {
-      "type": "text",
-      "id": "info_title",
-      "label": "Information title",
-      "default": "INFORMATION"
-    },
-    {
-      "type": "link_list",
-      "id": "info_menu",
-      "label": "Information menu"
-    },
-    {
-      "type": "text",
-      "id": "shop_title",
-      "label": "Shop title",
-      "default": "SHOP"
-    },
-    {
-      "type": "link_list",
-      "id": "shop_menu",
-      "label": "Shop menu"
-    },
-    {
-      "type": "text",
-      "id": "newsletter_title",
-      "label": "Newsletter title",
-      "default": "NEWSLETTER"
-    },
-    {
-      "type": "text",
-      "id": "newsletter_text",
-      "label": "Newsletter text",
-      "default": "הצטרפי לעולם שלנו"
-    },
-    {
-      "type": "text",
-      "id": "newsletter_button_label",
-      "label": "Newsletter button label",
-      "default": "להצטרפות"
-    }
-  ]
-}
-{% endschema %}
