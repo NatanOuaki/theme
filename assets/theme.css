@@ -8720,12 +8720,6 @@ sale-price {
   height:40px;
 }
 
-#shopify-section-template--21538767995126__main .variant-picker__option-info,
-#shopify-section-template--21538767995126__main .variant-picker__option {
-direction:rtl;
-justify-content: flex-start;
-}
-
 #shopify-section-template--21538767995126__main .variant-picker__option:first-child {
   margin-top: -20px;
 }
