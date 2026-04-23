@@ -73,7 +73,7 @@
         "collection_PX9fQN"
       ],
       "custom_css": [
-        "h2 {font-family: 'Playfair Display', sans-serif !important; font-weight: 600 !important; font-size: 30px !important; font-style:italic; line-height: 30px; color: #000000 !important; margin: 30px 0 10px 0;}"
+        "h2 {font-family: \"Playfair Display\", sans-serif !important; font-weight: 600 !important; font-size: 30px !important; font-style: italic; line-height: 30px; color: #000000 !important; margin: 30px 0 10px 0;}"
       ],
       "name": "t:sections.featured_collections.presets.featured_collections.name",
       "settings": {
@@ -180,7 +180,8 @@
         "look_6yPd9z"
       ],
       "custom_css": [
-        "{margin-bottom: 50px;}"
+        "{margin-bottom: 50px;}",
+        "h2 {font-family: \"Playfair Display\", sans-serif !important; font-weight: 600 !important; font-size: 30px !important; font-style: italic; line-height: 30px; color: #000000 !important; margin: 30px 0 10px 0;}"
       ],
       "name": "t:sections.shop_the_look.presets.shop_the_look.name",
       "settings": {
