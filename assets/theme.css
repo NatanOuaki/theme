@@ -8762,7 +8762,7 @@ sale-price {
   font-size: 20px !important;
   line-height: 34px !important;
   padding: 5px 155px !important;
-  letter-spacing: -2% !important;
+  letter-spacing: -0.02em !important;
   border: none !important;
   border-radius: 0 !important;
   text-align: center;
