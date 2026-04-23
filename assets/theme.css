@@ -8359,8 +8359,8 @@ ul {
 /* ------------------------------- AJOUTS nodev ------------------------------------*/
 
 
-color-swatch{
-  border-radius:30px;
+.color-swatch{
+  border-radius:30px !important;
 }
 
 .free-shipping-wrapper{
