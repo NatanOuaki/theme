@@ -8875,10 +8875,8 @@ sale-price {
 
 featured-collections-carousel {
   display: block !important;
-  width: 100vw !important;
-  max-width: 100vw !important;
-  margin-left: calc(50% - 50vw) !important;
-  margin-right: calc(50% - 50vw) !important;
+  width: 90vw !important;
+  max-width: 90vw !important;
 }
 
 .product-list--carousel {
