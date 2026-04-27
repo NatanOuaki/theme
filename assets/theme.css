@@ -8885,7 +8885,7 @@ featured-collections-carousel {
   gap: 100px !important;
 }
 
-.shop-the-look__item-content .button {
+.shop-the-look__item-content a.button {
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 700 !important;
   font-size: 20px !important;
