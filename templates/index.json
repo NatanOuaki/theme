@@ -96,7 +96,7 @@
         "image_JrbUxr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Group_43.png",
+            "image": "shopify://shop_images/Region.png",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-center text-center",
@@ -126,7 +126,7 @@
       "name": "t:sections.slideshow.presets.slideshow.name",
       "settings": {
         "allow_transparent_header": false,
-        "show_next_section_button": true,
+        "show_next_section_button": false,
         "media_size": "auto",
         "show_initial_transition": false,
         "autoplay": true,
@@ -142,13 +142,14 @@
         "look_UtBcJc": {
           "type": "look",
           "settings": {
+            "image": "shopify://shop_images/Facetune_05-04-2026-12-29-10_1.png",
             "hot_spots_background": "#ffffff",
             "product_1": "jupe-selah",
-            "product_1_horizontal_position": 35,
-            "product_1_vertical_position": 35,
-            "product_2": "saroual-libi",
-            "product_2_horizontal_position": 34,
-            "product_2_vertical_position": 65,
+            "product_1_horizontal_position": 44,
+            "product_1_vertical_position": 52,
+            "product_2": "tshirt-oz",
+            "product_2_horizontal_position": 54,
+            "product_2_vertical_position": 34,
             "product_3": "",
             "product_3_horizontal_position": 66,
             "product_3_vertical_position": 42,
