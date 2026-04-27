@@ -8920,3 +8920,14 @@ header {
   z-index: 10 !important;
   background: white;
 }
+
+@media screen and (max-width: 769px) {
+  featured-collections-carousel {
+    display: block !important;
+    width: inherit !important;
+    margin-left: inherit !important;
+    margin-right: inherit !important;
+  }
+
+  
+}
