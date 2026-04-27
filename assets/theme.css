@@ -8905,3 +8905,10 @@ featured-collections-carousel {
   max-width: 15%;
   margin: 0 auto;
 }
+
+
+header {
+  position: relative;
+  z-index: 1000 !important;
+  background: white;
+}
