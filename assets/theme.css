@@ -8905,3 +8905,7 @@ featured-collections-carousel {
   max-width: 15%;
   margin: 0 auto;
 }
+#shopify-section-template--21538767995126__related-products .product-list {
+  justify-content: center !important;
+  gap: 0px; /* ajuste l’espace entre les cartes */
+}
