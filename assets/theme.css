@@ -8898,11 +8898,6 @@ sale-price {
   letter-spacing: -0.02em !important;
 }
 
-#shopify-section-template--21538767995126__related-products .product-card {
-  max-width: 15%;
-  margin: 0 auto;
-}
-
 
 header {
   position: relative;
@@ -8922,6 +8917,11 @@ featured-collections-carousel {
 .product-list--carousel {
   display: flex !important;
   gap: 100px !important;
+}
+
+#shopify-section-template--21538767995126__related-products .product-card {
+  max-width: 15%;
+  margin: 0 auto;
 }
 
 }
