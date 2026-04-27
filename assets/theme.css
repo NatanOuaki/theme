@@ -8900,3 +8900,8 @@ featured-collections-carousel {
   font-style: normal !important;
   letter-spacing: -0.02em !important;
 }
+
+#shopify-section-template--21538767995126__related-products .product-card {
+  max-width: 65%;
+  margin: 0 auto;
+}
