@@ -8905,14 +8905,3 @@ featured-collections-carousel {
   max-width: 15%;
   margin: 0 auto;
 }
-
-#shopify-section-template--21538767995126__related-products .scroll-area {
-  justify-content: center;
-}
-
-#shopify-section-template--21538767995126__related-products scroll-carousel {
-  display: flex !important;
-  justify-content: center !important;
-  overflow: visible !important;
-  transform: none !important;
-}
