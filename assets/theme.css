@@ -8917,6 +8917,6 @@ featured-collections-carousel {
 
 header {
   position: relative;
-  z-index: 1000 !important;
+  z-index: 10 !important;
   background: white;
 }
