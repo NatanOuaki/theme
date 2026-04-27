@@ -17,7 +17,7 @@
         "color_scheme": "",
         "show_cart_note": true,
         "allow_discount_application": false,
-        "show_shipping_text": true,
+        "show_shipping_text": false,
         "show_view_cart_button": false,
         "show_checkout_button": true,
         "show_price_in_checkout_button": true,
