@@ -8913,3 +8913,19 @@ header {
 }
 
 
+@media screen and (min-width: 900px) {
+
+featured-collections-carousel {
+  display: block !important;
+  width: calc(100% - 120px) !important; /* 145px + 145px */
+  margin-left: 60px !important;
+  margin-right: 60px !important;
+}
+
+.product-list--carousel {
+  display: flex !important;
+  gap: 100px !important;
+}
+
+
+}
