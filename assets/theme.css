@@ -8891,3 +8891,11 @@ featured-collections-carousel {
   font-size: 20px !important;
   letter-spacing: -0.02em !important;
 }
+
+
+.accordion__toggle {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  letter-spacing: -0.02em !important;
+}
