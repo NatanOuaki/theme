@@ -8362,7 +8362,7 @@ ul {
 .free-shipping-wrapper{
   color:white;
     font-family: 'Montserrat', sans-serif;
-  font-weight: 600; /* Regular */
+  font-weight: 500; /* Regular */
   font-size: 18px;
 }
 
@@ -8791,6 +8791,14 @@ sale-price {
 
 /* MOBILE FIX */
 @media screen and (max-width: 769px) {
+
+.free-shipping-wrapper{
+  color:white;
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 500; /* Regular */
+  font-size: 13px;
+}
+
   #shopify-section-template--21538767995126__main .product-title {
     font-size: 24px !important;
   }
