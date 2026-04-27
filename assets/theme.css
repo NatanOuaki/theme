@@ -8923,11 +8923,16 @@ header {
 
 @media screen and (max-width: 769px) {
   featured-collections-carousel {
-    display: block !important;
+    display: inherit !important;
     width: inherit !important;
     margin-left: inherit !important;
     margin-right: inherit !important;
   }
+
+  .product-list--carousel {
+  display: inherit !important;
+  gap: inherit !important;
+}
 
   
 }
