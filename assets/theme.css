@@ -8875,9 +8875,9 @@ sale-price {
 
 featured-collections-carousel {
   display: block !important;
-  width: calc(100% - 200px) !important; /* 145px + 145px */
-  margin-left: 100px !important;
-  margin-right: 100px !important;
+  width: calc(100% - 120px) !important; /* 145px + 145px */
+  margin-left: 60px !important;
+  margin-right: 60px !important;
 }
 
 .product-list--carousel {
