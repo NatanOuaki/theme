@@ -8910,12 +8910,18 @@ featured-collections-carousel {
   justify-content: center;
 }
 
+#shopify-section-template--21538767995126__related-products .product-list {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100%;
+}
+
 #shopify-section-template--21538767995126__related-products scroll-carousel {
   display: flex !important;
   justify-content: center !important;
-  gap: 40px;
 }
 
-#shopify-section-template--21538767995126__related-products .product-card {
-  flex: 0 0 auto;
+#shopify-section-template--21538767995126__related-products product-card {
+  flex: 0 0 auto !important;
+  margin: 0 20px; /* espace entre les cartes */
 }
