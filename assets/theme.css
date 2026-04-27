@@ -8881,6 +8881,17 @@ sale-price {
 }
 
 
+featured-collections-carousel {
+  display: block !important;
+  width: calc(100% - 120px) !important; /* 145px + 145px */
+  margin-left: 60px !important;
+  margin-right: 60px !important;
+}
+
+.product-list--carousel {
+  display: flex !important;
+  gap: 100px !important;
+}
 
 .shop-the-look__item-content a.button {
   font-family: 'Montserrat', sans-serif !important;
@@ -8910,4 +8921,20 @@ header {
   background: white;
 }
   
+}
+
+
+@media screen and (max-width: 749px) {
+
+  featured-collections-carousel {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .product-list--carousel {
+    display: block !important; /* ou flex sans gap */
+    gap: 0 !important;
+  }
+
 }
