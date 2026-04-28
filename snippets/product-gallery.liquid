@@ -234,7 +234,7 @@
 
     {%- if first_3d_model -%}
       <link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'; this.onload = null">
-
+{%- comment -%}
       <button
         class="button w-full md:hidden"
         data-shopify-xr
@@ -243,6 +243,7 @@
         data-shopify-title="{{ product.title | escape }}"
         data-shopify-xr-hidden
       >
+            {%- endcomment -%}
         <span class="text-with-icon justify-center">
           {%- render 'icon' with 'media-view-in-space' -%}
           {{- 'product.general.view_in_space' | t -}}
