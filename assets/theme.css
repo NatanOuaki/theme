@@ -9067,3 +9067,10 @@ featured-collections-carousel {
       0 4px 8px rgba(0, 0, 0, 0.08);
   }
 }
+
+
+@media screen and (max-width: 699px) {
+  .md\:hidden button[aria-controls^="shop-the-look-item-popover"] {
+    display: none !important;
+  }
+}
