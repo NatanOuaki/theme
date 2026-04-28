@@ -8996,3 +8996,35 @@ featured-collections-carousel {
 #sidebar-menu .icon {
   color: #000000 !important;
 }
+
+
+@media screen and (max-width: 699px) {
+  .featured-collections-carousel__item.is-selected .product-list--carousel {
+    display: grid !important;
+    grid-auto-flow: column;
+    grid-auto-columns: 100% !important;
+    gap: 0 !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .featured-collections-carousel__item.is-selected .product-list--carousel product-card {
+    width: 100% !important;
+    min-width: 100% !important;
+    scroll-snap-align: center;
+  }
+
+  .featured-collections-carousel__item.is-selected .product-card__media img {
+    width: 100% !important;
+  }
+
+  .featured-collections-carousel__item.is-selected .product-list {
+    padding-inline: 0 !important;
+  }
+
+  .featured-collections-carousel__item.is-selected .floating-controls-container__control {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
