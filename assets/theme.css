@@ -8488,7 +8488,7 @@ sale-price {
   justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
-  margin-top: -40px;
+  margin-top: 0px;
   margin-bottom:40px;
 }
 
