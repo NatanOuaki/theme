@@ -8383,8 +8383,8 @@ gap:20px;
 }
 
 
-header-sidebar__linklist-button h6{
-  font-family: 'Montserrat', sans-serif;
+.header-sidebar__linklist-button h6{
+  font-family: 'Montserrat', sans-serif ;
   font-weight: 400; /* Regular */
   font-size: 14px;
   color: #000000;
