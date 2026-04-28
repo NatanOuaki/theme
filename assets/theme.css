@@ -8999,6 +8999,7 @@ featured-collections-carousel {
 
 
 @media screen and (max-width: 699px) {
+  /* 1 produit visible */
   .featured-collections-carousel__item.is-selected .product-list--carousel {
     display: grid !important;
     grid-auto-flow: column;
@@ -9006,6 +9007,7 @@ featured-collections-carousel {
     gap: 0 !important;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
   }
 
   .featured-collections-carousel__item.is-selected .product-list--carousel product-card {
@@ -9014,17 +9016,52 @@ featured-collections-carousel {
     scroll-snap-align: center;
   }
 
+  .featured-collections-carousel__item.is-selected .product-card__media {
+    width: 100% !important;
+  }
+
   .featured-collections-carousel__item.is-selected .product-card__media img {
     width: 100% !important;
   }
 
   .featured-collections-carousel__item.is-selected .product-list {
     padding-inline: 0 !important;
+    position: relative !important;
   }
 
+  /* conteneur des flèches */
+  .featured-collections-carousel__item.is-selected .floating-controls-container {
+    position: relative !important;
+  }
+
+  /* affichage des flèches */
   .featured-collections-carousel__item.is-selected .floating-controls-container__control {
-    display: block !important;
+    display: flex !important;
     opacity: 1 !important;
     visibility: visible !important;
+    position: absolute !important;
+    top: 38%;
+    transform: translateY(-50%);
+    z-index: 20;
+  }
+
+  /* flèche gauche */
+  .featured-collections-carousel__item.is-selected .floating-controls-container__control:first-child {
+    left: 12px;
+  }
+
+  /* flèche droite */
+  .featured-collections-carousel__item.is-selected .floating-controls-container__control:last-child {
+    right: 12px;
+  }
+
+  /* style des boutons */
+  .featured-collections-carousel__item.is-selected .floating-controls-container__control .circle-button {
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 999px;
   }
 }
