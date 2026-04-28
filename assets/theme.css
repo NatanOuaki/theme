@@ -8383,13 +8383,57 @@ gap:20px;
 }
 
 
-#sidebar-menu .header-sidebar__linklist-button h6{
+/* =========================
+   MOBILE MENU TYPO (Sidebar)
+   ========================= */
+
+#sidebar-menu .header-sidebar__linklist-button,
+#sidebar-menu .header-sidebar__back-button {
   font-family: 'Montserrat', sans-serif !important;
-  font-weight: 400 !important; /* Regular */
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 22px !important;
+  letter-spacing: -0.02em !important;
+  color: #000000 !important;
+  text-transform: none !important;
+}
+
+/* Liens <a> */
+#sidebar-menu .header-sidebar__linklist-button[href] {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400 !important;
   font-size: 14px !important;
   color: #000000 !important;
 }
 
+/* Boutons avec sous-menu */
+#sidebar-menu button.header-sidebar__linklist-button {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #000000 !important;
+}
+
+/* Sous-menu */
+#sidebar-menu .header-sidebar__sub-panel .header-sidebar__linklist-button {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #000000 !important;
+}
+
+/* Bouton retour */
+#sidebar-menu .header-sidebar__back-button {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #000000 !important;
+}
+
+/* Chevron */
+#sidebar-menu .icon {
+  color: #000000 !important;
+}
 .header__primary-nav a,
 .header__primary-nav summary,
 .header__secondary-nav a {
