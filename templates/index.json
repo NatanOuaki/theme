@@ -15,7 +15,7 @@
         "image_aRHhQM": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Group_43.png",
+            "image": "shopify://shop_images/Group_43_a5bfd28d-c303-4a4a-991b-235f6f4519e2.png",
             "mobile_image": "shopify://shop_images/Group_44.png",
             "subheading": "",
             "title": "",
@@ -74,7 +74,7 @@
         "collection_PX9fQN"
       ],
       "custom_css": [
-        "h2 {font-family: \"Playfair Display\", sans-serif !important; font-weight: 600 !important; font-size: 30px !important; font-style: italic; line-height: 30px; color: #000000 !important; margin: 30px 0 10px 0;}"
+        "h2 {font-family: \"Playfair Display\", sans-serif !important; font-weight: 600 !important; font-size: 30px !important; font-style: italic; line-height: 30px; color: #000000 !important; margin: -30px 0 10px 0;}"
       ],
       "name": "t:sections.featured_collections.presets.featured_collections.name",
       "settings": {
