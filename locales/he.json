@@ -1624,7 +1624,25 @@
       },
       "payment_delete": {
         "warning_message_without_replacement": {
-          "with_subscriptions": "מחיקת אמצעי תשלום זה תשפיע על תשלומים שאושרו מראש. אנא הוסף אמצעי תשלום חלופי כדי להמשיך ולקבל הזמנות עתידיות."
+          "with_subscriptions": "מחיקת אמצעי תשלום זה תשפיע על תשלומים שאושרו מראש. אנא הוסף אמצעי תשלום חלופי כדי להמשיך ולקבל הזמנות עתידיות.",
+          "with_pending_orders_and_subscriptions": "הסרת אמצעי תשלום זה תשפיע על תשלומים שאושרו מראש. יתרות חוב קיימות בהזמנות ימשיכו להיגבות מאמצעי תשלום זה, אך לא תקבלו הזמנות מנוי עתידיות. הוסיפו אמצעי תשלום חלופי כדי להמשיך לקבל הזמנות מנוי.",
+          "with_pending_orders": "אם תמחק אמצעי תשלום זה, הוא יוסר מחשבונך ולא יהיה זמין יותר לרכישות עתידיות. יתרות לתשלום, עם זאת, ימשיכו להיגבות ממנו עבור הזמנות קיימות."
+        },
+        "title": "מחיקת אמצעי תשלום",
+        "description_without_replacement": "אמצעי תשלום זה לא יהיה זמין יותר בהזמנותיך העתידיות.",
+        "description_with_replacement": "מחיקת אמצעי תשלום זה תשפיע על תשלומים שאושרו מראש. תוכל לבחור להחליף אותו באמצעי תשלום אחר כדי להמשיך ולקבל הזמנות.",
+        "payment_method_selector_placeholder": "בחירת אמצעי תשלום חלופי (אופציונלי)",
+        "replace_method_with_new_method_description": "אמצעי התשלום הנוכחי שלך, {{currentPaymentMethodName}}, יימחק ויוחלף ב-{{newPaymentMethodName}}.",
+        "error_when_deleting": "אנו מתנצלים, אך אירעה שגיאה ולא הצלחנו למחוק את אמצעי תשלום זה. אנא נסו שוב מאוחר יותר או רעננו את העמוד.",
+        "delete_and_replace_button": "מחק והחלף",
+        "delete_and_replace_button_accessibility_label": "מחק את {{currentPaymentMethodName}} והחלף אותו ב-{{newPaymentMethodName}}.",
+        "deleted_successfully": "אמצעי התשלום הוסר בהצלחה.",
+        "payment_method_selector_no_alternative_payment": "אין שיטת החלפה",
+        "loading_available_payment_methods_accessibility_label": "אפשרויות תשלום זמינות בטעינה",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "הסרת אמצעי תשלום זה תשפיע על תשלומים שאושרו מראש. יתרות לתשלום בהזמנות קיימות ימשיכו להיגבות מאמצעי תשלום זה, אלא אם תבחרו אמצעי תשלום חלופי. בחירת אמצעי תשלום חלופי תאפשר לכם לקבל הזמנות מנוי עתידיות ללא הפרעה.",
+          "with_pending_orders": "אם תמחק אמצעי תשלום זה, הוא יוסר מחשבונך ולא יהיה זמין יותר לרכישות עתידיות. יתרות לתשלום בגין הזמנות קיימות ימשיכו להיגבות באמצעי תשלום זה, אלא אם תבחר באמצעי תשלום חלופי.",
+          "with_subscriptions": "מחיקת אמצעי תשלום זה תשפיע על תשלומים שאושרו מראש. אנא החליפו אותו באמצעי תשלום חלופי כדי להמשיך ולקבל הזמנות עתידיות."
         }
       },
       "edit_payment_method": {
@@ -1741,7 +1759,41 @@
       "edit_payment_method_brand_button_accessibility_label": "עריכת {{paymentMethodName}}",
       "expiration_warning_button_accessibility_label": "הצג אזהרת תפוגה עבור {{paymentMethodName}} המסתיימת ב-{{lastDigits}}",
       "no_payment_methods_banner": "לא נוספו אמצעי תשלום",
-      "default": "ברירת מחדל"
+      "default": "ברירת מחדל",
+      "title": "אפשרויות תשלום",
+      "add_payment_method_button": "הוסף אמצעי תשלום",
+      "payment_details": {
+        "title": "פרטי אמצעי תשלום",
+        "payment_method_expiring_on": "תוקף ב-{{expiryDate}}",
+        "preauthorized_payments": "תשלומים שאושרו מראש",
+        "close_payment_modal": "סגור",
+        "close_payment_modal_accessibility_label": "סגור את חלון המידע המודאלי של אמצעי התשלום",
+        "payment_method_not_found_error": "לא ניתן למצוא אמצעי תשלום",
+        "payment_details_loading": "פרטי אמצעי התשלום נטענים",
+        "pre_authorized_payments": "תשלומים מאושרים מראש",
+        "total_amount_of_subscription_line_items_left": "ועוד {{total}}",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "{{totalItems}} פריטים בסך הכל, הצגת {{totalItemsToDisplay}} פריטים",
+        "next_payment_due": "התשלום עקב ב-{{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "שנה",
+        "edit_payment_method_button_accessibility_label": "שינוי אמצעי התשלום המסתײם ב-{{lastDigits}}",
+        "credit_card_details_accessibility_label": "המסתיימים ב-{{lastDigits}}",
+        "billing_title": "כתובת לחיוב",
+        "card_info_title": "פרטי כרטיס",
+        "payment_method_expired_on": "תוקפו פג ב-{{expiryDate}}",
+        "loading_shop_pay": "Shop Pay בטעינה",
+        "invalid_payment_method": "אמצעי תשלום לא תקף",
+        "invalid_payment_method_message": "השתמש/י בכרטיס אשראי חדש כדי להמשיך ולקבל הזמנות עתידיות.",
+        "replace_payment_method": "החלף אמצעי תשלום",
+        "checkout_card_banner": "אמצעי תשלום זה יכול לשמש רק לתשלומים שאושרו מראש. הוא לא יופיע בקופה אם אתה מחובר לחנות זו.",
+        "default_checkbox": "הגדר כהתקן מדיה ברירת מחדל",
+        "default_checkbox_accessibility_label": "הגדר אמצעי תשלום זה כברירת מחדל",
+        "replace_payment_method_button": "החלף"
+      },
+      "delete_payment_method_button": "מחק",
+      "delete_payment_method_button_accessibility_label": "מחק את {{paymentMethodName}}",
+      "back_button": "חזרה",
+      "back_button_accessibility_label": "חזרה ל-{{paymentMethodStepTitle}}",
+      "generic_card": "כרטיס"
     },
     "payment_method_brands": {
       "visa": "ויזה",
@@ -1973,8 +2025,35 @@
         "title": "הזמנה {{name}}",
         "order_timeline": {
           "expand_events_label": "הצג פרטים",
-          "expand_events_accessibility_label": "הצג פרטי הזמנה טרומית"
+          "expand_events_accessibility_label": "הצג פרטי הזמנה טרומית",
+          "hide_events_label": "הסתר פרטים",
+          "hide_events_accessibility_label": "הסתר פרטי הזמנה טרומית"
         }
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "אמצעי תשלום זה לא יהיה זמין עוד לרכישות עתידיות שיתבצעו ממיקום זה.",
+          "description_with_replacement": "מחיקת אמצעי תשלום זה תשפיע על תשלומים שאושרו מראש עבור מיקום זה. יש להחליפו באמצעי תשלום חלופי כדי להמשיך ולקבל הזמנות עתידיות."
+        },
+        "payment_details": {
+          "order_label": "הזמנה {{name}}",
+          "draft_label": "הזמנה זמנית {{name}}"
+        }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "הוסף מספר הזמנת רכש",
+        "add_modal_title": "הוסף מספר הזמנת רכש",
+        "cancel": "בטל",
+        "close_modal_accessibility_label": "סגור חלון קופץ של הזמנת רכש",
+        "discard": "בטל",
+        "discard_changes_modal_title": "לבטל את השינויים?",
+        "edit_accessibility_label": "שינוי מספר הזמנת הרכש",
+        "edit_modal_title": "שינוי מספר הזמנת הרכש",
+        "empty_state": "אין מספר הזמנת רכש",
+        "modal_po_number_input_label": "מספר הזמנת רכש",
+        "modal_po_number_input_max_length_error": "מספרי הזמנות רכש הם בני {{maxLength}} תווים לכל היותר.",
+        "save": "שמור",
+        "title": "הזמנת רכש מס' {{poNumber}}"
       }
     },
     "profile_preview_bar": {
@@ -2084,6 +2163,73 @@
         "greeting_without_name": "חשבון",
         "orders_button": "הזמנות"
       }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "אירעה שגיאה במחיקת הכתובת הזו. נסה שוב או רענן את הדף."
+      },
+      "addresses_loading_issue": {
+        "description": "שגיאת חיבור. אנא בדוק את חיבור האינטרנט שלך ונסה שוב."
+      },
+      "banner_title": {
+        "one": "יש {{count}} שגיאות",
+        "other": "ישנן {{count}} שגיאות",
+        "many": "ישנן {{count}} שגיאות"
+      },
+      "failed_address_creation": {
+        "description": "אירעה שגיאה בעת יצירת הכתובת שלך. נסה לרענן את הדף או לבדוק את חיבור האינטרנט שלך."
+      },
+      "failed_address_update": {
+        "description": "אירעה שגיאה בעת עדכון כתובתך. אנא נסה לרענן את העמוד או לבדוק את חיבור האינטרנט שלך."
+      },
+      "no_access_to_locations": {
+        "description": "אין לך גישה למיקומים."
+      },
+      "not_found": {
+        "description": "בדוק את כתובת האתר או נסה שוב בעוד כמה דקות.",
+        "title": "אירעה שגיאה בטעינת דף זה"
+      },
+      "order_not_found": {
+        "description": "פקודה זו אינה קיימת או שאין לך הרשאה לצפות בה.",
+        "title": "הפקודה לא נמצאה"
+      },
+      "profile_update_error": {
+        "description": "אירעה שגיאה בעת עדכון הפרופיל שלך. נסה לרענן דף זה או לבדוק את חיבור האינטרנט שלך."
+      },
+      "retry_action_label": "נסה שוב",
+      "load_orders_error": {
+        "title": "לא ניתן לטעון את ההזמנות",
+        "description": "נסו שוב או חזרו מאוחר יותר.",
+        "retry_button": "נסה שוב"
+      },
+      "load_paypal_error": {
+        "description": "אירעה שגיאה בטעינת PayPal. אנא נסה שוב."
+      },
+      "load_extension_error": {
+        "title": "שגיאה",
+        "description": "רענן את הדף הזה או נסה שוב בעוד כמה דקות.",
+        "refresh_button": "רענן את הדף"
+      },
+      "already_upgraded": "חשבונות הלקוחות כבר שודרגו.",
+      "failed_to_upgrade": "כשל בעדכון הגדרות חשבונות הלקוחות.",
+      "logout_everywhere": {
+        "description": "אירעה שגיאה בעת ניסיון ההתנתקות. אנא נסו שוב."
+      },
+      "resend_link": {
+        "too_many_requests": "בקשות רבות מדי. נסה שוב מאוחר יותר.",
+        "generic": "הבקשה נכשלה"
+      },
+      "profile_name_update_error": {
+        "description": "אירעה שגיאה בעת עדכון השם שלך. נסה לרענן את הדף או לבדוק את חיבור האינטרנט שלך."
+      },
+      "load_address_form_error": {
+        "title": "לא ניתן לטעון את טופס הכתובת",
+        "description": ".לא ניתן לטעון את טופס הכתובת",
+        "refresh_button": "רענן דף"
+      },
+      "not_upgraded": "חשבונות הלקוחות לא משודרגים.",
+      "failed_to_revert": "שחזור הגדרות חשבון הלקוח נכשל.",
+      "revert_window_expired": "חלון השחזור פג תוקפו."
     }
   }
 }
