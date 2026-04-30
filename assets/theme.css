@@ -9075,8 +9075,6 @@ featured-collections-carousel {
   }
 }
 
-
-<style>
 .language-popup-overlay {
   position: fixed;
   inset: 0;
@@ -9159,4 +9157,3 @@ featured-collections-carousel {
     flex-direction: column;
   }
 }
-</style>
