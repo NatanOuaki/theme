@@ -1218,7 +1218,60 @@
         "card_information_notice": "כל העסקאות מאובטחות ומוצפנות. פרטי כרטיס אשראי לעולם אינם נשמרים.",
         "credit_card_start_month": "חודש הנפקה",
         "credit_card_start_year": "שנת הנפקה",
-        "card_expiration_month_label": "חודש תפוגה"
+        "card_expiration_month_label": "חודש תפוגה",
+        "bank_account_type": {
+          "savings": "חיסכון"
+        },
+        "bank_account_choose": "בחר חשבון כדי להשלים את רכישתך בצורה מאובטחת",
+        "bank_account_connect_another": "חבר חשבון בנק אחר",
+        "bank_account_connect": "חבר חשבון בנק",
+        "bank_account_missing": "יש לחבר את חשבון הבנק",
+        "crypto_payment_method": {
+          "description": "חברו את הארנק שלכם באופן מאובטח. היתרה והכתובת שלכם לא ישותפו.",
+          "tooltip": "היתרה וכתובת הארנק האלקטרוני שלך לא ישותפו, ורק הסכום המבוקש ינוכה.",
+          "cashback_descriptor": {
+            "one": "תקבל את הקאשבק שלך לאחר %{count} יום",
+            "other": "תקבל את הקאשבק שלך לאחר %{count} ימים",
+            "many": "תקבל את הקאשבק שלך לאחר %{count} ימים"
+          }
+        },
+        "usdc_cashback_title": "החזר כספי של %{incentive_percentage}",
+        "usdc_cashback_additional_info": "שלמו ב-USDC ב-Base וקבלו החזר של %{incentive_percentage} לארנק האלקטרוני שלכם תוך 30 יום.",
+        "usdc_cashback_terms": "תנאים והגבלות חלים",
+        "separate_payments_label": "הפריטים שלך מגיעים ממספר חנויות. יחויבו בגינם ב-%{separate_payments_link}.",
+        "separate_payments_text": "תשלומים נפרדים",
+        "payments": "תשלומים",
+        "discount_show_more_warnings": {
+          "one": "הצג עוד %{count}",
+          "other": "הצג עוד %{count}",
+          "many": "הצג עוד %{count}"
+        },
+        "business_customer_with_bank_account_vaulting_payment_label": "שמור אמצעי תשלום זה בעת התשלום, ואשר ל-‎%{company} לחייב את חשבונך עבור רכישות עתידיות שתאשר עבור מיקום זה עד לביטול מצדך. כל אנשי הקשר המשויכים למיקום זה יכולים להשתמש באמצעי התשלום.",
+        "new_bank_account_disclaimer": "באישור הזמנה זו, אתה מאשר/ת ל-%{shop_name} לחייב את הסכום הנקוב בחשבונך באמצעות ACH, בתאריך שצוין.",
+        "bank_account_disclaimer": "עיבוד תשלומי העברה בנקאית (ACH) עשוי להימשך עד 4 ימי עסקים.",
+        "bank_account_vaulted_company_location": "חשבון בנק רשום עבור מיקום זה",
+        "bank_account_generic_error": "לא ניתן להוסיף חשבון בנק. נסו שוב מאוחר יותר.",
+        "discount_codes_removed_summary": {
+          "one": "קוד הנחה אחד נמחק",
+          "other": "%{count} קודי הנחה נמחקו",
+          "many": "%{count} קודי הנחה נמחקו"
+        },
+        "default": "ברירת מחדל",
+        "continue_to_guest_checkout": "המשך כאורח",
+        "add_payment_method": "הוסף אמצעי תשלום",
+        "choose_new_payment_method": "בחירת אמצעי תשלום חדש",
+        "add_new_payment_method": "הוספת אמצעי תשלום חדש",
+        "discount_codes_modified_summary": {
+          "one": "קוד הנחה אחד שונה",
+          "other": "% {count} קודי הנחה שונו",
+          "many": "% {count} קודי הנחה שונו"
+        },
+        "discount_codes_removed_or_modified_summary": {
+          "one": "%{count} קודי הנחה הוסרו או שונו",
+          "other": "%אתרים קודים של הנחה הוסרו או שונו",
+          "many": "%אתרים קודים של הנחה הוסרו או שונו"
+        },
+        "multiple_primary_payment_not_allowed": "אמצעי תשלום לא תקפים"
       },
       "contact": {
         "title": "פרטים",
@@ -1393,6 +1446,71 @@
         "item_label": {
           "one": "{{count}} פריטים"
         }
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "יתרה נוכחית %{amount}",
+        "credit_card_expires_on_notice": "פג בתאריך %{month}/%{year}",
+        "express_payment_gateway_label": "אקספרס",
+        "manual_payment_gateway_label": "מדריך",
+        "billing_address_title": "כתובת לחיוב",
+        "free_label": "חינם"
+      },
+      "field_errors": {
+        "handle_phone_invalid": "הכנס מספר טלפון חוקי",
+        "handle_email_invalid": "הזן כתובת דוא\"ל חוקית",
+        "email_invalid": "הזן כתובת דוא\"ל חוקית",
+        "email_or_phone_blank": "הזן כתובת אימייל או מספר טלפון",
+        "email_or_phone_invalid": "יש להזין כתובת דוא\"ל או מספר טלפון נייד חוקיים",
+        "address_first_name_blank": "הכנס שם פרטי",
+        "address_last_name_blank": "הזן שם",
+        "address_address1_blank": "הכנס כתובת",
+        "address_address2_blank": "הזן מספר דירה, סוויטה וכו'.",
+        "address_city_blank": "הזן עיר",
+        "address_country_blank": "בחר מדינה/אזור",
+        "address_country_not_supported": "איננו שולחים למדינה או לאזור זה. אנא הזן כתובת למשלוח חדשה ונסה שוב.",
+        "address_province_blank": "בחר מדינה/מחוז",
+        "address_company_blank": "הזן שם עסק",
+        "address_phone_blank": "הכנס מספר טלפון חוקי",
+        "address_zip_blank": "הכנס מיקוד",
+        "address_zip_invalid_for_country": "הזן מיקוד תקף עבור %{country}",
+        "address_zip_invalid_for_country_and_province": "הזן מיקוד תקף עבור %{province}, %{country}",
+        "credit_card_name_blank": "הזן את שמך כפי שהוא מופיע על הכרטיס שלך",
+        "credit_card_name_invalid": "הזן את שמך כפי שהוא מופיע על הכרטיס שלך",
+        "credit_card_number_invalid": "אנא הזן מספר כרטיס תקף",
+        "credit_card_expiry_invalid": "הזן תאריך תפוגה חוקי",
+        "credit_card_month_invalid": "יש להזין חודש תפוגה חוקי",
+        "credit_card_year_invalid": "הזן שנת תפוגה חוקית",
+        "credit_card_start_invalid": "הזן תאריך התחלה תקף של הכרטיס",
+        "credit_card_start_month_invalid": "הכנס חודש התחלה חוקי של כרטיס",
+        "credit_card_start_year_invalid": "הזן שנת התחלה חוקית של כרטיס",
+        "credit_card_verification_value_blank": "הזן את קוד ה-CVV או קוד האבטחה בכרטיס שלך",
+        "delivery_line_detail_changed": "יתכן כי פרטי משלוח מסוימים השתנו. יש לבדוק את שיטת המשלוח ולנסות שוב.",
+        "reduction_code_code_not_found": ".הזן קוד הנחה או שובר מתנה חוקי",
+        "reduction_code_discount_not_found": "הזן קוד קופון תקף",
+        "reduction_code_gift_card_code_invalid": "הזן כרטיס מתנה תקף",
+        "reduction_code_gift_card_unusable": "אינך יכול/ה להשתמש בכרטיס מתנה כדי לרכוש כרטיס מתנה אחר",
+        "shipping_line_phone_blank": "הזן מספר טלפון כדי להשתמש בשיטת משלוח זו",
+        "shipping_line_phone_invalid": "הזן מספר טלפון חוקי",
+        "gift_card_already_applied": "כרטיס מתנה זה כבר הוחל על ההזמנה שלך",
+        "gift_card_disabled": "כרטיס מתנה זה אינו זמין עוד",
+        "gift_card_expired": "כרטיס המתנה הזה פג תוקף",
+        "gift_card_depleted": "כרטיס המתנה הזה אזל מהיתרה",
+        "gift_card_currency_mismatch": "ניתן להשתמש בהזמנה זו רק בכרטיסי מתנה ב-%{checkout_currency}",
+        "payment_gateway_needs_paid_plan_error": "אמצעי תשלום זה אינו זמין בחנות בשלב זה",
+        "payment_gateway_incompatible_with_multi_currency": "כדי לבצע הזמנה זו במטבע המקומי שלכם, עליכם לשלם בכרטיס אשראי.",
+        "physical_gift_card_invalid_quantity": "כותרות של כרטיסי מתנה פיזיים חייבות לכלול כמות התואמת למספר קודי כרטיסי המתנה.",
+        "physical_gift_card_duplicate_code": "בקוד של כרטיס המתנה הפיזי יש כפילות.",
+        "physical_gift_card_invalid_code": "הקוד של כרטיס המתנה הפיזי אינו חוקי.",
+        "payment_gateway_not_in_test_mode": "אינה מוגדרת להזמנות בדיקה. חנות זו אינה יכולה לקבל הזמנות בפועל או תשלומים בפועל.",
+        "tips_invalid_tip_amount": "הזן טיפ מתחת ל-%{amount}",
+        "payment_gateway_unsupported_for_subscriptions": "אמצעי תשלום זה אינו זמין עבור הזמנות מנוי.",
+        "address_first_name_too_long": "השם הפרטי ארוך מדי (האורך המקסימלי הוא 255 תווים)",
+        "address_last_name_too_long": "שם המשפחה ארוך מדי (המגבלה היא 255 תווים)",
+        "address_address1_too_long": "השורה הראשונה של הכתובת ארוכה מדי (האורך המרבי הוא 255 תווים)",
+        "address_address2_too_long": "השורה השנייה בכתובת ארוכה מדי (האורך המרבי הוא 255 תווים)",
+        "address_city_too_long": "שם העיר ארוך מדי (המקסימום הוא 255 תווים)",
+        "address_company_too_long": "שם החברה ארוך מדי (האורך המקסימלי הוא 255 תווים)",
+        "address_first_name_contains_html_tags": "השם הפרטי אינו יכול להכיל תגי HTML."
       }
     }
   },
