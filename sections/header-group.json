@@ -58,6 +58,7 @@
     },
     "custom_liquid_B8EwAM": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom_liquid.presets.custom_liquid.name",
       "settings": {
         "color_scheme": "",
