@@ -782,6 +782,41 @@
             "one": "משלוח חינם עבור %{count} משלוח, ולאחר מכן %{recurring_order_shipping_price}",
             "other": "משלוח חינם עבור %{count} משלוחים, ולאחר מכן %{recurring_order_shipping_price}",
             "many": "משלוח חינם עבור %{count} משלוחים, ולאחר מכן %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "משלוח נוסף אחד עבור %{shipping_price}",
+            "other": "%{count} משלוחים נוספים עבור %{shipping_price} כל אחד",
+            "many": "%{count} משלוחים נוספים עבור %{shipping_price} כל אחד"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} משלוח עבור %{shipping_price}",
+            "other": "%{count} משלוחים נוספים עבור %{shipping_price} כל אחד",
+            "many": "%{count} משלוחים נוספים עבור %{shipping_price} כל אחד"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "משלוח חינם עבור %{cycle} הראשון, ולאחר מכן %{recurring_order_shipping_price}",
+            "other": "משלוח חינם עבור %{cycle} הראשון, ולאחר מכן %{recurring_order_shipping_price}",
+            "many": "משלוח חינם עבור %{cycle} הראשון, ולאחר מכן %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "%{shipping_price} עבור משלוח נוסף של %{count}",
+            "other": "₪%{shipping_price} עבור %{count} משלוחים נוספים (₪%{per_delivery_cost} למשלוח)",
+            "many": "₪%{shipping_price} עבור %{count} משלוחים נוספים (₪%{per_delivery_cost} למשלוח)"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{shipping_price} עבור %{count} משלוח",
+            "other": "%{shipping_price} עבור %{count} משלוחים (%{per_delivery_cost})",
+            "many": "%{shipping_price} עבור %{count} משלוחים (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "‏%{shipping_price} עבור %{count} משלוחים נוספים, ולאחר מכן ‏%{recurring_order_shipping_price}",
+            "other": "%{shipping_price} עבור %{count} משלוחים נוספים (%{per_delivery_cost} לכל משלוח), ואחרי זה %{recurring_order_shipping_price}",
+            "many": "%{shipping_price} עבור %{count} משלוחים נוספים (%{per_delivery_cost} לכל משלוח), ואחרי זה %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{shipping_price} עבור משלוח יחיד, ואחריו %{recurring_order_shipping_price} עבור הזמנות חוזרות",
+            "other": "%{shipping_price} עבור %{count} משלוחים (%{per_delivery_cost}), ולאחר מכן %{recurring_order_shipping_price}",
+            "many": "%{shipping_price} עבור %{count} משלוחים (%{per_delivery_cost}), ולאחר מכן %{recurring_order_shipping_price}"
           }
         },
         "split_shipping_option_recommended": "מומלץ",
@@ -815,7 +850,97 @@
           "many": "משלוח תוך %{count} שבועות"
         },
         "add_new_delivery_address": "הוסף כתובת משלוח חדשה",
-        "delivery_to": "משלוח אל"
+        "delivery_to": "משלוח אל",
+        "one_time_purchase_shipping": "משלוח בזמן",
+        "estimated_delivery_time": "משלוח מתוכנן ל-%{time}",
+        "estimated_delivery_time_range": "משלוח צפוי בין: %{min_time}–%{max_time}",
+        "arrives_time": "הגעה בשעה %{time}",
+        "arrives_time_range": "הגעה בין %{min_time}–%{max_time}",
+        "estimated_time": "מתוכנן ל־%{time}",
+        "estimated_time_range": "מתוכנן בין %{min_time} ל-%{max_time}",
+        "delivery_date_range": "%{min_time} – %{max_time}",
+        "subscription_local_delivery": "משלוח מקומי של המנוי",
+        "subscription_pickup": "ביטול מינוי",
+        "delivery_today": "משלוח באותו יום %{time}",
+        "delivery_tomorrow": "משלוח למחרת %{time}",
+        "two_day_delivery": "משלוח תוך יומיים %{time}",
+        "delivery": "משלוח %{time}",
+        "duties_and_taxes_title": "מכס ומסים",
+        "shipping_information_required_notice": "פרטי משלוח נדרשים. {{link}}.",
+        "shipping_information_redirect_link": "הכנס את המידע שלך כאן",
+        "loading_progressive_rates": "מחפש/ת תעריפים נוספים...",
+        "no_other_methods_available": "אין שיטות משלוח אחרות זמינות",
+        "duties_and_taxes_options": {
+          "ddu_title": "תשלום בעת המסירה",
+          "ddu_caption": "ייתכנו חיובים נוספים",
+          "ddp_title": "שלם עכשיו",
+          "ddp_caption": "אין חיובים נוספים במשלוח"
+        },
+        "shipping_method_combinations": {
+          "combination": "%{rest} וכן %{current}"
+        },
+        "shipping_used_as_billing_notice": "כתובת זו תשמש גם ככתובת חיוב עבור הזמנה זו.",
+        "address_update": "עדכן כתובת",
+        "shipping_address_title": "לשלוח ל",
+        "add_address": "השתמש בכתובת אחרת",
+        "add_delivery_instructions": "הוספת הוראות משלוח",
+        "edit": "שנה",
+        "delete": "מחק",
+        "address_more": "אין פעולות נוספות עבור כתובת זו",
+        "address_edit": "שינוי כתובת",
+        "address_delete": "מחק כתובת",
+        "address_confirm": "האם ברצונך למחוק כתובת זו מחשבונך?",
+        "address_form": {
+          "add_address": "הוספת כתובת",
+          "save": "שמור",
+          "cancel": "בטל",
+          "generic_error": "אירעה שגיאה בעת שמירת כתובתך. אנא נסה שוב.",
+          "one_time_address_subtitle": "השתמש בכתובת נקודתית עבור הזמנה זו",
+          "edit": "שינוי כתובת",
+          "update": "שמור שינויים"
+        },
+        "different_shipping_method_summary": "הזן כתובת למשלוח אחרת כדי לראות את שיטות המשלוח הזמינות",
+        "invalid_shipping_method_summary": "הזן כתובת למשלוח חבילה כדי להציג את אפשרויות המשלוח הזמינות",
+        "method_summary": {
+          "incomplete_address_entered": "הזן כתובת למשלוח כדי להציג את אפשרויות המשלוח הזמינות",
+          "incomplete_address_selected": "בחר כתובת למשלוח מלאה כדי להציג את אפשרויות המשלוח הזמינות"
+        },
+        "local_pickup": {
+          "search_address": "חפש את הכתובת",
+          "rollup_title": "נקודת איסוף",
+          "rollup_accessibility_label": "אפשרויות נקודת איסוף"
+        },
+        "missing_shipping_address": "חסרה כתובת למשלוח",
+        "delivery_title": "משלוח",
+        "shipping_method_first_shipment_group_title": {
+          "one": "שליחה ראשונה",
+          "other": "משלוחים ראשונים",
+          "many": "משלוחים ראשונים"
+        },
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "שליחה חוזרת",
+          "other": "משלוחים חוזרים",
+          "many": "משלוחים חוזרים"
+        },
+        "address_default": "הגדר כברירת מחדל",
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} מאמרים",
+        "split_shipping_merchandise_quantity_label_additional": "ועוד %{quantity}",
+        "split_shipping_merchandise_shipment_number": "שליחה %{number} מתוך %{total}",
+        "pre_order_ships_now": "שלח עכשיו",
+        "pre_order_ships_later": "שלח מאוחר יותר",
+        "pre_order_ships_date": "נשלח ב-%{date}",
+        "split_shipping_shipped_by_shop": "נשלח על ידי %{shop_name}",
+        "split_shipping_multiple_shipment_label": "מספר משלוחים",
+        "split_shipping_shipping_label": "שיטה",
+        "split_shipping_multiple_shipment_quantity_label": "%{quantity} משלוחים",
+        "split_shipping_multiple_shipment_notice": "ההזמנה שלך תגיע במספר משלוחים",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "ההזמנה שלך תגיע ב-%{quantity} משלוחים",
+        "split_shipping_more_shipping_options": "אפשרויות משלוח נוספות",
+        "split_shipping_shipment_number": "משלוח %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "כמות: %{quantity}",
+        "split_shipping_option_free": "משלוח חינם",
+        "split_shipping_option_lowest_price": "המחיר הנמוך ביותר",
+        "split_shipping_option_fastest": "המהיר ביותר"
       },
       "general": {
         "errors": {
@@ -1169,9 +1294,27 @@
             "payment_returned": "התשלום הוחזר",
             "order_cancellation": "ביטול הזמנה",
             "tax_finalization": "סיום המס"
-          }
+          },
+          "title": "זיכוי חנות שתוקפו פג",
+          "balance_label": "יתרה",
+          "expiration_date_label": "תאריך תפוגה",
+          "amount_label": "סכום",
+          "expirable_balance_info": "חלק מהיתרה שלך יפוג בעתיד",
+          "expirable_amount_label": "סכום כולל שפג תוקפו",
+          "expirable_amounts_info": "סכומים שתוקפם עומד לפוג יוחלו קודם כל לתשלום",
+          "expired_amounts_button": "הצג סכומים שפג תוקפם",
+          "pagination": {
+            "load_more_label": "טען עוד",
+            "load_more_accessibility_label": "טען עוד סכומים שתוקפם יפוג"
+          },
+          "date_label": "תאריך",
+          "expirable_amounts_button": "הצג",
+          "event_label": "אירוע"
         },
-        "expirable_amounts_label": "סכומים עם תוקף"
+        "expirable_amounts_label": "סכומים עם תוקף",
+        "label": "זיכוי לחנות",
+        "accesibility_label": "זיכוי בחנות - {{formattedBalance}}",
+        "expirable_amounts_button": "הצג סכומים שתוקפם יפוג"
       },
       "three_d_secure": {
         "verification_failed": "לא ניתן היה לאמת את התשלום שלך. נסה שוב או השתמש באמצעי תשלום אחר."
@@ -1232,7 +1375,127 @@
       "add_success": {
         "title": "אמצעי תשלום התווסף",
         "done_button": "המשך לקנות"
-      }
+      },
+      "payment_delete": {
+        "warning_message_without_replacement": {
+          "with_subscriptions": "מחיקת אמצעי תשלום זה תשפיע על תשלומים שאושרו מראש. אנא הוסף אמצעי תשלום חלופי כדי להמשיך ולקבל הזמנות עתידיות."
+        }
+      },
+      "edit_payment_method": {
+        "title": "שינוי אמצעי התשלום",
+        "save_payment_method_button": "שמור",
+        "cancel_edit_payment_method_button": "בטל",
+        "payment_method_updated_toast": "אמצעי התשלום עודכן",
+        "billing_address": "כתובת לחיוב",
+        "billing_address_add_new": "הוסף כתובת חדשה",
+        "billing_address_choose_from_list": "בחר מהרשימה",
+        "future_purchases_notice": "אמצעי תשלום זה יישמר לרכישות עתידיות.",
+        "generic_error": "אירעה שגיאה בעת העדכון. אנא נסה שוב."
+      },
+      "card_fields": {
+        "card_number_label": "מספר כרטיס",
+        "card_number_placeholder": "מספר כרטיס",
+        "name_on_card_label": "שם על הכרטיס",
+        "name_on_card_placeholder": "שם על הכרטיס",
+        "card_expiry_label": "תאריך תפוגה (חודש/שנה)",
+        "card_expiry_placeholder": "תאריך תפוגה (חודש/שנה)",
+        "card_verification_value_label": "קוד אבטחה",
+        "card_verification_value_placeholder": "קוד אבטחה",
+        "card_start_label": "תאריך הוצאה (חודש/שנה)",
+        "card_start_placeholder": "תאריך הוצאה (חודש/שנה)",
+        "tooltip": {
+          "tooltip_accessibility_label": "מידע נוסף",
+          "card_verification_value_explanation_amex": "הקוד הסודי בן 4 הספרות שבחזית הכרטיס",
+          "card_verification_value_explanation_other": "קוד האבטחה בן 3 הספרות בגב הכרטיס שלך",
+          "card_verification_value_explanation": "קוד אבטחה בן 3 ספרות המופיע בדרך כלל בגב הכרטיס. קוד האבטחה של כרטיסי אמריקן אקספרס מורכב מ-4 ספרות המופיעות בחזית הכרטיס.",
+          "card_security_notice": "כל העסקאות מאובטחות ומוצפנות."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "הזן את שמך כפי שהוא מופיע על הכרטיס שלך",
+          "credit_card_number_invalid": "אנא הזן מספר כרטיס תקף",
+          "credit_card_expiry_invalid": "אנא הזן תאריך תפוגה חוקי של הכרטיס",
+          "credit_card_verification_value_blank": "הזן את ה-CVV או קוד האבטחה שעל כרטיסך"
+        },
+        "unavailable": {
+          "text": "תשלומים בכרטיס אשראי וחיוב אינם זמינים כעת.",
+          "link_text": "רענן דף זה",
+          "suffix": "או נסה שוב מאוחר יותר."
+        }
+      },
+      "add_payment_method": {
+        "title": "הוסף אמצעי תשלום",
+        "payment_method_added_confirmation": "אמצעי תשלום התווסף",
+        "billing_address": {
+          "title": "כתובת לחיוב",
+          "add_billing_address_button": "הוסף כתובת חדשה",
+          "add_billing_address_button_accessibility_label": "הוסף כתובת חיוב חדשה",
+          "choose_billing_address_from_list_button": "בחר מהרשימה",
+          "choose_billing_address_from_list_button_accessibility_label": "בחר/י כתובת לחיוב מהרשימה",
+          "missing_billing_address_error_message": "אנא ציין כתובת לחיוב",
+          "default_checkbox": "הגדר כאמצעי תשלום ברירת מחדל"
+        },
+        "replace_mode_warning": "מחיקת אמצעי תשלום זה תשפיע על מינויים או הזמנות מראש. החלף אותו באמצעי תשלום אחר כדי להמשיך ולקבל את ההזמנות הבאות.",
+        "choose_from_list": "בחר מהרשימה",
+        "add_new_button": "צור",
+        "button_title": "הוספה",
+        "subscription_contracts": {
+          "title": "שימוש באמצעי תשלום עבור הזמנות חוזרות",
+          "product_details": "פרטי מוצר",
+          "load_more": "טען עוד",
+          "more_items": {
+            "one": "פריט נוסף אחד",
+            "other": "{{count}} פריטים נוספים",
+            "many": "{{count}} פריטים נוספים"
+          },
+          "product_count": {
+            "one": "{{count}} פריט",
+            "other": "{{count}} מוצרים",
+            "many": "{{count}} מוצרים"
+          }
+        },
+        "contracts_update_failed": "עדכון של חוזי מנוי מסוימים נכשל",
+        "subscription_contracts_updated": "{{succeeded}} מנויים מתוך {{total}} עודכנו בהצלחה",
+        "invalid_wallet_type_error": "סוג ארנק אלקטרוני לא חוקי.",
+        "updating_contracts": {
+          "one": "עדכון {{count}} חוזי מנוי...",
+          "other": "מעדכן {{count}} חוזי מנוי...",
+          "many": "מעדכן {{count}} חוזי מנוי..."
+        },
+        "contracts_updated": {
+          "one": "{{count}} חוזה מנוי עודכן בהצלחה",
+          "other": "{{count}} חוזי מנוי עודכנו בהצלחה",
+          "many": "{{count}} חוזי מנוי עודכנו בהצלחה"
+        },
+        "missing_customer_error": "אירעה שגיאה. נא לנסות שוב או לפנות לתמיכה."
+      },
+      "expires_soon": "הכרטיס עומד לפוג",
+      "expired": "תוקף כרטיס זה פג",
+      "card_update_consent": "אמצעי תשלום זה יישמר לרכישות עתידיות.",
+      "digital_wallet_title": "ארנק אלקטרוני",
+      "credit_or_debit_card_title": "כרטיס אשראי או חיוב",
+      "google_pay": {
+        "errors": {
+          "generic": "אירעה שגיאה ב-Google Pay. נסה שוב או השתמש באמצעי תשלום אחר.",
+          "missing_billing_address": "Google Pay דורש כתובת לחיוב. הוסף כתובת לחשבון שלך."
+        },
+        "loading": "Google Pay בטעינה",
+        "iframe_title_accessibility_label": "הוסף אמצעי תשלום של Google Pay",
+        "loading_accessibility_message": "Google Pay בטעינה"
+      },
+      "apple_pay": {
+        "loading": "Apple Pay נטען",
+        "errors": {
+          "generic": "אירעה שגיאה ב-Apple Pay. יש לנסות שנית או להשתמש בשיטת תשלום אחרת.",
+          "not_available": "‏Apple Pay אינו זמין במכשיר זה.",
+          "missing_billing_address": "Apple Pay דורש כתובת לחיוב. אנא הוסף/הוסיפי אחת לחשבונך."
+        }
+      },
+      "add_payment_method_banner": "הוסף שיטת תשלום עבור תשלום מהיר יותר או שירותים מאושרים מראש",
+      "edit_payment_method_button_accessibility_label": "ערוך את {{paymentMethodName}} שמסתיים ב-{{lastDigits}}",
+      "edit_payment_method_brand_button_accessibility_label": "עריכת {{paymentMethodName}}",
+      "expiration_warning_button_accessibility_label": "הצג אזהרת תפוגה עבור {{paymentMethodName}} המסתיימת ב-{{lastDigits}}",
+      "no_payment_methods_banner": "לא נוספו אמצעי תשלום",
+      "default": "ברירת מחדל"
     },
     "payment_method_brands": {
       "visa": "ויזה",
