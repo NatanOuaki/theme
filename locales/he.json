@@ -547,7 +547,137 @@
           "rst": "יומני הערפד",
           "vpt": "קופה רושמת ממוחשבת"
         },
-        "automatic_discount_tooltip": "אין אפשרות לבטל הנחות המוחלות אוטומטית."
+        "automatic_discount_tooltip": "אין אפשרות לבטל הנחות המוחלות אוטומטית.",
+        "deferred_payment_info": {
+          "paid_today": "הסכום הכולל ששולם היום",
+          "due_on_fulfillment_title": "התשלום על סך %{amount_due} יחויב עם עיבוד ההזמנה",
+          "due_on_receipt_title": "התשלום על סך %{amount_due} יגיע עם קבלתו",
+          "paid_today_next": "שולם היום"
+        },
+        "percent_off_shipping": "%{percent}% הנחה על דמי משלוח",
+        "amount_off_shipping": "%{amount} הנחה על עלויות המשלוח",
+        "payment_terms_totals": {
+          "due_today": "סה\"כ לתשלום היום",
+          "due_later": "סה\"כ לתשלום ב-%{due_at}",
+          "due_later_checkout_to_draft": "סה\"כ לתשלום במועד מאוחר יותר",
+          "due_on_fulfillment": "סה\"כ לתשלום לאחר עיבוד ההזמנה",
+          "due_on_receipt": "סה\"כ לתשלום בקבלה",
+          "total_paid": "סה\"כ ששולם",
+          "due_today_next": "בגלל היום",
+          "due_on_fulfillment_next": "יש לתשלום עם עיבוד ההזמנה"
+        },
+        "higher_value_discount_applied": "הקוד <strong style=\"text-transform:uppercase\">%{code}</strong> לא יכול לשמש עם ההנחות הקיימות שלך.",
+        "maximum_discount_code_limit_reached": "הגעת למספר קודי ההנחה המקסימלי המותר. מחק קוד קיים כדי להשתמש ב-<strong style=\"text-transform:uppercase\">%{code}</strong>.",
+        "order_total_label": "סה\"כ הזמנה",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> אינו פועל כרגע. אנא צור/צרי איתנו קשר לקבלת עזרה.",
+        "due_on_fulfillment": "לאחר עיבוד ההזמנה",
+        "subscriptions": "מינויים",
+        "duties_label": "דמי מכס",
+        "duties_and_taxes_label": "זכויות ומיסים",
+        "error_duties_tooltip": "מכיוון שהזמנה זו נשלחת ממדינה אחרת, ייתכן שייגבו מכס ומסים בעת המסירה.",
+        "may_be_charged_on_delivery": "לתשלום בעת המסירה",
+        "total_updated_label_with_price": "הסכום הכולל עודכן: %{totalPrice}",
+        "recurring_payments": "תשלומים חוזרים",
+        "recurring_total_multiple_label": "להזמנה זו יש חיובים חוזרים עבור מספר פריטים.",
+        "deferred_total_due_date_label": "סה\"כ לתשלום {{date}}",
+        "full_price": "סה\"כ מחיר: %{price}",
+        "custom_discount": "הנחה מותאמת אישית",
+        "expand_component_information": {
+          "one": "הצג פריט אחד",
+          "other": "הצג %{count} פריטים",
+          "many": "הצג %{count} פריטים"
+        },
+        "collapse_component_information": {
+          "one": "הסתר פריטים (%{count})",
+          "other": "הסתר %{count} פריטים",
+          "many": "הסתר %{count} פריטים"
+        },
+        "discount_discovery": {
+          "add_code": "הוסף הנחה",
+          "merchandise_quantity_label": {
+            "one": "%{count} פריטים",
+            "other": "%{count} כתבות",
+            "many": "%{count} כתבות"
+          },
+          "back_to_finalize_order": "חזור כדי להשלים את ההזמנה"
+        },
+        "alternative_payment_currency_total": "סכום החיוב %{amount_due}",
+        "calculating": "בחישוב…",
+        "group_title_label": "חלק מ-\"%{group_title}\"",
+        "discount_title_stacking": {
+          "one": "הנחה",
+          "other": "הנחות",
+          "many": "הנחות"
+        },
+        "discount_order_stacking": {
+          "one": "הנחת הזמנה",
+          "other": "הנחות על ההזמנה",
+          "many": "הנחות על ההזמנה"
+        },
+        "price_per_item": {
+          "accessibility_label": "%{price} לפריט",
+          "label": "%{price} ליחידה"
+        },
+        "updated_shipping_method": "אמצעי משלוח עודכן: %{shipping_method}",
+        "discount_not_found": "לא ניתן למצוא הנחה תקפה התואמת לקוד שהוזן",
+        "total_savings": "סה\"כ חסכונות",
+        "return_restocking_fee_label": "דמי חידוש מלאי",
+        "return_shipping_fee_label": "משלוח החזרה",
+        "enter_shipping_address": "הזן כתובת למשלוח",
+        "shipping_discount_title": "הנחה על דמי משלוח",
+        "discount_code_applied": "קוד הנחה יושם בהצלחה",
+        "discount_code_applied_with_code": "קוד ההנחה %{code} הופעל",
+        "gift_card_applied": "הכרטיס הוחל",
+        "duties_included_label": "המחיר כולל מיסים ועמלות מכס. אין חיובים נוספים בעת המסירה.",
+        "deferred_balance_info": {
+          "title": "יתרת ה-{{amount_due}} לתשלום עד ה-{{due_at}}",
+          "due_on_fulfillment_title": "יתרת חוב בסך {{amount_due}} לתשלום עם עיבוד ההזמנה"
+        },
+        "eligible_customer_missing_notice": "קוד ההנחה <strong style=\"text-transform:uppercase\">%{code}</strong> דורש לקוח מתאים",
+        "subtotal_label_with_quantity": {
+          "one": "סכום ביניים · פריט %{count}",
+          "other": "סיכום ביניים · %{count} פריטים",
+          "many": "סיכום ביניים · %{count} פריטים"
+        },
+        "cost_table_item_column_header": "מאמר",
+        "cost_table_value_column_header": "ערך",
+        "product_image_quantity_label": "כמות",
+        "more_items_modal": {
+          "clear_search": "נקה חיפוש",
+          "empty_results": "לא נמצאו תוצאות עבור « %{searchText} ». בדוק את האיות או השתמש במילה או בביטוי אחר.",
+          "number_items_shown": "%{shownNumber} מתוך %{totalNumber} פריטים",
+          "search_item": "חיפוש"
+        },
+        "number_items": {
+          "one": "%{count} פריטים",
+          "other": "%{count} כתבות",
+          "many": "%{count} כתבות"
+        },
+        "view_all_items": {
+          "one": "הצג %{count} פריטים",
+          "other": "הצג את כל %{count} הפריטים",
+          "many": "הצג את כל %{count} הפריטים"
+        },
+        "price_before_discount_aria_text": "מחיר מקורי",
+        "price_after_discount_aria_text": "מחיר מופחת",
+        "discount_code_aria_text": "קוד הנחה",
+        "pickup_unavailable_banner_body": {
+          "ship_to_address": "שלח לכתובת",
+          "ship_to_address_instead_html": "%{link} במקום זאת"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "אין חנויות זמינות עם הפריט שלך",
+          "other": "אין חנויות זמינות עבור הפריטים שלך.",
+          "many": "אין חנויות זמינות עבור הפריטים שלך."
+        },
+        "deposit_label": "מקדמה",
+        "total_due_today_label": "סה\"כ לתשלום היום",
+        "total_due_later_label": "סה\"כ לתשלום במועד מאוחר יותר",
+        "discount_code_allocations_mismatch": "קוד ההנחה שלך <strong style=\"text-transform:uppercase\">%{code}</strong> השתנה. אנא בדוק/בדקי את עגלת הקניות שלך ונסה/נסי שנית.",
+        "deferred_total_due_date_label_next": "בתאריך %{date}",
+        "total_due_label": "סה\"כ לתשלום",
+        "total_price_label": "מחיר כולל",
+        "for_add_on": "אל: %{group_title}"
       },
       "shipping": {
         "title": "משלוח",
