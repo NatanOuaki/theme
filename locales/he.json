@@ -1069,7 +1069,79 @@
         "continue_to_payment_plans_button_label": "המשך לתוכניות תשלום",
         "back_button_label": "חזרה",
         "choose_delivery_strategy": "בחירת אופן משלוח",
-        "autocomplete_zero_item": "אין פריטים זמינים"
+        "autocomplete_zero_item": "אין פריטים זמינים",
+        "autocomplete_powered_by_google": "מופעל על ידי {{brandName}}",
+        "submit": "שלח",
+        "processing": "בטיפול...",
+        "stepper": {
+          "increase": "עלייה ב-{{type}}",
+          "decrease": "הפחתה ב{{type}}",
+          "minimum_reached": "מינימום של {{value}} הושג",
+          "maximum_reached": "הגעת למקסימום של {{value}}"
+        },
+        "remove_item": "מחיקת %{label}",
+        "remove_tag": "מחק תווית",
+        "dates": {
+          "weekdays": {
+            "monday": "יום שני",
+            "tuesday": "יום שלישי",
+            "wednesday": "יום רביעי",
+            "thursday": "יום חמישי",
+            "friday": "יום שישי",
+            "saturday": "שבת",
+            "sunday": "יום ראשון"
+          },
+          "weekdays_abbreviation": {
+            "monday": "ירח",
+            "tuesday": "מר",
+            "wednesday": "ים",
+            "thursday": "משחק",
+            "friday": "בוא",
+            "saturday": "סם",
+            "sunday": "עמום"
+          },
+          "months": {
+            "january": "ינואר",
+            "february": "פברואר",
+            "march": "מרס",
+            "april": "אפריל",
+            "may": "מאי",
+            "june": "יוני",
+            "july": "יולי",
+            "august": "אוגוסט",
+            "september": "ספטמבר",
+            "october": "אוקטובר",
+            "november": "נובמבר",
+            "december": "דצמבר"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "הצג חודש קודם, {{month}} {{year}}",
+          "show_next_month": "הצג את החודש הבא, {{month}} {{year}}",
+          "range_start": "תחילת התקופה",
+          "in_range": "בתקופה",
+          "range_end": "סיום תקופה"
+        },
+        "map": {
+          "cluster_title": {
+            "one": "אשכול של {{number}} סמנים",
+            "other": "אשכול של {{number}} סמנים",
+            "many": "אשכול של {{number}} סמנים"
+          }
+        },
+        "sheet": {
+          "expand": "הגדל"
+        },
+        "confirm_order_button_label": "אישור הזמנה",
+        "qr_code": "קוד QR",
+        "dropzone": {
+          "add_file": "הוסף קובץ",
+          "invalid_file_type": "סוג קובץ לא נתמך",
+          "dragged_over": "גרור לכאן את הקובץ לייבוא"
+        },
+        "loading": "טוען...",
+        "remove_chip": "מחק את המאמר",
+        "finalize_order_accessibility_label": "סיום הזמנה"
       },
       "payment": {
         "amazon_payments_login_hint": "תתבקש/י להתחבר באמצעות אמזון.",
@@ -1147,6 +1219,56 @@
         "credit_card_start_month": "חודש הנפקה",
         "credit_card_start_year": "שנת הנפקה",
         "card_expiration_month_label": "חודש תפוגה"
+      },
+      "contact": {
+        "title": "פרטים",
+        "address_title": "כתובת",
+        "delivery_option_title": "אופן משלוח",
+        "contact_method_title": "איש קשר",
+        "email_label": "כתובת דוא\"ל",
+        "email_placeholder": "כתובת דוא\"ל",
+        "email_or_phone_label": "דוא\"ל או מספר טלפון נייד",
+        "email_or_phone_placeholder": "דוא\"ל או מספר טלפון נייד",
+        "stored_addresses_label": "כתובות שמורות",
+        "new_address_label": "השתמש בכתובת חדשה",
+        "first_name_label": "שם פרטי",
+        "optional_first_name_label": "שם פרטי (אופציונלי)",
+        "last_name_label": "שם",
+        "company_label": "חברה",
+        "optional_company_label": "חברה (אופציונלי)",
+        "address1_label": "כתובת",
+        "address2_label": "דירה, סוויטה וכו'.",
+        "optional_address2_label": "דירה, סוויטה וכו' (אופציונלי)",
+        "city_label": "עיר",
+        "country_label": "מדינה/אזור",
+        "country_code": "קוד מדינה/אזור",
+        "province_label": "מחוז",
+        "province_placeholder": "מחוז",
+        "county_label": "קונטה",
+        "county_placeholder": "קונטה",
+        "state_label": "מצב",
+        "state_placeholder": "מצב",
+        "region_label": "אזור",
+        "region_placeholder": "אזור",
+        "prefecture_label": "פרפקטורה",
+        "prefecture_placeholder": "פרפקטורה",
+        "governorate_label": "מחוז",
+        "governorate_placeholder": "מחוז",
+        "emirate_label": "אמירות",
+        "emirate_placeholder": "אמירות",
+        "state_and_territory_label": "מדינה/טריטוריה",
+        "state_and_territory_placeholder": "מדינה/טריטוריה",
+        "phone_label": "טלפון",
+        "optional_phone_label": "טלפון (אופציונלי)",
+        "phone_placeholder": "טלפון",
+        "phone_tooltip": "למקרה שנצטרך ליצור אתכם קשר לגבי ההזמנה שלכם",
+        "zip_code_label": "מיקוד",
+        "zip_code_placeholder": "מיקוד",
+        "postal_code_label": "מיקוד",
+        "postal_code_placeholder": "מיקוד",
+        "postcode_label": "מיקוד",
+        "postcode_placeholder": "מיקוד",
+        "pincode_label": "קוד חסוי"
       }
     }
   },
