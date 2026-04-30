@@ -653,7 +653,245 @@
             "other": "משלוח חינם עבור %{count} משלוחים, ולאחר מכן %{recurring_order_shipping_price}",
             "many": "משלוח חינם עבור %{count} משלוחים, ולאחר מכן %{recurring_order_shipping_price}"
           }
-        }
+        },
+        "split_shipping_option_recommended": "מומלץ",
+        "split_shipping_option_custom": "התאמה אישית",
+        "default_description": "משלוחים תוך יום עסקים אחד",
+        "split_shipping_shipment_notice": "ההזמנה שלך תגיע בעוד %{quantity_shipments}",
+        "unbranded_default_description": "מוכן למשלוח",
+        "prime_not_available": {
+          "default": "משלוח פריים אינו זמין עבור ההזמנה שלך. אפשרויות המשלוח שלך עודכנו."
+        },
+        "split_shipping_first_shipment_notice": "ההזמנה הראשונה שלך תגיע בעוד %{quantity_shipments}",
+        "shipping_method_rollup_accessibility_label": "אפשרויות משלוח",
+        "shipping_address_rollup_accessibility_label": "אפשרויות משלוח לכתובת",
+        "back": "חזרה",
+        "invalid_shipping_method_summary_selected": "בחר כתובת למשלוח אחרת כדי לראות אפשרויות משלוח זמינות",
+        "third_party_address_timeout": ".לא ניתן לטעון את הכתובות. נסה שוב או השתמש בכתובת אחרת",
+        "third_party_address_error": "אירעה שגיאה בטעינת בחירת הכתובת. יש להזין את הכתובת באופן ידני למטה.",
+        "third_party_payment_timeout": "לא ניתן לטעון אמצעי תשלום. נסו שוב או השתמשו באמצעי תשלום אחר.",
+        "third_party_payment_error": "אירעה שגיאה בעת טעינת בחירת התשלום. השתמש באמצעי תשלום אחר.",
+        "add_shipping_address": "הוסף כתובת למשלוח",
+        "choose_new_address": "בחירת כתובת חדשה",
+        "unbranded_description_same_day": "נשלח באותו יום עסקים",
+        "unbranded_description_with_fulfillment_days": {
+          "one": "משלוח ביום העסקים הבא",
+          "other": "משלוח תוך %{count} ימי עסקים",
+          "many": "משלוח תוך %{count} ימי עסקים"
+        },
+        "unbranded_description_with_fulfillment_weeks": {
+          "one": "משלוח תוך שבוע אחד",
+          "other": "משלוח תוך %{count} שבועות",
+          "many": "משלוח תוך %{count} שבועות"
+        },
+        "add_new_delivery_address": "הוסף כתובת משלוח חדשה",
+        "delivery_to": "משלוח אל"
+      },
+      "general": {
+        "errors": {
+          "delivery": {
+            "auto_fulfill_required": "עיבוד הזמנות אוטומטי נדרש כאשר נבחר מצב משלוח RETAIL.",
+            "prefetch_shipping_rates_used": "שיעורי משלוח שחולצו מראש לא יחזירו תעריפים לעולם.",
+            "fulfillment_constraints_not_satisfied": "אילוץ אחד או יותר של עיבוד ההזמנה לא התמלא.",
+            "must_fulfill_from_constraint_not_satisfied": "מגבלות עיבוד ההזמנות לא מתקיימות, כיוון שלא ניתן לעבד פריטים מהמיקומים הנדרשים.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "אילוצי עיבוד ההזמנות אינם מרוצים מכיוון שלא ניתן לעבד פריטים מאותם מיקומים.",
+            "delivery_strategy_conditions_not_satisfied": "אפשרויות משלוח זמינות למיקום זה, אך התנאים שלהן אינם מתקיימים.",
+            "out_of_stock_at_origin_location": "אין מלאי במיקום המקורי.",
+            "invalid_signature": "חתימה לא חוקית להנחה.",
+            "selected_pickup_option_no_longer_available": "אפשרות המשיכה שנבחרה קודם לכן אינה זמינה עוד.",
+            "mixed_destination_countries": "המשלוח אינו זמין, שכן קווי האספקה פרוסים על פני מספר מדינות."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "הנחות אינן מורשות בחנויות B2B.",
+            "custom_discount_not_honoured": "ההנחה המותאמת אישית שסופקה לא כובדה.",
+            "unsupported_expectation": "ההנחה על פריט שסופק כללה ציפייה שהמדיניות לא הצליחה לפרש.",
+            "additional_requested_discount_code_discarded": "{{code}} תקף, אך אינו ניתן ליישום. אנא בדוק את תנאי המבצע.",
+            "allocations_mismatch": "קוד ההנחה שלך השתנה. עיין שוב בסל הקניות שלך ונסה שנית.",
+            "discount_title_too_long": "הכותרת הנחה לא יכולה להיות גדולה מ-255 תווים.",
+            "additional_requested_discount_discarded": "ההנחה שלך תקפה, אך אינה ניתנת ליישום. בדוק את תנאי ההנחה.",
+            "mixed_destination_countries": "ההנחות אינן זמינות כיוון שקווי האספקה מפוזרים במספר מדינות."
+          },
+          "tax": {
+            "new_tax_must_be_accepted": "המיסים המשויכים להזמנתך השתנו. בדוק ונסה שוב.",
+            "unresolvable_tax_terms": "התנאים שהוצעו אינם ניתנים ליישוב בהתחשב בהקשר הנוכחי של המשא ומתן.",
+            "delivery_price_is_abstract": "מחיר המשלוח המשויך הוא מופשט.",
+            "tax_inclusivity_mismatch": "تفاوض מחדש עם ערך ממשי ב-totalTaxAndDutyAmount או ב-totalAmountIn IncludedInTarget.",
+            "tax_exemption_not_supported": "פטורים ממס אינם כלולים בביקור המשא ומתן הנוכחי.",
+            "delivery_tax_exemption_not_supported": "פטורים ממע\"מ עבור משלוחים אינם נתמכים כרגע.",
+            "proposed_allocations_required": "שדה \"הקצאות מוצעות\" חסר.",
+            "merchandise_terms_must_be_defined": "יש להגדיר את תנאי הפריטים.",
+            "delivery_terms_must_be_defined": "יש להגדיר את תנאי המסירה.",
+            "merchandise_discount_terms_must_be_defined": "יש להגדיר את אופני ההנחה על הפריטים.",
+            "delivery_discount_terms_must_be_defined": "יש להגדיר את תנאי הנחת המשלוח.",
+            "allocated_required": "שדה \"שהוקצה ל\" חסר.",
+            "value_required": "שדה \"ערך\" חסר.",
+            "line_splits_not_supported": "יש לחלק את השדה \"קטגוריות פריטים\" כך שלכל אחד יהיה רכיב שורה יחיד בהצעת המחיר של הספק/ית."
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "תשלומים ידניים אינם מורשים בחנויות B2B.",
+            "positive_amount_expected": "הסכום לתשלום חייב להיות גדול מ-0.",
+            "total_amount_mismatch": "הסכום לתשלום אינו תואם את סך התשלומים.",
+            "subscription_terms_not_accepted": "תנאי המנוי לא אושרו.",
+            "missing_session_id": "פרטי כרטיס אשראי חסרים.",
+            "gateway_not_supported": "שער התשלום אינו תומך באחסון אמצעי התשלום.",
+            "credit_card_last_name_required": "\"שם משפחה\" אינו יכול להיות ריק.",
+            "credit_card_update_failed": "עדכון כרטיס האשראי נכשל.",
+            "invalid_address_type": "כתובת הספק אינה חוקית עבור אמצעי תשלום זה.",
+            "missing_retail_attributions": "נדרשת הקצאת מכירות קמעונאיות עבור תשלומי כרטיסי אשראי שהוזנו ידנית.",
+            "unexpected_retail_attributions": "הקצאות מכירה קמעונאית ניתנו באופן בלתי צפוי עבור תשלום בכרטיס אשראי.",
+            "invalid_card_source": "ביקור זה אינו מורשה להשתמש במקור מפה זה.",
+            "wallet_content_missing": "תוכן הארנק חסר.",
+            "payment_instrument_not_found": "לא ניתן למצוא אמצעי תשלום",
+            "unauthorized_capture_method": "הגדרת שיטת הקלדת התשלום אינה מורשית.",
+            "saved_payment_methods_not_allowed": "האפשרות \"אמצעי תשלום שמורים\" אינה מורשית.",
+            "saved_payment_methods_not_enabled": "אמצעי התשלום הרשומים אינם מופעלים עבור חנות זו.",
+            "store_credit_not_enabled": "אפשרות אשראי בחנות אינה מופעלת עבור חנות זו.",
+            "store_credit_account_not_found": "חשבון אשראי בחנות לא נמצא.",
+            "store_credit_account_mismatch": "חשבון הזיכוי בחנות אינו תואם את זהות הקונה.",
+            "store_credit_mismatched_currency": "מטבע חשבון אשראי החנות אינו תואם את מטבע התשלום.",
+            "store_credit_insufficient_funds": "אין מספיק כסף בחשבון הזיכוי בחנות.",
+            "store_credit_buying_gift_card": "אינכם יכולים להשתמש בזיכוי מהחנות כדי לקנות כרטיס מתנה.",
+            "gift_cards_not_allowed_for_b2b": "כרטיסי מתנה אינם מורשים בחנויות B2B.",
+            "method_required": "יש להציע אמצעי תשלום.",
+            "paypal_express_address_invalid": "PayPal החזיר כתובת לא חוקית.",
+            "saved_payment_methods_cvv_verification_disabled": "אמצעי התשלום שנבחר דורש אימות קוד אבטחה (CVV), שאינו מופעל בחנות זו. אנא בחר אמצעי תשלום אחר."
+          },
+          "tip": {
+            "not_accepted_by_shop": "החנות אינה מקבלת טיפים.",
+            "only_one_tip_line_allowed": "טיפים מרובים אינם נתמכים.",
+            "tips_not_allowed_for_b2b": "טיפים אסורים בחנויות B2B.",
+            "currency_change_reset": "הטיפ אופס עקב שינוי מטבע.",
+            "tips_not_allowed_for_deferred_purchase_options": "טיפים עדיין אינם נתמכים באפשרויות של רכישה עם תשלום עתידי."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "הזמנה זמנית זו אינה קיימת בחנות הנוכחית.",
+            "staff_member_not_exist": "עובדים אלה אינם קיימים בחנות הנוכחית.",
+            "location_not_exist": "מיקום זה אינו קיים בחנות הנוכחית.",
+            "point_of_sale_device_not_exist": "התקן נקודת מכירה זו אינו קיים בחנות הנוכחית.",
+            "unresolvable_target_merchandise_lines": "הקצאות המכירה המוצעות אינן ניתנות לפתרון בהתחשב בהקשר הנוכחי של המשא ומתן."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "ההצעה של הקונה שלך חייבת לכלול non-negotiable_terms.",
+            "invalid_signature": "החתימה של {{target_terms}} אינה חוקית."
+          },
+          "inventory": {
+            "missing_quantity_value": "שדה \"כמות\" חסר בשורות מלאי הרכש של הקונה.",
+            "changing_behavior_not_allowed": "לקוח/ה זה/ו אינו/ה מורשה/ית לשנות את התנהגות המלאי.",
+            "only_one_inventory_behavior_allowed": "כרגע, רק התנהגות מלאי אחת מותרת לכל תשלום."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "סירוב דמי מכס אינו מורשה עבור תשלום זה."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "חלוקת פריטים אינה מותרת עבור תשלום זה.",
+            "retail_attribution_required": "נדרש ייחוס מכירה קמעונאית עבור תשלום זה."
+          },
+          "captcha": {
+            "metadata_missing": "נדרש מענה על קאפצ'ה עבור הזמנה זו.",
+            "metadata_mismatch": "ספק וסוג ה-captcha שהוזנו אינם תואמים לערכים הצפויים.",
+            "token_missing": "יש לספק אסימון captcha כדי להשלים תשלום זה.",
+            "job_enqueue_failed": "לא ניתן היה להוסיף את משימת אימות ה-captcha לתור.",
+            "job_already_queued": "אימות ה-captcha כבר עומד בתור עבור אסימון captcha זה.",
+            "token_expired": "קוד ה-CAPTCHA שסופק פג תוקף. אנא הזינו את קוד ה-CAPTCHA החדש כדי להמשיך בתשלום.",
+            "token_invalid": "אסימון ה-captcha שצוין אינו תקף. אנא השלם את ה-captcha החדש כדי להמשיך בתשלום.",
+            "token_not_valid_for_session": "ה-captcha שסופק אינו יכול לשמש לתשלום זה."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "הסכום שהתקבל צריך להיות במטבע של החנות."
+          },
+          "checkout_source": {
+            "revoked": "תשלום זה אינו זמין עוד."
+          }
+        },
+        "full_price": "מחיר רגיל:",
+        "title": "תשלום - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - תשלום",
+        "loading_title": "תשלום - {{shopName}}",
+        "google_map_title": "מפת Google",
+        "submit_order_button_label": "שלח הזמנה",
+        "submit_for_review_button_label": "להגיש לבדיקה",
+        "submit_for_review_notice_label": "התשלום יידרש רק לאחר בדיקת ההזמנה שלך",
+        "continue_to_payment_plans_button_label": "המשך לתוכניות תשלום",
+        "back_button_label": "חזרה",
+        "choose_delivery_strategy": "בחירת אופן משלוח",
+        "autocomplete_zero_item": "אין פריטים זמינים"
+      },
+      "payment": {
+        "amazon_payments_login_hint": "תתבקש/י להתחבר באמצעות אמזון.",
+        "amazon_payments_logout": "התנתקו מ-Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "לא ניתן היה להשתמש באמצעי התשלום שנבחר. בחר/י אמצעי תשלום אחר או צור/צרי קשר עם הבנק שלך או עם מנפיק הכרטיס.",
+        "amazon_payments_abandoned_mfa_challenge": "התשלום שלך לא עובד. נסה אמצעי תשלום אחר או צור קשר עם הבנק שלך או עם מנפיק הכרטיס שלך.",
+        "amazon_payments_could_not_enqueue_authorize": "אירעה שגיאה בעיבוד התשלום שלך. אנא נסה שוב או השתמש באמצעי תשלום אחר.",
+        "title": "תשלום",
+        "amount_left_to_pay_label": "תשלום נדרש:",
+        "discount_button_action_label": "החלת קוד הנחה",
+        "gift_card_code_label": "קוד כרטיס מתנה",
+        "apply_gift_card_button_label": "להחיל",
+        "gift_card_balance_label": "יתרה:",
+        "supported_card_brands_more_label": "ועוד…",
+        "detected_card_brand": "מותג כרטיס זוהה: {brand}",
+        "card_number_label": "מספר כרטיס",
+        "card_number_placeholder": "מספר כרטיס",
+        "card_pay_with": "שלמו עם:",
+        "card_security_notice": "כל העסקאות מאובטחות ומוצפנות.",
+        "name_on_card_label": "שם על הכרטיס",
+        "name_on_card_placeholder": "שם על הכרטיס",
+        "card_expiry_label": "תאריך תפוגה (חודש/שנה)",
+        "card_expiry_placeholder": "תאריך תפוגה (חודש/שנה)",
+        "card_verification_value_label": "קוד אבטחה",
+        "card_verification_value_placeholder": "קוד אבטחה",
+        "card_expiry_date_explanation": "תאריך תפוגת הכרטיס בפורמט: חודש, חודש, שנה, שנה",
+        "card_verification_value_explanation": "קוד אבטחה בן 3 ספרות הממוקם בדרך כלל בגב הכרטיס. קוד האבטחה בכרטיסי אמריקן אקספרס מורכב מ-4 ספרות וממוקם בחזית הכרטיס.",
+        "card_verification_value_explanation_amex": "הקוד בן 4 הספרות שבחזית הכרטיס",
+        "card_verification_value_explanation_other": "קוד האבטחה בן 3 הספרות בגב הכרטיס שלך",
+        "card_start_label": "תאריך הנפקה (חודש / שנה)",
+        "card_start_placeholder": "תאריך הנפקה (חודש / שנה)",
+        "card_issue_number_label": "מספר פריט",
+        "card_issue_number_placeholder": "מספר פריט",
+        "card_change_label": "שנה",
+        "ends_with_label": "המסתיימים ב-%{last_digits}",
+        "saved_by_payment_method": "נרשם באמצעות %{payment_method}",
+        "pay_with_payment_method": "לשלם באמצעות %{payment_method}",
+        "same_billing_address_label": "זהה לכתובת למשלוח",
+        "different_billing_address_label": "להשתמש בכתובת חיוב שונה",
+        "free_order_notice_html": "ההזמנה שלך היא <strong>חינם</strong>. לא נדרש תשלום.",
+        "express_checkout_free_order": "לא תחויב עבור הזמנה בחינם",
+        "order_covered_by_gift_cards_notice": {
+          "one": "ההזמנה שלך מכוסה על ידי כרטיס המתנה שלך.",
+          "other": "ההזמנות שלך מכוסות על ידי כרטיסי המתנה שלך.",
+          "many": "ההזמנות שלך מכוסות על ידי כרטיסי המתנה שלך."
+        },
+        "offsite_gateway_redirect_hint": "תנותבו אל %{gateway_label} להשלמת הרכישה.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "סה\"כ %{gateway_label} %{total_shop_price}",
+        "billing_address_title": "כתובת לחיוב",
+        "billing_address_description": "בחר את הכתובת התואמת את הכרטיס או אמצעי התשלום שלך.",
+        "billing_address_description_no_shipping_address": "בחר את הכתובת התואמת את הכרטיס או אמצעי התשלום שלך.",
+        "no_js_credit_card_fields_redirect_hint": "תעבור/תעברי להוספת פרטי התשלום שלך.",
+        "card_fields_container_prefix": "מסגרת לשדה:",
+        "card_fields_unavailable_html": {
+          "one": "תשלומים בכרטיס אשראי וחיוב אינם זמינים כרגע.<br><a href=\"%{current_url}\">רענן דף זה</a> או נסה שוב מאוחר יותר.",
+          "other": "תשלומי כרטיסי אשראי וחיוב אינם זמינים כרגע.<br><a href=\"%{current_url}\">יש לרענן את העמוד</a> או לנסות אמצעי תשלום אחר.",
+          "many": "תשלומי כרטיסי אשראי וחיוב אינם זמינים כרגע.<br><a href=\"%{current_url}\">יש לרענן את העמוד</a> או לנסות אמצעי תשלום אחר."
+        },
+        "card_fields_processing_error": "אירעה שגיאה בעיבוד התשלום. נסו לרענן את העמוד או לבדוק את חיבור האינטרנט שלכם.",
+        "technical_error": "התשלומים אינם ניתנים לעיבוד כעת עקב תקלה טכנית. אנא נסה/נסי שוב בעוד מספר דקות.",
+        "no_method_error": "חנות זו אינה יכולה לקבל תשלומים כרגע.",
+        "not_configured_error": "חנות זו אינה יכולה לקבל תשלומים כרגע.",
+        "missing_credit_card_error": "הזן את פרטי הכרטיס שלך כדי להשלים את התשלום.",
+        "generic_incorrect_card_info": "פרטי התשלום שלך לא ניתנים לאימות. אנא בדוק/בדקי את פרטי הכרטיס ונסה/נסי שנית.",
+        "sofort_label": "מיידית",
+        "paypal_label": "פייפאל",
+        "bank_picker_label": "בנק",
+        "klarna_pay_now_label": "שלמו עכשיו באמצעות Klarna",
+        "klarna_pay_later_label": "שלמו מאוחר יותר עם קלארנה",
+        "bancontact_label": "באנקונט",
+        "giropay_label": "ג'ירופיי",
+        "eps_label": "העברת EPS (מערכת תשלומים אלקטרונית)",
+        "klarna_slice_it_label": "ממן באמצעות Klarna",
+        "card_information_notice": "כל העסקאות מאובטחות ומוצפנות. פרטי כרטיס אשראי לעולם אינם נשמרים.",
+        "credit_card_start_month": "חודש הנפקה",
+        "credit_card_start_year": "שנת הנפקה",
+        "card_expiration_month_label": "חודש תפוגה"
       }
     }
   },
