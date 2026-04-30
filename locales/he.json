@@ -1151,6 +1151,152 @@
       "tuesday": "יום שלישי",
       "wednesday": "יום רביעי",
       "thursday": "יום חמישי"
+    },
+    "B2B": {
+      "location_selection": {
+        "no_location_description": "אינך מורשה עוד לבצע הזמנות עבור {{company}}. עדיין באפשרותך לבצע הזמנות אישיות.",
+        "no_locations_found": "לא נמצאו מיקומים",
+        "search": "חיפוש מיקומים",
+        "clear_search": "נקה חיפוש",
+        "try_new_search": "נסה חיפוש חדש",
+        "search_location_title": "בחר מיקום",
+        "selection_continue_button": "המשך",
+        "description_switch_later": "תמיד תוכלו לשנות זאת מאוחר יותר",
+        "title_choose_location": "בחירת מיקום"
+      },
+      "addresses": {
+        "add_billing_address_button": "הוסף כתובת לחיוב",
+        "add_billing_address_section_accessibility_label": "הוסף כתובת לחיוב",
+        "add_shipping_address_button": "הוסף כתובת למשלוח",
+        "add_shipping_address_section_accessibility_label": "הוסף כתובת למשלוח",
+        "billing_address_card_title": "כתובת לחיוב",
+        "cancel_adding_billing_address_accessibility_label": "ביטול הוספת כתובת לחיוב",
+        "cancel_adding_shipping_address_accessibility_label": "ביטול הוספת כתובת למשלוח",
+        "save_new_billing_address_accessibility_label": "שמור כתובת לחיוב",
+        "save_new_shipping_address_accessibility_label": "שמור כתובת למשלוח",
+        "shipping_address_card_title": "כתובת למשלוח"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "הסתר הכל",
+          "show_all": "הצג הכול",
+          "hide_all_accessibility_label": "הסתר את כל ההזמנות בבדיקה",
+          "show_all_accessibility_label": "הצג את כל ההזמנות בבדיקה",
+          "title": "ממתין",
+          "pagination": {
+            "nav_accessibility_label": "לחצני ניווט בהזמנות בבדיקה"
+          },
+          "show_all_orders_in_review": "הצג את כל ההזמנות בבדיקה",
+          "show_less_orders_in_review": "הצג פחות הזמנות בבדיקה",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "אין לך הזמנה ממתינה",
+            "pending_orders": {
+              "one": "יש לך {{count}} הזמנה ממתינה",
+              "other": "יש לך {{count}} הזמנות ממתינות",
+              "many": "יש לך {{count}} הזמנות ממתינות"
+            },
+            "more_than_pagination_length": "יש לך למעלה מ-{{count}} הזמנות ממתינות"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}} ומעלה"
+        },
+        "order_list_column_headers_location": "מיקום",
+        "order_list_column_headers_contact": "איש קשר",
+        "removed_company_contact_tooltip": "פוטר מהחברה",
+        "order_list_column_headers_status": "סטטוס"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "אומת ב-{{date}} מהזמנת טיוטה {{draftOrderName}}",
+        "loading": "פרטי הזמנה נטענים",
+        "loading_finished_accessibility_message": "פרטי ההזמנה נטענו",
+        "payment_status": {
+          "draft": {
+            "description": "פרטי התשלום נקבעים לאחר אישור ההזמנה.",
+            "title": "תשלום שטרם הגיע מועדו",
+            "in_review": {
+              "description": "פרטי התשלום נקבעים לאחר אישור ההזמנה.",
+              "title": "תשלום שטרם הגיע מועדו"
+            },
+            "submitted": {
+              "description": "שלם כדי לאשר הזמנה זו.",
+              "title": "שלם כדי לאשר",
+              "deposit": {
+                "title": "התשלום מגיע",
+                "due_later": "היתרה היא בתנאי של {{translatedName}} ויש לשלמה ב-{{dueDate}}.",
+                "due_on_fulfillment": "היתרה לתשלום לאחר עיבוד כל הפריטים בהזמנה.",
+                "due_on_receipt": "תקבל חשבונית עבור היתרה שנותרה.",
+                "due_on_date": "היתרה לתשלום עד ה-{{dueDate}}."
+              }
+            },
+            "deposit": {
+              "due_later": "{{depositAmount}} ישולם עם אישור ההזמנה. היתרה תשולם עד לתאריך {{translatedName}}.",
+              "due_on_fulfillment": "{{depositAmount}} יחויב ברגע שההזמנה שלך תאושר. היתרה תשולם בעת עיבוד ההזמנה.",
+              "due_on_receipt": "{{depositAmount}} יחויבו לאחר אישור ההזמנה. היתרה תחויב במועד מאוחר יותר.",
+              "due_on_date": "{{depositAmount}} יחויב עם אישור הזמנתך. היתרה תחויב עד ה-{{dueDate}}."
+            }
+          },
+          "paid": {
+            "description": "ההזמנה שלך שולמה במלואה.",
+            "title": "שולם",
+            "title_with_date": "שולם ב-{{date}}"
+          },
+          "pay_now": "שלם עכשיו",
+          "title": "סטטוס תשלום",
+          "pending": {
+            "banner_overdue": {
+              "one": "אתה בפיגור של {{count}} ימים בתשלום",
+              "other": "איחור בתשלום של {{count}} ימים",
+              "many": "איחור בתשלום של {{count}} ימים"
+            },
+            "banner_due": {
+              "one": "התשלום שלך מגיע בעוד יום אחד",
+              "other": "התשלום שלך מגיע בעוד {{count}} ימים",
+              "many": "התשלום שלך מגיע בעוד {{count}} ימים"
+            },
+            "banner_due_today": "התשלום שלך מגיע היום",
+            "title": "התשלום הגיע",
+            "title_with_date": "התשלום נדרש עד ה-{{date}}",
+            "description_overdue": "אתם באיחור תשלום.",
+            "description_partially_paid": "הזמנה זו שולמה באופן חלקי. נותרה יתרה לתשלום.",
+            "description_authorized": "אמצעי התשלום שלך יחויב במועד הפירעון, או שבאפשרותך לשלם כעת.",
+            "title_due_on_receipt": "תשלום שטרם הגיע מועדו",
+            "description_due_on_receipt": "חשבונית תישלח אליכם כשהתשלום יגיע למועד פירעון.",
+            "title_due_on_fulfillment": "התשלום נדרש בעת עיבוד ההזמנה",
+            "description_due_on_fulfillment": "התשלום חל לאחר שכל הפריטים בהזמנה טופלו.",
+            "description_waiting_for_manual_payment": "להזמנה זו קיים תשלום ממתין. היתרה תעודכן לאחר קבלת התשלום.",
+            "description_due_on_receipt_partially_paid": "ההזמנה הזו שולמה חלקית. נותרה יתרה לתשלום. חשבונית תישלח אליך כשיידרש התשלום.",
+            "description_due_on_fulfillment_partially_paid": "ההזמנה הזו שולמה חלקית. יש יתרה לתשלום. התשלום יחול כאשר כל הפריטים בהזמנה יעובדו.",
+            "description_due_on_fulfillment_partially_paid_next": "הזמנה זו שולמה חלקית. יתרת חוב נותרה לתשלום.",
+            "banner_due_today_for_single_fulfillment": "התשלום על סך {{amount}} מגיע היום. {{link}}",
+            "banner_due_today_for_multiple_fulfillments": "תשלום לביצוע היום עבור {{count}} הזמנות",
+            "banner_overdue_for_multiple_fulfillments": "תשלום לבצוע עבור {{count}} הזמנות",
+            "banner_overdue_for_single_fulfillment": {
+              "one": "התשלום על סך {{amount}} נמצא באיחור של {{count}} ימים. {{link}}",
+              "other": "התשלום בסך {{amount}} נמצא בפיגור של {{count}} ימים. {{link}}",
+              "many": "התשלום בסך {{amount}} נמצא בפיגור של {{count}} ימים. {{link}}"
+            }
+          },
+          "refund": {
+            "title": "הוחזר",
+            "title_with_date": "הוחזר ב-{{date}}",
+            "description_full_refund": "הזמנה זו זוכּתה במלואה.",
+            "description_single_refund": "הזמנה זו זוכתה לך באופן חלקי.",
+            "description_multiple_refunds": "קיבלת החזרים חלקיים עבור הזמנה זו."
+          },
+          "canceled": {
+            "title": "תשלום בוטל",
+            "description": "לא חויבת."
+          },
+          "pay_now_accessibility_label": "שלם כעת עבור הזמנה {{orderName}}",
+          "due_date": "מאת ה-{{date}}",
+          "total_balance": "יתרה כוללת"
+        },
+        "subtitle": "הוגש ב-{{date}}",
+        "title": "הזמנה {{name}}",
+        "order_timeline": {
+          "expand_events_label": "הצג פרטים",
+          "expand_events_accessibility_label": "הצג פרטי הזמנה טרומית"
+        }
+      }
     }
   }
 }
