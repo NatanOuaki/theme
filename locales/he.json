@@ -1268,7 +1268,131 @@
         "postal_code_placeholder": "מיקוד",
         "postcode_label": "מיקוד",
         "postcode_placeholder": "מיקוד",
-        "pincode_label": "קוד חסוי"
+        "pincode_label": "קוד חסוי",
+        "pincode_placeholder": "מיקוד",
+        "region_none": "אין בחירה",
+        "civic_number_warning": "הוסף מספר בית, אם רלוונטי",
+        "optional_last_name_label": "שם (אופציונלי)",
+        "different_shipping_address_label": "שלח לכתובת אחרת",
+        "different_shipping_address_text": "להשתמש בכתובת יחידה להזמנה זו",
+        "change_company_location_link_label": "שינוי מיקום העסק",
+        "change_location_link_label": "שינוי מיקום",
+        "ship_to_company": "לשלוח ל-{{companyName}}",
+        "shipping_used_as_billing_notice": "כתובת זו תשמש גם ככתובת חיוב עבור הזמנה זו.",
+        "company_attention_label": "חברה/לכבוד",
+        "optional_company_attention_label": "חברה/לידי (אופציונלי)",
+        "available_addresses_label": "כתובות זמינות",
+        "optional_zip_code_label": "מיקוד (אופציונלי)",
+        "optional_postal_code_label": "מיקוד (אופציונלי)",
+        "optional_postcode_label": "מיקוד (אופציונלי)",
+        "optional_pincode_label": "קוד אימות (אופציונלי)",
+        "email_rollup_accessibility_label": "אפשרויות אימייל",
+        "phone_rollup_accessibility_label": "אפשרויות טלפון",
+        "phone_country_code_label": "קידומת בינלאומית של מספר הטלפון",
+        "storefront_link": "אתר הספק",
+        "suburb_label": "פרבר"
+      },
+      "delivery_options": {
+        "ship": "לשלוח",
+        "pick_up": "לאחזר",
+        "pick_up_in_two_hours": "בדרך כלל מוכן תוך שעתיים",
+        "pick_up_in_four_hours": "בדרך כלל מוכן תוך 4 שעות",
+        "pick_up_immediately": "מוכן לאיסוף עכשיו",
+        "pick_up_next_day": "מוכן לאיסוף ביום למחרת",
+        "pick_up_in_one_hour": "בדרך כלל מוכן תוך שעה",
+        "pick_up_in_twenty_four_hours": "בדרך כלל מוכן תוך 24 שעות",
+        "pick_up_in_two_to_four_days": "בדרך כלל מוכן תוך 2–4 ימים",
+        "pick_up_in_five_or_more_days": "בדרך כלל מוכן תוך 5 ימים או יותר",
+        "pick_up_in_zero_to_two_hours": "מוכן לאיסוף תוך שעתיים",
+        "pick_up_in_two_to_four_hours": "מוכן לאיסוף תוך 4 שעות",
+        "free_total_label": "חינם",
+        "shipping_address": "כתובת למשלוח",
+        "pick_up_locations": "מרכזי משיכה",
+        "pickup_point_method_definition": "לשלוח לנקודת איסוף",
+        "retail_method_definition": "משלוח קמעונאי",
+        "none_method_definition": "אין משלוח",
+        "subscription_pickup_information": "זו תהיה נקודת האיסוף עבור כל ההזמנות העתידיות מהמנוי שלך.",
+        "ship_to_address": "שלח לכתובת",
+        "pick_up_from_store": "איסוף בחנות",
+        "company_location_no_address_banner": "משלוח הזמנות למיקומים ללא כתובת ייבחן.",
+        "pickup_point_map_title": "מפת נקודות איסוף"
+      },
+      "customer_account": {
+        "not_user_label": "אתה לא %{first_name}?",
+        "have_an_account_label": "יש לך חשבון?",
+        "sign_in_link_label": "התחבר",
+        "sign_out_link_label": "התנתק",
+        "save_my_information_label": "שמור את פרטי ההתקשרות שלי לפעם הבאה",
+        "invalid_address": "הכתובת שנבחרה אינה תקפה. %{update_address_link} או בחר כתובת אחרת.",
+        "incomplete_address": "הכתובת שנבחרה אינה מלאה. %{update_address_link} או בחר כתובת אחרת.",
+        "rollup_label": "חשבון",
+        "invalid_shipping_method_summary": "בחר כתובת למשלוח חוקית כדי להציג את אפשרויות המשלוח הזמינות",
+        "saved_address_option_link": "השתמש בכתובת רשומה",
+        "saved_address_modal_title": "להשתמש בכתובת הרשומה שלי",
+        "saved_address_option_description": {
+          "one": "יש לך {{count}} כתובות רשומות.",
+          "other": "יש לך {{count}} כתובות רשומות.",
+          "many": "יש לך {{count}} כתובות רשומות."
+        },
+        "rollup_accessibility_label": "אפשרויות חשבון"
+      },
+      "stock": {
+        "page_title": "בעיות מלאי",
+        "title": "אזל מהמלאי",
+        "items_unavailable_notice": "פריטים מסוימים אינם זמינים עוד.",
+        "product_column_header": "מוצרים",
+        "quantity_column_header": "כמות",
+        "price_column_header": "מחיר",
+        "status_column_header": "סטטוס",
+        "removed_from_cart_notice": "הוסר מהעגלה",
+        "sold_out_label": "מתיש",
+        "reduced_label": "מופחת",
+        "reduced_with_quantity_label": "נותרו עוד %{quantity_available}",
+        "remove_from_cart_button_label": "הסר מהעגלה",
+        "continue_shopping_button_label": "המשך",
+        "go_back_to_cart_button_label": "חזרה לסל הקניות שלי",
+        "remove": "הסר",
+        "empty_cart_label": "עגלת הקניות שלך ריקה",
+        "quantity_update": {
+          "page_title": "עדכון כמות",
+          "title": "עדכון כמות",
+          "description": "הכמויות הזמינות עבור פריטים אלה השתנו וְעוּדכנו בעגלת הקניות שלך."
+        },
+        "unpurchasable_product": {
+          "title": "מוצר שאי אפשר לרכוש",
+          "header": "פריטים מסוימים הוסרו מהעגלה שלך",
+          "message": "פריטים אלה אינם זמינים להזמנות B2B.",
+          "status_column_header": "לא זמין"
+        },
+        "unpurchasable_product_generic": {
+          "title": "מוצר שאי אפשר לרכוש",
+          "header": "פריטים מסוימים הוסרו מהעגלה שלך",
+          "message": "פריטים אלו אינם זמינים.",
+          "status_column_header": "לא זמין"
+        },
+        "unshippable_product": {
+          "title": "אין משלוח זמין",
+          "header": {
+            "one": "אין משלוח זמין עבור פריט %{count}",
+            "other": "אין משלוח זמין עבור %{count} פריטים",
+            "many": "אין משלוח זמין עבור %{count} פריטים"
+          },
+          "message": {
+            "one": "פריט זה יוסר מהסל, מאחר שאין שיטת משלוח זמינה לכתובת שלך.",
+            "other": "פריטים אלה יוסרו מהעגלה שלך, מכיוון שאין שיטות משלוח זמינות עבור הכתובת שלך.",
+            "many": "פריטים אלה יוסרו מהעגלה שלך, מכיוון שאין שיטות משלוח זמינות עבור הכתובת שלך."
+          },
+          "status_column_header": "אין משלוח"
+        },
+        "price_update": {
+          "title": "שינוי מחיר",
+          "description": "המחירים של פריטים אלה השתנו ועודכנו בעגלת הקניות שלך.",
+          "updated_price": "מחיר מעודכן"
+        },
+        "return_to_store_label": "חזרה לחנות",
+        "item_label": {
+          "one": "{{count}} פריטים"
+        }
       }
     }
   },
