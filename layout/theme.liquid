@@ -160,7 +160,7 @@ const LANGUAGE_POPUP_DAYS = 2; // change ici : 1, 7, 30, etc.
 
 function saveLanguageChoice() {
   const expiresAt = Date.now() + (LANGUAGE_POPUP_DAYS * 24 * 60 * 60 * 1000);
-  localStorage.setItem('languagePopupExpiresAt', expiresAt);
+  sessionStorage.setItem('languagePopupExpiresAt', expiresAt);
 }
 
 function closeLanguagePopup() {
@@ -178,7 +178,7 @@ function initLanguagePopup() {
   const popup = document.getElementById('languagePopup');
   if (!popup) return;
 
-  const expiresAt = localStorage.getItem('languagePopupExpiresAt');
+  const expiresAt = sessionStorage.getItem('languagePopupExpiresAt');
 
   if (expiresAt && Date.now() < Number(expiresAt)) {
     popup.style.display = 'none';
