@@ -157,13 +157,20 @@ function saveLanguage() {
   localStorage.setItem('languagePopupSeen', 'true');
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  var popup = document.getElementById('languagePopup');
+function initLanguagePopup() {
+  const popup = document.getElementById('languagePopup');
+  if (!popup) return;
 
   if (localStorage.getItem('languagePopupSeen') === 'true') {
     popup.style.display = 'none';
+  } else {
+    popup.style.display = 'flex';
   }
-});
+}
+
+document.addEventListener('DOMContentLoaded', initLanguagePopup);
+document.addEventListener('shopify:section:load', initLanguagePopup);
+window.addEventListener('load', initLanguagePopup);
 </script>
 
   </body>
