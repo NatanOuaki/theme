@@ -656,5 +656,263 @@
         }
       }
     }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_status": {
+        "delivery_promise_v2": {
+          "details_modal": {
+            "order_includes_guarantees_label": "ההזמנה שלך כוללת {{deliveryAgreementsCount}} אחריות",
+            "order_includes_guarantees_description": "Shop Promise מבטיחה משלוח מהיר ואמין. דרשו Shop Cash אם הזמנתכם תגיע לאחר ה-{{date}}.",
+            "delivered_after_label": "אספקה לאחר ה-{{date}}.",
+            "delivered_after_description": "מכיוון שההזמנה שלך הגיעה באיחור, תוכל/י לתבוע {{amount}} בכסף Shop.",
+            "claimed_shop_cash_description": "מכיוון שההזמנה שלך הגיעה באיחור, תבעת סכום של {{amount}} ב-Shop Cash.",
+            "eligible_to_claim_shop_cash_description": "מכיוון שההזמנה שלך הגיעה באיחור, תוכל/י לתבוע {{amount}} בכסף Shop.",
+            "learn_more_button_label": "למידע נוסף",
+            "claim_shop_cash_button_label": "קבל Shop Cash",
+            "view_balance_in_shop_button_label": "הצג יתרה בחנות",
+            "scan_to_claim_shop_cash_label": "סרקו כדי לתבוע את כספי החנות שלכם בסך {{amount}}"
+          }
+        },
+        "tracking_number": {
+          "one": "מספר מעקב",
+          "other": "מספרי מעקב",
+          "many": "מספרי מעקב"
+        },
+        "gift_card_resend_button": {
+          "one": "שלח שוב את כרטיס המתנה",
+          "other": "שלח שוב את כרטיסי המתנה",
+          "many": "שלח שוב את כרטיסי המתנה"
+        },
+        "expected_by": "מתוכנן ליום {{date}}",
+        "was_expected_by": "תוכנן ליום {{date}}"
+      },
+      "status_mark_as_delivered": "סמן כנמסר",
+      "buy_again": "קנה שוב",
+      "buy_again_accessibility_label": "קנה שוב עבור הזמנה {{orderId}}",
+      "manage": "לנהל",
+      "manage_accessiblity_label": "נהל הזמנה {{orderId}}",
+      "fulfillment_status_title": "סטטוס טיפול בהזמנה: {{status}}",
+      "list_title_with_pending_orders": "הזמנות:",
+      "list_title_confirmed_orders_accessibility_label": "הזמנות: מאושרות",
+      "list_title_pending_orders_accessibility_label": "הזמנות: ממתינות",
+      "switch_order_type_pending_orders_accessibility_label": "שינוי סוגי הזמנות, הצגת הזמנות בהמתנה",
+      "switch_order_type_confirmed_orders_accessibility_label": "שינוי סוגי הזמנות, הצגת הזמנות מאושרות",
+      "group_title_label": "חלק מ: {{groupTitle}}",
+      "group_title_label_with_parent": "לכבוד: {{groupTitle}}"
+    },
+    "order_details": {
+      "addresses_section_title": "חיוב ומשלוח",
+      "billing_address": "כתובת לחיוב",
+      "card_ending_with": "המסתיימים ב-{{lastDigits}}",
+      "contact": "איש קשר",
+      "hide_items": "הסתר פריטים",
+      "loading": "פרטי הזמנה נטענים",
+      "loading_finished_accessibility_message": "פרטי ההזמנה נטענו",
+      "payment": {
+        "status_in_review": "תשלום מגיע לאחר בדיקה",
+        "status_unpaid": "התשלום נדרש עד ה-{{date}}",
+        "title": "תשלום",
+        "card_payment_details": "הנגמר ב-{{lastDigits}} - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "שולם באמצעות תשלומים עם Shop Pay",
+          "view_schedule": "ראה יומן"
+        },
+        "gift_card_payment_details": "הנגמר ב-{{lastDigits}} - {{formattedTransactionAmount}}",
+        "manual_payment_methods": {
+          "money_order": "הרשאה – {{formattedTransactionAmount}}",
+          "cash_on_delivery": "תשלום בעת המסירה – {{formattedTransactionAmount}}",
+          "bank_deposit": "הפקדה בנקאית – {{formattedTransactionAmount}}",
+          "manual": "מדריך - {{formattedTransactionAmount}}"
+        },
+        "store_credit_payment_details": "זיכוי לרכישה בחנות - {{formattedTransactionAmount}}",
+        "transactions": {
+          "show_all": "הצג הכול",
+          "show_less": "הצג פחות",
+          "details": "פרטים",
+          "payment_details": "פרטי תשלום"
+        },
+        "emv_details": {
+          "auth": "אימות:",
+          "aid": "סיוע:",
+          "source": "מקור:"
+        },
+        "payment_type": {
+          "gift_card": "כרטיס מתנה",
+          "store_credit": "זיכוי לחנות",
+          "money_order": "מנדט",
+          "cash_on_delivery": "תשלום בעת קבלת הסחורה",
+          "bank_deposit": "הפקדה בנקאית",
+          "manual": "מדריך"
+        }
+      },
+      "shipping": {
+        "address": "כתובת למשלוח",
+        "address_map_marker": "כתובת למשלוח",
+        "method": "שיטת משלוח",
+        "summary": "משלוח",
+        "free": "חינם",
+        "free_shipping_discount": "משלוח חינם",
+        "one_time": "משלוח בזמן",
+        "subscription": "משלוח למנויים"
+      },
+      "show_items": "הצג פריטים",
+      "subtitle": "אושרה ב-{{date}}",
+      "subtotal": "סיכום ביניים",
+      "summary_list_title_accessibility_label": "פריטי ההזמנה",
+      "summary_title": "סיכום הזמנה",
+      "summary_totals_title_accessibility_label": "סכומי הזמנה",
+      "taxes": "מסים",
+      "title": "הזמנה {{name}}",
+      "total": "סך הכול",
+      "unit_price": "{{price}}/יחידה",
+      "location": "מיקום",
+      "not_applicable": "מישהו/י",
+      "fully_refunded_label": "הוחזר תשלום",
+      "partially_refunded_label": "הוחזר חלקית",
+      "refunded_amount": "הוחזר",
+      "discount": "הנחה",
+      "compare_at_sale": "מבצע ({{saleAmount}})",
+      "no_data": "אף אחד",
+      "pagination": {
+        "load_more": "טען עוד",
+        "load_more_accessibility_label": "טען כתבות נוספות",
+        "loading_accessibility_label": "טוען פריטים"
+      },
+      "returns": {
+        "expand_events_label": "הצג פרטים",
+        "hide_events_label": "הסתר פרטים",
+        "print_shipping_label": "הדפס תווית משלוח",
+        "tracking_number": "מספר מעקב:",
+        "return_and_refund_modal_header": "מדיניות החזרים",
+        "ineligible_return_message": "אף פריט בהזמנה זו אינו זכאי להחזרה.",
+        "ineligible_return_message_when_returned": "פריטים אחרים בהזמנה זו אינם זכאים להחזרה.",
+        "exchange_header": "פריטי מסחר"
+      }
+    },
+    "payment_methods": {
+      "store_credit": {
+        "details_modal": {
+          "events": {
+            "adjustment": "התאמה",
+            "order_payment": "תשלום הזמנה",
+            "order_refund": "החזר הזמנה",
+            "payment_failure": "תשלום נכשל",
+            "payment_returned": "התשלום הוחזר",
+            "order_cancellation": "ביטול הזמנה",
+            "tax_finalization": "סיום המס"
+          }
+        },
+        "expirable_amounts_label": "סכומים עם תוקף"
+      },
+      "three_d_secure": {
+        "verification_failed": "לא ניתן היה לאמת את התשלום שלך. נסה שוב או השתמש באמצעי תשלום אחר."
+      },
+      "pay_pal": {
+        "iframe_title_accessibility_label": "הוסף אמצעי תשלום PayPal",
+        "loading_accessibility_message": "PayPal בטעינה",
+        "errors": {
+          "generic": "אירעה תקלה ב-PayPal. נסה שוב או השתמש באמצעי תשלום אחר."
+        }
+      },
+      "card_update_consent_subscriptions": "אמצעי תשלום זה יישמר לרכישות עתידיות וניתן יהיה להשתמש בו עבור כל רכישה חוזרת או רכישה עתידית אחרת.",
+      "add_payment_method_dropdown": {
+        "bank_account_consent": "בצירוף אמצעי תשלום, הנך מסכים/ה לחיוב הכרטיס שלך או לחיובי חשבון הבנק שלך עבור רכישות עתידיות שתאשר/י, עד שתבטל/י הרשאה זו."
+      },
+      "bank_account": {
+        "loading_accessibility_message": "הלחצן \"חשבון בנק\" נטען",
+        "iframe_title_accessibility_label": "הגדרות חשבון הבנק",
+        "display_name": "חשבון בנק",
+        "generic_error": "לא ניתן להוסיף חשבון בנק. נסו שוב מאוחר יותר."
+      },
+      "replacement_payment_method_title": "אמצעי תשלום חלופי",
+      "update_payment_method": {
+        "title": "עדכון אמצעי התשלום",
+        "button_title": "עדכן",
+        "billing_address": "כתובת לחיוב",
+        "disclaimer": "אמצעי תשלום זה יישמר לרכישות עתידיות וניתן יהיה להשתמש בו עבור כל רכישה חוזרת או רכישה עתידית אחרת.",
+        "error_message": "לא ניתן לעדכן את אמצעי התשלום",
+        "current": "נוכחי",
+        "loading_form_accessibility_message": "טוען טופס עדכון אמצעי תשלום",
+        "loading_current_payment_method": "טעינת אמצעי התשלום הנוכחי",
+        "loading_digital_wallets": "טעינת אפשרויות ארנק אלקטרוני",
+        "loading_card_fields": "טוען שדות כרטיס אשראי",
+        "subscriptions_title": "מינויים",
+        "subscriptions_list_accessibility_label": "רשימת מוצרי מנוי",
+        "pre_orders_title": "בקרוב",
+        "pre_orders_list_accessibility_label": "רשימת מוצרי הזמנות ממתינות",
+        "resources_list_accessibility_label": "מוצרי מנוי ומוצרי הזמנה ממתינה המשתמשים באמצעי תשלום זה",
+        "resources_card_scroll": "גלול למטה לפריטים נוספים",
+        "resources_card_show_more": "הצג עוד",
+        "resources_card_show_less": "הצג פחות",
+        "loading_resources": "טוען מינויים והזמנות קרובות"
+      },
+      "update_success": {
+        "title": "אמצעי התשלום עודכן",
+        "done_button": "המשך לקנות"
+      },
+      "link_expired": {
+        "return_home_button": "חזרה לדף הבית",
+        "update_message": "קישור זה לעדכון אמצעי התשלום שלך פג תוקף.",
+        "add_message": "קישור זה להוספת אמצעי התשלום שלך פג תוקפו.",
+        "message": "קישור זה לעדכון אמצעי התשלום שלך פג תוקף."
+      },
+      "expired_badge_label": "פג תוקף",
+      "credit_card_title": "כרטיס אשראי",
+      "or": "או",
+      "additional_payment_methods": "אפשרויות תשלום נוספות",
+      "add_success": {
+        "title": "אמצעי תשלום התווסף",
+        "done_button": "המשך לקנות"
+      }
+    },
+    "payment_method_brands": {
+      "visa": "ויזה",
+      "mastercard": "מאסטרקארד",
+      "paypal": "פייפאל",
+      "americanexpress": "אמריקן אקספרס",
+      "discover": "גלה",
+      "dinersclub": "דיינרס קלאב",
+      "elo": "הלו",
+      "visaelectron": "ויזה אלקטרון",
+      "maestro": "מאסטרו",
+      "forbrugsforeningen": "פורברוגספורנינגן",
+      "dankort": "דנקורט",
+      "hipercard": "היפרכארד",
+      "laser": "לייזר",
+      "storecredit": "זיכוי לחנות",
+      "bogus": "בדיוני",
+      "klarna_pay_now": "קלרנה",
+      "klarna_pay_later": "קלרנה",
+      "klarna_slice_it": "קלרנה"
+    },
+    "enable_javascript": "כדי להציג את החשבון שלך, הפעל JavaScript בהגדרות הדפדפן שלך או היכנס באמצעות דפדפן אחר.",
+    "ui_components": {
+      "closeNotification": "סגור",
+      "expandNotification": "ראה עוד",
+      "closeModal": "סגור",
+      "submit": "שלח",
+      "processing": "בטיפול...",
+      "increase": "עלייה ב-{{type}}",
+      "decrease": "הפחתה ב{{type}}",
+      "minimumReached": "מינימום של {{value}} הושג",
+      "maximumReached": "הגעת למקסימום של {{value}}",
+      "january": "ינואר",
+      "february": "פברואר",
+      "march": "מרס",
+      "april": "אפריל",
+      "may": "מאי",
+      "june": "יוני",
+      "july": "יולי",
+      "august": "אוגוסט",
+      "september": "ספטמבר",
+      "october": "אוקטובר",
+      "november": "נובמבר",
+      "december": "דצמבר",
+      "monday": "יום שני",
+      "tuesday": "יום שלישי",
+      "wednesday": "יום רביעי",
+      "thursday": "יום חמישי"
+    }
   }
 }
