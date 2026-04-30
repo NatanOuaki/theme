@@ -1511,6 +1511,134 @@
         "address_city_too_long": "שם העיר ארוך מדי (המקסימום הוא 255 תווים)",
         "address_company_too_long": "שם החברה ארוך מדי (האורך המקסימלי הוא 255 תווים)",
         "address_first_name_contains_html_tags": "השם הפרטי אינו יכול להכיל תגי HTML."
+      },
+      "thank_you": {
+        "pick_up_in_store_marker": {
+          "current": "מיקום נוכחי של ההזמנה",
+          "shipping": "מרכז גמילה"
+        },
+        "thank_you_confirmed_order_with_email_pick_up": "תקבלו הודעת דוא\"ל כאשר הזמנתכם תהיה מוכנה לאיסוף.",
+        "thank_you_confirmed_order_with_phone_pick_up": "תקבלו הודעת טקסט כשההזמנה שלכם תהיה מוכנה לאיסוף.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "תקבלו הודעת דוא\"ל כאשר הזמנתכם תהיה מוכנה לאיסוף.",
+        "ready_for_pickup_title": "ההזמנה שלך מוכנה לאיסוף",
+        "ready_for_pickup_description": "הזמנתכם מוכנה לאיסוף. אנא הביאו את אישור ההזמנה שלכם בעת איסוף הזמנתכם.",
+        "picked_up_title": "ההזמנה שלך נאספה",
+        "picked_up_description_html": "ההזמנה שלך נאספה מ- %{location_name} ב- %{date}.",
+        "other_options": "אפשרויות נוספות",
+        "shop_phone_description": "תקבל/י הודעה המכילה קישור לאפליקציית Shop כדי לעזור לך לעקוב אחר ההזמנה שלך.",
+        "ready_for_delivery_title": "ההזמנה שלך מוכנה למשלוח",
+        "ready_for_delivery_description": "ההזמנה שלך הוכנה.",
+        "order_status_confirmed_order_local": "אנו מכינים כעת את משלוח הזמנתך.",
+        "delivery_information_label": "פרטי משלוח:",
+        "gift_card_sent_confirmation": "כרטיסי מתנה נשלחו",
+        "out_for_delivery_local_title": "ההזמנה שלך בדרך",
+        "out_for_delivery_local_description_html": "תקבל את הזמנתך בקרוב.",
+        "delivered_local_title": "ההזמנה שלך נמסרה",
+        "delivered_local_description_html": "לא קיבלתם את הזמנתכם? %{let_us_know}.",
+        "let_us_know": "אנא דווח לנו על כך",
+        "qr_code": {
+          "title": "עקוב/עקבי באמצעות הטלפון שלך",
+          "send_link_to_phone": "או שלחו קישור לטלפון שלכם"
+        },
+        "gift_card_confirmation_by_text": "אם לא קיבלתם אותו, שלחו שוב את ההודעה או צרו עמנו קשר.",
+        "gift_card_confirmation_by_email": "אם לא קיבלת אותו, שלח שוב את הדוא\"ל או צור איתנו קשר.",
+        "gift_card_title": "כרטיסי מתנה",
+        "resend_gift_cards": "שלח שוב את כרטיסי המתנה",
+        "attempted_delivery_local_title": "משלוח שלא נמסר",
+        "attempted_delivery_local_description_html": "לא הצלחנו למסור את הזמנתכם. לקביעת מועד מסירה חדש, %{contact_us}.",
+        "thank_you_title_payment": "התשלום שלך אושר",
+        "thank_you_confirmed_order_with_email_payment": "ביצעת תשלום עבור הזמנתך בתאריך %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "ביצעת תשלום עבור הזמנתך בתאריך %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "ביצעת תשלום עבור הזמנתך בתאריך %{date}.",
+        "order_status_confirmed_order_with_email_payment": "ביצעת תשלום עבור הזמנתך בתאריך %{date}.",
+        "order_status_confirmed_order_with_phone_payment": "ביצעת תשלום עבור הזמנתך בתאריך %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "ביצעת תשלום עבור הזמנתך בתאריך %{date}.",
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "סרוק באמצעות הטלפון שלך"
+          },
+          "sms": {
+            "title": "או שלחו קישור לטלפון שלכם"
+          }
+        },
+        "estimated_delivery": "אומדן משלוח נוכחי:",
+        "view_business_customer_account": "ראה חשבון",
+        "company_location_title": "מיקום",
+        "thank_you_title_review": "ההזמנה שלך הוגשה לבדיקה",
+        "thank_you_confirmed_order_with_draft": "אנו ניצור עמך קשר אם נזדקק למידע נוסף או כשאישור ההזמנה יתקבל.",
+        "breadcrumbs_submitted": "הוגש",
+        "breadcrumbs_in_review": "בתהליכי בדיקה",
+        "breadcrumbs_confirmed": "אושר",
+        "missing_shipping_address_banner": {
+          "title": "ההזמנה אינה כוללת כתובת למשלוח",
+          "text_html": "%{contact_us} כדי להוסיף את כתובתך",
+          "contact_us": "צור קשר"
+        },
+        "order_status_confirmed_with_installments_payment_return": "פנו לאנשי המכירות.",
+        "order_status_confirmed_with_installments_payment_confirm": "בבקשה שימו לב: אימייל אישור הכולל את מספר ההזמנה שלכם ופרטי תוכנית התשלומים שלכם יישלח אליכם בקרוב.",
+        "first_payment_complete": "התשלום הראשון הושלם",
+        "in_store_purchase": "קנייה בחנות",
+        "choose_payment_method_later": "בחר אמצעי תשלום אחר כך",
+        "purchase_order_number_title": "מספר הזמנת רכש: %{purchase_order_number}",
+        "thank_you_ready_for_picked_up": "ההזמנה שלך נאספה בכתובת הבאה: %{address}.",
+        "ready_for_delivery": "מוכנה למסירה",
+        "order_updates_subscribe_to_email_notifications_failed": "איננו יכולים לרשום כתובת דוא\"ל זו לצורך קבלת עדכונים. נסו שוב או השתמשו בכתובת דוא\"ל אחרת.",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "כתובת הדוא\"ל שהזנת כבר קיימת.",
+        "subscriptions_management": {
+          "title": "מנוי",
+          "description": "המשך לחשבונך כדי לראות ולנהל את המינויים שלך.",
+          "button_label": "נהל את המינוי שלך"
+        },
+        "manage_order_label": "ניהול ההזמנות שלך",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "תקבל הודעת SMS עם כרטיס המתנה שלך בתוך דקות ספורות.",
+          "other": "תקבל/י הודעת SMS עם כרטיסי המתנה שלך בעוד מספר דקות.",
+          "many": "תקבל/י הודעת SMS עם כרטיסי המתנה שלך בעוד מספר דקות."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "תקבל/י אימייל עם כרטיס המתנה שלך בעוד מספר דקות.",
+          "other": "תקבל/י אימייל עם כרטיסי המתנה שלך בתוך דקות ספורות.",
+          "many": "תקבל/י אימייל עם כרטיסי המתנה שלך בתוך דקות ספורות."
+        },
+        "gift_card_email_title": {
+          "one": "הגיפט קארד נשלח במייל",
+          "other": "כרטיסי המתנה נשלחו במייל",
+          "many": "כרטיסי המתנה נשלחו במייל"
+        },
+        "gift_card_text_title": {
+          "one": "כרטיס המתנה נשלח ב-SMS",
+          "other": "כרטיסי המתנה נשלחו באמצעות SMS",
+          "many": "כרטיסי המתנה נשלחו באמצעות SMS"
+        },
+        "resend_gift_cards_by_email": "שלח מחדש את האימייל",
+        "resend_gift_cards_by_text": "שלח שוב את ה-SMS",
+        "gift_card_resent_confirmation": {
+          "one": "כרטיס המתנה הוחזר.",
+          "other": "כרטיסי המתנה הוחזרו.",
+          "many": "כרטיסי המתנה הוחזרו."
+        },
+        "gift_card_resend_failure": {
+          "one": "אירעה שגיאה בשליחת כרטיס המתנה שלך שוב. נסה/נסי שוב או פנה/פני אלינו.",
+          "other": "אירעה שגיאה בשליחת כרטיסי המתנה שלך שוב. נסה שוב או צור איתנו קשר.",
+          "many": "אירעה שגיאה בשליחת כרטיסי המתנה שלך שוב. נסה שוב או צור איתנו קשר."
+        },
+        "failed_pending_payment_page_title": "אירעה שגיאה בעיבוד התשלום שלך",
+        "thank_you_title_payments_app_pending_default": "התשלום שלך בתהליך",
+        "thank_you_title_payments_app_pending_buyer_action_required": "ההזמנה שלך התקבלה",
+        "thank_you_title_payments_app_failed_pending_payment": "התשלום שלך לא עובד",
+        "thank_you_payments_app_failed_pending_payment": "ההזמנה שלך לא חויבה. אנא חזור/חזרי לסל הקניות שלך כדי לבדוק את ההזמנה ולהמשיך שוב לתשלום.",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone": "בקרוב תקבל אישור במייל. עקוב אחר ההזמנה שלך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email": "בקרוב תקבל אישור במייל. עקוב אחר ההזמנה שלך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_phone": "בזמן הקרוב תקבלו אישור ב-SMS. עקבו אחר ההזמנה באפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "לאחר השלמת התשלום, תקבל אישור במייל. עקוב/עקבי אחר הזמנתך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email": "לאחר השלמת התשלום, תקבל אישור במייל. עקוב/עקבי אחר הזמנתך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone": "לאחר השלמת התשלום, תקבל אישור במייל. עקוב/עקבי אחר הזמנתך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_failed_pending_payment": "ההזמנה שלך לא חויבה. אנא חזור/חזרי לסל הקניות שלך כדי לבדוק את ההזמנה ולהמשיך שוב לתשלום.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "לאחר השלמת התשלום, תקבל אישור במייל. עקוב/עקבי אחר הזמנתך באמצעות אפליקציית Shop.",
+        "thank_you_confirmed_order_with_missing_payment": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "thank_you_confirmed_order_with_missing_pick_up": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "thank_you_confirmed_order_with_draft_payment": "אנו ניצור עמך קשר אם נזדקק למידע נוסף או כשאישור ההזמנה יתקבל.",
+        "thank_you_confirmed_order_with_draft_pick_up": "אנו ניצור עמך קשר אם נזדקק למידע נוסף או כשאישור ההזמנה יתקבל."
       }
     }
   },
