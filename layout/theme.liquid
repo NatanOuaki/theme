@@ -130,6 +130,38 @@
 </a>
 
 
+<div id="languagePopup" class="language-popup-overlay">
+  <div class="language-popup">
+    <img src="https://cdn.shopify.com/s/files/1/0802/9903/2822/files/LOGOS_R_copy_4_1.png?v=1776969552" alt="Koahatsniout" width:"293px"  height="70px";>
+
+    <div class="line"></div>
+
+    <h2>ברוכים הבאים • Bienvenue</h2>
+
+    <p>Veuillez choisir votre langue</p>
+    <p>אנא בחרו את השפה שלכם</p>
+
+    <div class="language-buttons">
+      <a href="/he" onclick="saveLanguage()">עברית</a>
+      <a href="/fr" onclick="saveLanguage()">Français</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function saveLanguage() {
+  localStorage.setItem('languagePopupSeen', 'true');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var popup = document.getElementById('languagePopup');
+
+  if (localStorage.getItem('languagePopupSeen') === 'true') {
+    popup.style.display = 'none';
+  }
+});
+</script>
+
   </body>
 
 <script>
