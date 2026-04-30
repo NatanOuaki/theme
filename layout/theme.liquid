@@ -131,13 +131,16 @@
 
 
 <div id="languagePopup" class="language-popup-overlay">
-  <div class="language-popup">
+  <div class="language-popup" onclick="event.stopPropagation()">
+    <button class="language-popup-close" onclick="closeLanguagePopup()" aria-label="Fermer">×</button>
+
     <img 
       src="https://cdn.shopify.com/s/files/1/0802/9903/2822/files/LOGOS_R_copy_4_1.png?v=1776969552" 
       alt="Koahatsniout"
       width="293"
       height="147"
     >
+
     <div class="line"></div>
 
     <h2>ברוכים הבאים • Bienvenue</h2>
@@ -146,30 +149,50 @@
     <p>אנא בחרו את השפה שלכם</p>
 
     <div class="language-buttons">
-      <a href="/he" onclick="saveLanguage()">עברית</a>
-      <a href="/fr" onclick="saveLanguage()">Français</a>
+      <a href="{{ routes.root_url }}?locale=he" onclick="saveLanguageChoice()">עברית</a>
+      <a href="{{ routes.root_url }}?locale=fr" onclick="saveLanguageChoice()">Français</a>
     </div>
   </div>
 </div>
 
 <script>
-function saveLanguage() {
-  localStorage.setItem('languagePopupSeen', 'true');
+const LANGUAGE_POPUP_DAYS = 2; // change ici : 1, 7, 30, etc.
+
+function saveLanguageChoice() {
+  const expiresAt = Date.now() + (LANGUAGE_POPUP_DAYS * 24 * 60 * 60 * 1000);
+  localStorage.setItem('languagePopupExpiresAt', expiresAt);
+}
+
+function closeLanguagePopup() {
+  saveLanguageChoice();
+  const popup = document.getElementById('languagePopup');
+  if (popup) {
+    popup.classList.add('is-closing');
+    setTimeout(() => {
+      popup.style.display = 'none';
+    }, 250);
+  }
 }
 
 function initLanguagePopup() {
   const popup = document.getElementById('languagePopup');
   if (!popup) return;
 
-  if (localStorage.getItem('languagePopupSeen') === 'true') {
+  const expiresAt = localStorage.getItem('languagePopupExpiresAt');
+
+  if (expiresAt && Date.now() < Number(expiresAt)) {
     popup.style.display = 'none';
   } else {
     popup.style.display = 'flex';
+    setTimeout(() => {
+      popup.classList.add('is-visible');
+    }, 50);
   }
+
+  popup.addEventListener('click', closeLanguagePopup);
 }
 
 document.addEventListener('DOMContentLoaded', initLanguagePopup);
-document.addEventListener('shopify:section:load', initLanguagePopup);
 window.addEventListener('load', initLanguagePopup);
 </script>
 
