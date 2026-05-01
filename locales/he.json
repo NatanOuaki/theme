@@ -2364,7 +2364,8 @@
         "title": "תשלום Shop Pay"
       },
       "company_location": {
-        "location_title": "מיקום החברה"
+        "location_title": "מיקום החברה",
+        "location_rollup_accessibility_label": "אפשרויות למיקום העסק"
       },
       "review": {
         "title": "אישור",
@@ -2556,6 +2557,166 @@
       },
       "discount_errors": {
         "generic_error": "ההזמנה שלך לא עובדה כי קוד ההנחה שבו השתמשת אינו זמין עוד. עיין בסיכום ההזמנה שלך ונסה שוב."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "מחיר כרטיס המתנה חייב להיות גבוה מ-0.",
+            "subtotal_limit_reached": "הערך המקסימלי עבור פריטי השורה הושג.",
+            "gift_card_price_must_not_exceed_limit": "מחיר כרטיס המתנה לא יעלה על %{gift_card_limit}.",
+            "signature_mismatch": "חתימת מאמרים שונה עבור שורה %{stable_id}."
+          }
+        }
+      },
+      "clipboard": {
+        "copied": "הועתק",
+        "failed_to_copy": "לא ניתן להעתיק"
+      },
+      "payment_challenge_modal": {
+        "instructions": "סיימו את הרכישה עם הקוד שלכם ב-{{paymentMethod}}",
+        "timer_message": "יש לך {{timeLeft}} לשלם",
+        "copy_text": "העתק את הקוד {{paymentMethod}}",
+        "header": "לשלם באמצעות {{paymentMethod}}",
+        "qr_code": {
+          "instructions": "סיימו את הרכישה עם הקוד שלכם ב-{{paymentMethod}}"
+        },
+        "external": {
+          "instructions": "אשרו את התשלום באפליקציה שלכם כדי להשלים רכישה זו"
+        },
+        "close": "סגור את המחלוקת",
+        "open_app_text": "פתח את אפליקציית {{paymentMethod}}"
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "אירעה שגיאה בעיבוד הזמנתך. אנא נסה/נסי שוב בעוד כמה דקות."
+      },
+      "merchant_instruction_errors": {
+        "empty_stable_id": "הוראות עבור פריטי %{position} %{name} מכילות מזהה יציב ריק.",
+        "invalid_stable_id_target": "הוראות הפריט של %{position} %{name} מפנות ל-ID יציב %{stable_id}, אבל ה-ID היציב לא מופיע בשורות הפריטים.",
+        "duplicate_variant_id": "הוראות עבור פריטי %{position} %{name} מכילות מזהה וריאנט כפול %{variant_id}.",
+        "invalid_variant_id_target": "הוראות הפריט עבור %{name} מתייחסות למזהה הגרסה %{variant_id}, אבל גרסה זו לא מופיעה בפרטי הפריט.",
+        "invalid_price_override_target": "הוראת החלפת מחיר פריט עבור פריט עגלת קניות %{stable_id} אינה חוקית כיוון שמדובר במרכיב חבילה.",
+        "discount_not_supported": "ההוראה המסחרית לגבי החלת הנחה על פריטים אינה תומכת בסוג הנחה זה."
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "אין אפשרות לספק מוצר זה ל%{location_name}.",
+          "some_products_other": "מוצרים אלה אינם זמינים למשלוח אל %{location_name}.",
+          "all_products_one": "המוצר בעגלת הקניות שלך אינו זמין למשלוח אל %{location_name}.",
+          "all_products_other": "הפריטים בסל הקניות שלך אינם זמינים למשלוח ל%{location_name}."
+        },
+        "missing_country_fallback": "ארצך",
+        "indeterminate_location_fallback": "המיקום שלך",
+        "cart_updated": "העגלה שלך עודכנה.",
+        "change_address_only": "יש לעדכן את כתובת המשלוח כדי להמשיך.",
+        "change_address_or_remove": "שנה את כתובת המשלוח או %{remove_action}.",
+        "empty_cart_action": "לנקות סל קניות ולחזור לחנות",
+        "remove_items_action": {
+          "one": "מחיקת פריט לא זמין",
+          "other": "מחק פריטים שלא זמינים",
+          "many": "מחק פריטים שלא זמינים"
+        }
+      },
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "אין לך הרשאה לבצע הזמנות B2B. בקר ב- %{logout_url} כדי לבצע במקום זאת הזמנה אישית.",
+        "log_out_link_text": "התנתק",
+        "lost_permissions_subtitle": "אין לך עוד הרשאה לבצע הזמנות B2B. צא מהחשבון כדי לבצע הזמנה אישית.",
+        "lost_permissions_title": "אין הרשאת מיקום"
+      },
+      "units": {
+        "milligram": "מ\"ג",
+        "kilogram": "קג",
+        "milliliter": "מ\"ל",
+        "centiliter": "קל",
+        "cubic_meter": "מ\"ק",
+        "millimeter": "מ\"מ",
+        "centimeter": "ס\"מ",
+        "square_meter": "מ\"ר",
+        "ounce": "עוז",
+        "pound": "ליברליזם",
+        "fluid_ounce": "עוז ליק.",
+        "pint": "נק'",
+        "quart": "כמות",
+        "gallon": "גל",
+        "inch": "פו",
+        "foot": "פאי",
+        "yard": "יד",
+        "square_foot": "פאי בריבוע",
+        "item": "מאמר"
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "מעבר לחנות המקוונת"
+        }
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "הכתובת אינה נתמכת עבור החברות הנוכחית.",
+        "items_split_across_locations_unsupported": "משלוח פריים אינו זמין עבור ההזמנה שלך. אפשרויות המשלוח שלך עודכנו."
+      },
+      "tooltip": {
+        "accessibility_label_context": "מידע נוסף על %{context}",
+        "additional_payment_methods": "אפשרויות תשלום נוספות"
+      },
+      "review_address_modal": {
+        "title": "בדוק את הכתובת",
+        "subtitle_no_match": "כתובת זו אינה תואמת לאף אחת מהכתובות ששמרת.",
+        "subtitle_must_use": "ההזמנה שלך תישלח לכתובת זו.",
+        "continue": "להמשיך עם כתובת זו",
+        "use_saved_address": "השתמש בכתובת אחרת",
+        "return_to_cart": "חזרה לעגלת הקניות",
+        "subtitle": {
+          "one": "הזמנה זו תישלח לכתובת שסופקה על ידי {{merchant}}.",
+          "other": "הזמנה זו תישלח לכתובת שתימסר על ידי {{merchant}}. יש לבחור כתובת למשלוח.",
+          "many": "הזמנה זו תישלח לכתובת שתימסר על ידי {{merchant}}. יש לבחור כתובת למשלוח."
+        }
+      },
+      "remote": {
+        "errors": {
+          "currency_mismatch": "לא ניתן להוסיף פריט זה לעגלת הקניות שלך מכיוון שהוא מגיע מחנות המשתמשת במטבע אחר.",
+          "max_remote_shops_exceeded": "לא ניתן להוסיף מוצר זה, כיוון שעגלת הקניות שלך כבר כוללת את המספר המקסימלי של מוצרים מחנויות אחרות.",
+          "currency_mismatch_removal": "פריט הוסר מהעגלה שלך, כי הוא משויך לחנות המשתמשת במטבע אחר.",
+          "only_remote_merchandise_lines": "התשלום חל רק על פריטים מחנות חיצונית. יש צורך בהפניה מחדש לחנות זו כדי להשלים את התשלום."
+        }
+      },
+      "remote_merchandise_only": {
+        "title": "סיים את הרכישה שלך",
+        "return_to_store_label": "חזרה לחנות",
+        "checkout_on_shop_label": "סיים את התשלום ב- %{shop_name}",
+        "single_shop_transition": "את/ה מועבר/ת כעת אל %{advertiser} כדי לסיים את הרכישה.",
+        "detail_item_label": {
+          "one": "{{count}} פריטים",
+          "other": "{{count}} כתבות",
+          "many": "{{count}} כתבות"
+        },
+        "remote_only_notice": "פריטים אלה נמכרים ונשלחים על ידי חנויות אחרות. יש לשלם עבור כל הזמנה בנפרד."
+      },
+      "remote_policies": {
+        "unavailable_policy": "לא סופקה מדיניות %{policy_name} עבור חנות זו. לקבלת מידע נוסף, יש ליצור קשר ישירות עם %{shop_name}."
+      },
+      "offsite_payment_failed": {
+        "payment_not_processed_title": "תשלום נכשל",
+        "payment_not_processed_text": "נסו לסרוק את קוד ה-QR שוב. אם הוא עדיין לא עובד, הודיעו לעובדים ונסו אמצעי תשלום אחר.",
+        "payment_link_expired_title": "קישור התשלום פג תוקף",
+        "payment_link_expired_text": "נסה לסרוק שוב את קוד ה-QR.",
+        "title": "התשלום מחוץ לאתר נכשל"
+      },
+      "taxes": {
+        "tax_details": "מידע מס נוסף",
+        "vat_number": {
+          "field": {
+            "label": "מספר מע\"מ (אופציונלי)",
+            "tooltip": "אמת את מספר המע\"מ והחל חיוב עצמי באופן אוטומטי להזמנות זכאיות"
+          },
+          "add": "הוסף מספר מע\"מ",
+          "vaulted": "מספר מע\"מ: %{number}",
+          "badge": "מספר מע\"מ: %{number}",
+          "domestic_order": "הפטור מחיוב עצמי חל רק על הזמנות חוצות גבולות בתוך האיחוד האירופי. בהזמנות מקומיות, נגבה מע\"מ רגיל.",
+          "status": {
+            "invalid_format": {
+              "at": "באוסטריה, מספרי מע\"מ מורכבים מהקידומת AT ולאחריה 9 תווים",
+              "be": "בבלגיה, מספרי מע\"מ מורכבים מהקידומת BE ואחריה 10 תווים"
+            }
+          }
+        }
       }
     },
     "collections": {
