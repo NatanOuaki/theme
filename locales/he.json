@@ -2251,6 +2251,181 @@
           "change_billing_address_link_label": "שינוי כתובת לחיוב",
           "change_shipping_address_link_label": "שנה כתובת למשלוח"
         }
+      },
+      "notice_banner": {
+        "validation_errors_banner": {
+          "heading": {
+            "other": "קיימות {{count}} שגיאות:",
+            "many": "קיימות {{count}} שגיאות:"
+          }
+        }
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "לאמת",
+          "link_label": "תנאים והגבלות של {{partnerDisplayName}}"
+        }
+      },
+      "online_store_chat": {
+        "title": "שאלות? דברו איתנו"
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "קיימים %{count} מיקומים עם מלאי בקרבת מקום",
+          "other": "יש %{count} מיקומים קרובים עם מלאי",
+          "many": "יש %{count} מיקומים קרובים עם מלאי"
+        },
+        "toggle_location": "שנה מיקום",
+        "or": "אוֹ",
+        "cancel": "בטל",
+        "your_location": "המיקום שלך",
+        "search_button": "מצא חנויות",
+        "no_stores_found": "לא נמצאו חנויות",
+        "could_not_resolve_address": ".לא ניתן היה לאתר את כתובתך. אנא נסה/נסי שוב או השתמש/י בכתובת אחרת",
+        "paginator": {
+          "accessibility_label": "עימוד של איסוף בחנות",
+          "previous": "עמוד קודם",
+          "next": "עמוד הבא",
+          "label": {
+            "one": "%{first} – %{last} מתוך %{count} חנויות",
+            "other": "%{first} – %{last} מתוך %{count} חנויות",
+            "many": "%{first} – %{last} מתוך %{count} חנויות"
+          }
+        },
+        "reveal_more_label": {
+          "one": "הצג מיקום אחד נוסף",
+          "other": "הצג מיקומים נוספים: %{count}",
+          "many": "הצג מיקומים נוספים: %{count}"
+        },
+        "location_address_search_label": "כתובת",
+        "all_stores_far_away": {
+          "title": "המיקומים הקרובים ביותר נמצאים במרחק של יותר מ-%{distance}",
+          "description": "בחר מיקום או %{ship_to_address_link}",
+          "ship_to_address_link": "שלח לכתובת",
+          "change_location_link": "שנה את מיקומך",
+          "title_with_specific_location": "המיקום הקרוב ביותר עם הפריט המבוקש נמצא במרחק של יותר מ-%{distance} מ-%{location}",
+          "title_with_item": {
+            "one": "המיקום הקרוב ביותר עם הפריט המבוקש נמצא במרחק העולה על %{distance} מ־%{location}",
+            "other": "המיקום הקרוב ביותר בו נמצאים הפריטים שלך נמצא במרחק של מעל %{distance} מ- %{location}",
+            "many": "המיקום הקרוב ביותר בו נמצאים הפריטים שלך נמצא במרחק של מעל %{distance} מ- %{location}"
+          }
+        },
+        "selected_pickup_option_no_longer_available": {
+          "title": "המיקום שבחרת בעבר אינו זמין עוד",
+          "description": "בחר מיקום חדש או %{ship_to_address_link}",
+          "ship_to_address_link": "שלח לכתובת"
+        },
+        "pickup_unavailable_banner_body": {
+          "ship_items": "משלוח הפריטים שלך",
+          "search_elsewhere": "חפש במקום אחר",
+          "ship_items_or_search_elsewhere": "%{ship_items} או %{search_elsewhere}"
+        },
+        "location_address_search_placeholder": "%{postal_code_label} או כתובת",
+        "location_closest": "המיקום הקרוב ביותר עם הפריט שלך",
+        "toggle_multiple_locations": "%{count}+ מיקומים נוספים",
+        "location_information_far_away": {
+          "one": "קיימים %{count} מיקומים עם הפריט שלך",
+          "other": "קיימים %{count} מיקומים עם הפריט שלך",
+          "many": "קיימים %{count} מיקומים עם הפריט שלך"
+        },
+        "location_nearby": {
+          "one": "קיימת עמדה קרובה אחת לפריט שלך",
+          "other": "קיימים %{count} מיקומים קרובים עם הפריט שלך",
+          "many": "קיימים %{count} מיקומים קרובים עם הפריט שלך"
+        },
+        "location_nearby_short": {
+          "one": "%{count} מיקומים קרובים עם הפריט שלך",
+          "other": "%{count} מיקומים קרובים עם הפריט שלך",
+          "many": "%{count} מיקומים קרובים עם הפריט שלך"
+        },
+        "location_far_away": {
+          "one": "%{count} מיקום עם הפריט שלך",
+          "other": "%{count} מיקומים עם הפריט שלך",
+          "many": "%{count} מיקומים עם הפריט שלך"
+        },
+        "toggle_more_locations": {
+          "one": "מיקום אחד נוסף",
+          "other": "%d מיקומים אחרים",
+          "many": "%d מיקומים אחרים"
+        },
+        "pickup_unavailable_banner_title": {
+          "one": "לא נמצא מיקום עבור הפריט שלך",
+          "other": "לא נמצאו פריטים עם מיקומך",
+          "many": "לא נמצאו פריטים עם מיקומך"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "אין מיקומים ב/ב%/{country} עם הפריט שלך",
+          "other": "אין מיקומים ב/ב/ב% מדינה עם הפריטים שלך",
+          "many": "אין מיקומים ב/ב/ב% מדינה עם הפריטים שלך"
+        },
+        "title": "מיקום"
+      },
+      "split_delivery": {
+        "pickup_all_items": "בחר את כל הפריטים",
+        "delivery_method": "מצב משלוח מפוצל",
+        "delivery_method_menu": "תפריט מצב משלוח מפוצל",
+        "items_for_pickup": "מאמרים להסרה",
+        "inventory_issue_banner": {
+          "remove_items_or_ship": "%{ship_separately_link} או %{remove_items_link}",
+          "remove_items_or_pickup": "%{pickup_in_store_link} או %{remove_items_link}",
+          "heading": {
+            "cannot_be_picked_up": {
+              "one": "לא ניתן לאחזר %{count} פריט",
+              "other": "לא ניתן לאחזר %{count} פריטים",
+              "many": "לא ניתן לאחזר %{count} פריטים"
+            },
+            "cannot_be_shipped": {
+              "one": "לא ניתן לשלוח פריט אחד",
+              "other": "%{count} פריטים אינם ניתנים למשלוח",
+              "many": "%{count} פריטים אינם ניתנים למשלוח"
+            }
+          },
+          "remove_item": {
+            "one": "להסיר את הפריט",
+            "other": "הסר את הפריטים",
+            "many": "הסר פריטים"
+          },
+          "ship_separately": {
+            "one": "לשלוח בנפרד",
+            "other": "לשלוח אותם בנפרד",
+            "many": "לשלוח אותם בנפרד"
+          },
+          "pick_them_up_in_store": {
+            "one": "איסוף בחנות",
+            "other": "לאסוף בחנות",
+            "many": "לאסוף אותם בחנות"
+          },
+          "remove_item_only": {
+            "one": "הסר את הפריט",
+            "other": "הסר פריטים",
+            "many": "הסר פריטים"
+          }
+        },
+        "items_for_shipping": "פריטים למשלוח",
+        "pickup_items_count": {
+          "many": "הסר %{count} פריטים"
+        },
+        "ship_items_count": {
+          "many": "שלח %{count} פריטים"
+        },
+        "items_moved_to_shipping_toast": "פריטים שלא ניתן היה לאסוף הועברו למשלוח.",
+        "cross_border": {
+          "modal": {
+            "heading": "לשנות מדינה?",
+            "content": "אמצעי המסירה של כל הפריטים יאופסו למשלוח. מיקומי האיסוף והמשלוח שלך חייבים להיות באותה מדינה.",
+            "change_country": "לשנות מדינה"
+          },
+          "banner": "אופן המסירה שלך עודכן"
+        }
+      },
+      "captcha": {
+        "title": "אנא בצע/י את הקפצ'ה כדי להמשיך",
+        "errors": {
+          "not_solved": "אנא בצע/י את הקפצ'ה כדי להמשיך"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "ההזמנה שלך לא עובדה כי קוד ההנחה שבו השתמשת אינו זמין עוד. עיין בסיכום ההזמנה שלך ונסה שוב."
       }
     },
     "collections": {
