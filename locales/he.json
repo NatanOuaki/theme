@@ -2212,7 +2212,134 @@
       "switch_order_type_pending_orders_accessibility_label": "שינוי סוגי הזמנות, הצגת הזמנות בהמתנה",
       "switch_order_type_confirmed_orders_accessibility_label": "שינוי סוגי הזמנות, הצגת הזמנות מאושרות",
       "group_title_label": "חלק מ: {{groupTitle}}",
-      "group_title_label_with_parent": "לכבוד: {{groupTitle}}"
+      "group_title_label_with_parent": "לכבוד: {{groupTitle}}",
+      "list_layout_accessibility_label": "אפשרויות פריסה",
+      "list_title": "הזמנות",
+      "order_list": {
+        "column_headers": {
+          "total": "סך הכול",
+          "order": "הזמנה",
+          "actions_accessibility_label": "פעולות",
+          "products_accessibility_label": "מוצרים"
+        },
+        "delivered": "נשלח ב-{{date}}",
+        "empty_state_order_source_description": "רק הזמנות שבוצעו באמצעות {{email}} יוצגו כאן.",
+        "empty_state_subtitle": "גשו לחנות כדי לבצע הזמנה.",
+        "empty_state_title": "אין הזמנות בשלב זה",
+        "estimated_delivery": "מתוכנן ליום {{date}}",
+        "items": {
+          "one": "{{count}} פריטים",
+          "other": "{{count}} כתבות",
+          "many": "{{count}} כתבות"
+        },
+        "order_link": "הצג הזמנה {{name}}",
+        "order_number": "הזמנה {{name}}",
+        "orders_title": "אושר",
+        "pagination": {
+          "nav_accessibility_label": "לחצני ניווט לפקודות",
+          "next": "הבא",
+          "next_accessibility_label": "הזמנות הבאות",
+          "previous": "הקודם",
+          "previous_accessibility_label": "הזמנות קודמות",
+          "load_more": "טען עוד",
+          "load_more_accessibility_label": "טען הזמנות נוספות"
+        },
+        "sort_by": "מיין לפי: {{option}}",
+        "sort_hide_options_accessibility_label": "הסתר אפשרויות מיון להזמנות מאושרות.",
+        "sort_show_options_accessibility_label": "הצג אפשרויות מיון להזמנות מאושרות.",
+        "sort_title": "מיון",
+        "sort": {
+          "date": {
+            "newest": "מהחדש לישן",
+            "oldest": "מהישן לחדש"
+          },
+          "location": {
+            "ascending": "מיקום (א' עד ת')",
+            "descending": "מיקום (מתוצאה Z ל-A)"
+          },
+          "order_number": {
+            "ascending": "מספר הזמנה (לפי סדר עולה)",
+            "descending": "מספר הזמנה (בסדר יורד)"
+          },
+          "order_total": {
+            "ascending": "סה\"כ הזמנות (בסדר עולה)",
+            "descending": "סה\"כ הזמנות (בסדר יורד)"
+          }
+        },
+        "one_images_accessibility_label": "ההזמנה כוללת {{lineItemName1}}",
+        "two_images_accessibility_label": "ההזמנה כוללת את {{lineItemName1}}, {{lineItemName2}}",
+        "three_images_accessibility_label": "ההזמנה כוללת את {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}}",
+        "four_images_accessibility_label": "ההזמנה כוללת את הפריטים: {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}}, {{lineItemName4}}",
+        "no_filtered_results_description": ".הסר או התאם את המסננים כדי לראות את ההזמנות שלך",
+        "no_filtered_results_title": "אין תוצאות מסוננות",
+        "estimated_shortform": "הערכה ביום {{date}}",
+        "payment_status": {
+          "list_view": {
+            "overdue": "באיחור",
+            "due": "מאת ה-{{date}}",
+            "due_today": "בגלל היום",
+            "paid": "שולם",
+            "due_without_date": "בשל",
+            "due_on_fulfillment": "עקב טיפול בהזמנה",
+            "pay_to_confirm": "שלם כדי לאשר",
+            "payment_not_due": "עדיין לא הייתי צריך"
+          },
+          "gallery_view": {
+            "overdue": "תשלום מאוחר",
+            "due": "התשלום נדרש עד ה-{{date}}",
+            "due_today": "תשלום נדרש היום",
+            "due_without_date": "התשלום הגיע",
+            "due_on_fulfillment": "התשלום נדרש בעת עיבוד ההזמנה",
+            "pay_to_confirm": "שלם כדי לאשר",
+            "payment_not_due": "תשלום שטרם הגיע מועדו"
+          }
+        },
+        "sort_currently_sorted_by_accessibility_label": "ממוין כרגע לפי: {{option}}",
+        "carousel": {
+          "one_products_accessibility_label": "ההזמנה כוללת {{lineItemQuantity1}} יחידות של {{lineItemName1}}",
+          "two_products_accessibility_label": "ההזמנה כוללת כמות של {{lineItemQuantity1}} {{lineItemName1}}, כמות של {{lineItemQuantity2}} {{lineItemName2}}",
+          "three_products_accessibility_label": "ההזמנה כוללת {{lineItemQuantity1}} יחידות של {{lineItemName1}}, {{lineItemQuantity2}} יחידות של {{lineItemName2}}, ו-{{lineItemQuantity3}} יחידות של {{lineItemName3}}",
+          "four_products_accessibility_label": "ההזמנה כוללת {{lineItemQuantity1}} יחידות של {{lineItemName1}}, {{lineItemQuantity2}} יחידות של {{lineItemName2}}, {{lineItemQuantity3}} יחידות של {{lineItemName3}}, {{lineItemQuantity4}} יחידות של {{lineItemName4}}",
+          "five_products_accessibility_label": "ההזמנה כוללת {{lineItemQuantity1}} יחידות של {{lineItemName1}}, {{lineItemQuantity2}} יחידות של {{lineItemName2}}, {{lineItemQuantity3}} יחידות של {{lineItemName3}}, {{lineItemQuantity4}} יחידות של {{lineItemName4}}, {{lineItemQuantity5}} יחידות של {{lineItemName5}}",
+          "six_products_accessibility_label": "ההזמנה כוללת {{lineItemQuantity1}} יחידות של {{lineItemName1}}, {{lineItemQuantity2}} יחידות של {{lineItemName2}}, {{lineItemQuantity3}} יחידות של {{lineItemName3}}, {{lineItemQuantity4}} יחידות של {{lineItemName4}}, {{lineItemQuantity5}} יחידות של {{lineItemName5}}, {{lineItemQuantity6}} יחידות של {{lineItemName6}}",
+          "six_and_more_products_accessibility_label": "ההזמנה כוללת {{lineItemQuantity1}} יחידות של {{lineItemName1}}, {{lineItemQuantity2}} יחידות של {{lineItemName2}}, {{lineItemQuantity3}} יחידות של {{lineItemName3}}, {{lineItemQuantity4}} יחידות של {{lineItemName4}}, {{lineItemQuantity5}} יחידות של {{lineItemName5}}, {{lineItemQuantity6}} יחידות של {{lineItemName6}} ועוד.",
+          "view_order_details": "הצג פרטי הזמנה",
+          "previous": "הקודם",
+          "next": "הבא"
+        },
+        "show_order_actions_accessibility_label": "הצג פעולות הזמנה עבור הזמנה {{name}}",
+        "empty_state_title_for_pending_orders": "הזמנות בהמתנה",
+        "more_than_four_products_accessibility_label": "ההזמנה כוללת את {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}} ו-{{numberOfAdditionalProducts}} מוצרים נוספים",
+        "plus_more_products": "+{{numberOfAdditionalProducts}} מוצרים נוספים",
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "הצג הזמנה כדי לראות את פרטיה",
+            "estimated_delivery": "מתוכנן ליום {{date}}",
+            "last_updated": "עודכן לאחרונה ב-{{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "צפוי למסירה ב-{{date}}"
+          }
+        },
+        "more_than_three_products_accessibility_label": "ההזמנה כוללת את הפריטים {{lineItemName1}}, {{lineItemName2}} ו-{{numberOfAdditionalProducts}} מוצרים נוספים",
+        "filter_title": "לסנן",
+        "filter": {
+          "clear_section": "מחק מקטע",
+          "clear_all": "מחק הכול",
+          "apply": "להחיל",
+          "date": {
+            "start_date": "תאריך התחלה",
+            "end_date": "תאריך סיום",
+            "title": "תאריך ההזמנה",
+            "today": "היום",
+            "last_7_days": "7 הימים האחרונים",
+            "last_30_days": "30 הימים האחרונים",
+            "last_90_days": "90 ימים אחרונים",
+            "last_365_days": "12 החודשים האחרונים",
+            "custom": "התאמה אישית"
+          }
+        }
+      }
     },
     "order_details": {
       "addresses_section_title": "חיוב ומשלוח",
@@ -3062,6 +3189,20 @@
           "invalid_code": "הכנס את הקוד בן 6 הספרות"
         }
       }
+    },
+    "account_information": {
+      "verify_new_email_modal": {
+        "verify_button_accessibility_label": "אימות סיסמה חד פעמית",
+        "cancel_button": "בטל",
+        "cancel_button_accessibility_label": "ביטול שינוי אימייל",
+        "email_resend_button_success_toast_message": "קוד אימות נשלח",
+        "email_resend_button_failure_banner_message": "אין אפשרות לשלוח קוד אימות"
+      },
+      "email_update_success_modal": {
+        "title": "בדוק אימייל",
+        "description": "האימייל עודכן בהצלחה. הפנייה להתחברות."
+      },
+      "email_update_confirmation_message": "האימייל עודכן ל-{{email}}"
     }
   }
 }
