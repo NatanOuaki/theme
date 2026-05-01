@@ -1639,6 +1639,132 @@
         "thank_you_confirmed_order_with_missing_pick_up": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
         "thank_you_confirmed_order_with_draft_payment": "אנו ניצור עמך קשר אם נזדקק למידע נוסף או כשאישור ההזמנה יתקבל.",
         "thank_you_confirmed_order_with_draft_pick_up": "אנו ניצור עמך קשר אם נזדקק למידע נוסף או כשאישור ההזמנה יתקבל."
+      },
+      "payment_errors": {
+        "payment_method_billing_address": "אירעה שגיאה בכתובת לחיוב של אמצעי התשלום שנבחר. יש לבדוק את הכתובת ולנסות שוב, או להשתמש באמצעי תשלום אחר.",
+        "processing_error_checkout_as_guest": "אירעה שגיאה בעת עיבוד התשלום שלך. אנא נסה שוב עם אמצעי תשלום אחר, או {{checkout_as_guest_link}}.",
+        "amount_too_small": "סכום התשלום המינימלי חייב להיות גבוה מ-0.50 דולר. אנא נסה שוב עם סכום גבוה יותר.",
+        "payment_above_threshold": ".סכום התשלום חורג מהמגבלה הכספית עבור אזור זה. צמצם את הסכום הכולל ונסה שוב",
+        "risky": "אירעה שגיאה בעיבוד התשלום שלך. אנא נסה שוב או השתמש באמצעי תשלום אחר.",
+        "expired_buyer_action": "אמצעי התשלום פג תוקף. אנא נסה/נסי שוב.",
+        "three_d_secure_failed_payment_method": "הכרטיס שלך לא אומת. נסה שוב או הוסף כרטיס אחר.",
+        "name_mismatch": "בדוק את פרטי הכרטיס שלך. השם הרשום בכרטיס וכתובת החיוב אינם תואמים.",
+        "payment_method_not_applicable": "אמצעי תשלום זה אינו זמין. אנא השתמש/י באמצעי תשלום אחר.",
+        "shop_pay_wallet_not_available": "Shop Pay אינו זמין עבור תשלום זה.",
+        "market_manager_blocks_wallet_payments": "אמצעי התשלום אינו נתמך במדינתך.",
+        "paypal_over_capture": ".סך ההזמנה שלך עודכן. שלם באמצעות {{walletName}} כדי להשלים את הזמנתך",
+        "test_mode_enabled_only_test_cards": "מצב בדיקה מופעל, ניתן להוסיף רק כרטיסי אשראי לבדיקה.",
+        "captcha_required": "הזן את פרטי התשלום ופתור את הקפצ'ה כדי להשלים את הרכישה.",
+        "captcha_required_without_payment_information": "אנא פתור את הקפצ'ה כדי להשלים את רכישתך.",
+        "shipping_company_required_error": "{{shopName}} דורש שם חברה עבור כתובת המשלוח.",
+        "payment_credential_delegation_error": "אירעה שגיאה בעיבוד התשלום שלך. בחר אמצעי תשלום חדש.",
+        "cancelled_payment": "התשלום שלך בוטל. נסה שוב או השתמש באמצעי תשלום אחר.",
+        "currency": {
+          "no_longer_supported": "המטבע של החנות אינו נתמך עוד."
+        },
+        "installments_payment_method_incompatible": "אמצעי התשלום שנבחר אינו ניתן לשימוש עבור תשלום במספר תשלומים. אנא בחר/י אמצעי תשלום אחר."
+      },
+      "shipping_errors": {
+        "shipping_method": "אפשרויות המשלוח עבור ההזמנה שלך השתנו. אנא סקור את בחירתך.",
+        "shipping_method_not_available": "העגלה שלך עודכנה, והפריטים שהוספת לא ניתנים למשלוח לכתובתך. אנא הסר/הסירי את הפריטים כדי להשלים את הזמנתך.",
+        "shipping_method_not_available_generic": {
+          "one": "ההזמנה שלך אינה ניתנת למשלוח לכתובת הנבחרת. ודא/י שהזנת את הכתובת הנכונה ולאחר מכן נסה/י שוב או בחר/י כתובת אחרת.",
+          "other": "חלק מהפריטים בעגלת הקניות שלך לא ניתנים למשלוח לכתובת שהזנת. ודא/י שהכתובת הוזנה כהלכה, ואז נסה/י שוב או בחר/י כתובת אחרת.",
+          "many": "חלק מהפריטים בעגלת הקניות שלך לא ניתנים למשלוח לכתובת שהזנת. ודא/י שהכתובת הוזנה כהלכה, ואז נסה/י שוב או בחר/י כתובת אחרת."
+        },
+        "shipping_method_not_available_updated": {
+          "one": "הפריט שהוספת אינו ניתן למשלוח למיקומך. אנא הסר אותו כדי שתוכל להמשיך לתשלום, או צור קשר עם החנות.",
+          "other": "לא ניתן לשלוח לפחות אחד מהפריטים שהוספת למיקומך. נא להסיר אותם כדי להמשיך לתשלום, או ליצור קשר עם החנות.",
+          "many": "לא ניתן לשלוח לפחות אחד מהפריטים שהוספת למיקומך. נא להסיר אותם כדי להמשיך לתשלום, או ליצור קשר עם החנות."
+        },
+        "payment_method_not_supported": "אינך יכול/ה להשתמש באמצעי תשלום זה עבור המדינה הבאה: %{country}. יש להשתמש באמצעי תשלום אחר כדי לשלוח את ההזמנה למדינה זו.",
+        "empty_state": "הזן את כתובת המשלוח שלך כדי לראות את אפשרויות המשלוח הזמינות.",
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "הפריטים בעגלת הקניות אינם עומדים בדרישות המחיר או המשקל כדי שניתן יהיה לשלוח אותם. אנא עדכן את עגלת הקניות שלך ונסה שוב.",
+        "title": "המשלוח אינו זמין.",
+        "invalid_selected_address": "כתובת המשלוח שנבחרה אינה חוקית",
+        "invalid_selected_address_with_update_link": "כתובת המשלוח שנבחרה אינה חוקית. %{update_address_link} או בחר כתובת אחרת",
+        "unavailable_selected_address": "המשלוח אינו זמין עבור הכתובת שנבחרה",
+        "unavailable_selected_address_for_region": "משלוח אינו זמין עבור האזור {{region}}. אנא בחר/י כתובת אחרת כדי להמשיך",
+        "unavailable_addresses_only_countries": "ההזמנה שלך ניתנת למשלוח רק למדינות הבאות: {{countriesList}}. הוסף/הוסיפי כתובת חדשה כדי להמשיך.",
+        "unavailable_address_country": "המשלוח אינו זמין במדינה שבחרת. השתמש בכתובת אחרת כדי להמשיך"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "תשלום מהיר",
+        "or": "אוֹ",
+        "show_more_options": "הצג אפשרויות נוספות",
+        "hide_more_options": "הסתר אפשרויות נוספות",
+        "or_pay_another_way": "או לשלם בדרך אחרת",
+        "or_check_out_another_way": "או לראות שיטה אחרת",
+        "or_pay_with_credit_card": "או לשלם בכרטיס אשראי"
+      },
+      "processing": {
+        "redirecting_page_title": "הפניה מחדש מתבצעת…",
+        "redirecting_title": "הפניה מחדש מתבצעת…",
+        "redirecting_notice": "אנא המתן בזמן שאנו מפנים אותך.",
+        "complete_your_purchase_title": "סיים את הרכישה שלך",
+        "continue_to_payment_gateway_notice": "המשך לתשלום כדי להזין את פרטי התשלום שלך.",
+        "continue_to_payment_gateway_button_label": "המשך לתשלום",
+        "complete_your_purchase_title_error": "תקן את פרטי התשלום שלך",
+        "continue_to_payment_gateway_notice_error": "פרטי התשלום שלך לא ניתנים לאימות.",
+        "continue_to_payment_gateway_button_label_error": "עדכן פרטי תשלום",
+        "page_title": "טיפול בהזמנה",
+        "title": "טיפול בהזמנה",
+        "your_order_has_been_received_title": "תודה על הזמנתך",
+        "you_will_receive_confirmation": "אנו מקבלים כרגע מספר רב של הזמנות. עליך לקבל אישור במייל או בהודעת טקסט בקרוב. אם לא תקבל אותו בשעה הקרובה, אנא הודע לנו על כך.",
+        "wait": {
+          "short": "הזמנתך בתהליך.",
+          "medium": {
+            "one": "הזמנתך מעובדת. זמן ההמתנה המשוער הוא %{count} דקות.",
+            "other": "הזמנתך מעובדת. זמן ההמתנה המשוער הוא %{count} דקות.",
+            "many": "הזמנתך מעובדת. זמן ההמתנה המשוער הוא %{count} דקות."
+          },
+          "long": "תקבל אימייל ברגע שההזמנה שלך תטופל. יש כרגע נפח הזמנות גדול.",
+          "no_auto_refresh_html": "אם אינך מועבר(ת) באופן אוטומטי, %{link}.",
+          "refresh_this_page": "רענן את הדף הזה"
+        },
+        "you_will_not_be_charged": "עדיין לא יחויב/ת",
+        "action_required": "פעולה נדרשת",
+        "redirecting_to_bank": "במהלך הפניה אל {{bank}}",
+        "modal_notice": "אנו יוצרים קשר עם {{paymentMethod}}",
+        "remote_shops_payments_processing": "תשלומים מעובדים",
+        "remote_checkout_count": "%{current} מתוך %{total}"
+      },
+      "failed_payment": {
+        "page_title": "התשלום לא עובד",
+        "title": "התשלום לא עובד",
+        "payment_not_processed_title": "התשלום שלך לא עובד",
+        "payment_not_processed_text": "לא חויבת. חזור לסל שלך כדי להשלים את הרכישה.",
+        "return_to_cart_button_label": "חזרה לעגלת הקניות"
+      },
+      "payment_gateway": {
+        "credit_card_label": "כרטיס אשראי",
+        "bank_deposit_label": "הפקדה בנקאית",
+        "cash_on_delivery_label": "תשלום בעת קבלת הסחורה",
+        "money_order_label": "מנדט",
+        "debit_card_label": "כרטיס חיוב",
+        "deferred_payment_label": "בחר אמצעי תשלום אחר כך",
+        "generic_payment_terms": "התנאים שלך הם {{translatedName}}. התשלום שלך יגיע ב-{{dueDate}}.",
+        "login_prompt": {
+          "no_access": {
+            "message": "היכנס/י לחשבון עם גישה למיקום זה כדי להוסיף או להשתמש באמצעי תשלום שמורים.",
+            "link": "התחבר/התחברי"
+          }
+        },
+        "direct_payment_terms": "תאריך היעד שלך הוא {{translatedName}}. כרטיסך יחויב ב-{{dueDate}}.",
+        "order_due_on_fulfillment_choose_later": "התשלום שלך יגיע לאחר עיבוד הזמנתך.",
+        "order_due_on_fulfillment_payment": "כרטיס האשראי שלך יחויב לאחר עיבוד הזמנתך.",
+        "draft_order_payment_due_later_no_terms": "התשלום יידרש לאחר אישור הזמנתך.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "כרטיסכם יחויב ברגע שהזמנתכם תאושר.",
+        "draft_order_payment_due_later_terms": "אתה תהיה כפוף לתנאים של {{translatedName}} לאחר אישור הזמנתך.",
+        "draft_order_payment_due_on_fulfillment": "התשלום יידרש לאחר אישור ההזמנה ועיבודה.",
+        "fixed_payment_label": "התשלום שלך מגיע ב-{{dueDate}}.",
+        "fixed_direct_payment_terms": "הכרטיס שלך יחויב ב-{{dueDate}}.",
+        "order_deposit_due_now": "{{depositAmount}} ישולם היום. היתרה היא בהתאם ל-{{translatedName}} ותשולם עד ה-{{dueDate}}.",
+        "order_deposit_due_on_fulfillment": "{{depositAmount}} יש לשלם היום. היתרה תשולם לאחר עיבוד ההזמנה שלך.",
+        "order_due_on_receipt_choose_later": "התשלום שלך יחול עם הקבלה.",
+        "draft_order_deposit_due_later": "{{depositAmount}} מהסכום ישולם לאחר אישור ההזמנה. היתרה תשולם ב-{{translatedName}}.",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}} מהסכום ישולמו לאחר אישור הזמנתך. היתרה תשולם לאחר עיבוד הזמנתך.",
+        "order_deposit_due_on_receipt": "{{depositAmount}} יש לשלם היום. היתרה תשולם מאוחר יותר."
       }
     }
   },
