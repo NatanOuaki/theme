@@ -2168,6 +2168,65 @@
           "unfulfilled": "לא מטופל"
         }
       }
+    },
+    "email_marketing": {
+      "open_tracking": {
+        "no_longer_track": {
+          "privacy_policy": "לאחר משלוח דוא\"ל זה, עדכנו את מדיניות הפרטיות שלנו וכבר איננו עוקבים אחר פתיחות."
+        },
+        "track": {
+          "status_html": "<b>מעקב פתיחת דוא\"ל מדווח.</b>",
+          "visibility": "נבדוק אם פתחת את המייל רק בצורה של שיעור הפתיחה הכולל שלו."
+        },
+        "updated_policy": {
+          "status_html": "<b>מעקב פתיחת דוא\"ל מדווח.</b>",
+          "visibility": "עדכנו את המדיניות שלנו, וכעת אנו עוקבים אחר פתיחת הודעות דוא\"ל. שיעורי פתיחת הדוא\"ל ידווחו בעילום שם בדו\"ח. אנו נראה אם פתחת דוא\"ל רק כחלק משיעור הפתיחה הכולל שלו.",
+          "opt_out_html": "<p dir=\"rtl\">אם אינך מעוניין לקבל מידע זה, תוכל <a style='text-decoration:underline;' href='%{link}'>לבטל את הרישום</a>.</p>"
+        }
+      },
+      "sms_unsubscribe_confirm": {
+        "message": "האם ברצונך לבטל את ההצטרפות לשיווק באמצעות SMS?",
+        "button": "לבטל את המנוי"
+      }
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "בדרך כלל מוכן תוך שעה",
+        "two_hours": "בדרך כלל מוכן תוך שעתיים",
+        "four_hours": "בדרך כלל מוכן תוך 4 שעות",
+        "twenty_four_hours": "בדרך כלל מוכן תוך 24 שעות",
+        "two_to_four_days": "בדרך כלל מוכן תוך 2–4 ימים",
+        "five_or_more_days": "בדרך כלל מוכן תוך 5 ימים או יותר",
+        "zero_to_two_hours": "בדרך כלל מוכן תוך שעתיים",
+        "two_to_four_hours": "בדרך כלל מוכן תוך 4 שעות",
+        "immediately": "מוכן לאיסוף עכשיו",
+        "next_day": "מוכן לאיסוף ביום למחרת"
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "במלאי",
+          "out_of_stock": "אזל מהמלאי"
+        }
+      },
+      "boolean": {
+        "true_label": "כן",
+        "false_label": "לא"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "רלוונטיות",
+        "price_ascending": "מחיר: נמוך עד גבוה",
+        "price_descending": "מחיר: גבוה לנמוך"
+      },
+      "error": "אירעה שגיאה בטעינת תוצאות החיפוש. נא לרענן את הדף או לנסות שוב מאוחר יותר."
+    },
+    "subscriptions": {
+      "buyer_consent_product": "פריט זה הוא רכישה חוזרת או רכישה מראש. בהמשך, אני מסכים/ה ל-%{cancellationPolicyLink} ומאשר/ת לך לחייב את אמצעי התשלום שלי במחירים, בתדירויות ובתאריכים המפורטים בדף זה עד לטיפול בהזמנה שלי או לביטולה, אם הדבר מותר.",
+      "buyer_consent_cart": "לפחות פריט אחד בעגלה שלך הוא רכישה חוזרת או רכישה עתידית. כשאמשיך, אני מסכים/ה ל-%{cancellationPolicyLink} ומאשר/ת לך לחייב את אמצעי התשלום שלי בתעריפים, בתדירות ובתאריכים המפורטים בדף זה, עד שתישלח הזמנתי או עד שאבטל אותה, אם הדבר מותר.",
+      "cancellation_policy": "מדיניות ביטול"
     }
   },
   "customer_accounts": {
@@ -3196,13 +3255,100 @@
         "cancel_button": "בטל",
         "cancel_button_accessibility_label": "ביטול שינוי אימייל",
         "email_resend_button_success_toast_message": "קוד אימות נשלח",
-        "email_resend_button_failure_banner_message": "אין אפשרות לשלוח קוד אימות"
+        "email_resend_button_failure_banner_message": "אין אפשרות לשלוח קוד אימות",
+        "title": "בדוק אימייל",
+        "description": "הזן את הקוד שנשלח אל {{email}}",
+        "one_time_password_label": "קוד בן שש ספרות",
+        "email_resend_button": "שלח קוד שוב",
+        "email_resend_button_accessibility_label": "שלח שוב את קוד האימות",
+        "verify_button": "לאמת"
       },
       "email_update_success_modal": {
         "title": "בדוק אימייל",
         "description": "האימייל עודכן בהצלחה. הפנייה להתחברות."
       },
-      "email_update_confirmation_message": "האימייל עודכן ל-{{email}}"
+      "email_update_confirmation_message": "האימייל עודכן ל-{{email}}",
+      "loading_accessibility_message": "פרטי החשבון נטענים",
+      "loading_finished_accessibility_message": "פרטי החשבון נטענו",
+      "profile_card": {
+        "cancel": "בטל",
+        "cancel_accessibility_label": "בטל עריכת פרופיל",
+        "edit": "שנה",
+        "edit_accessibility_label": "ערוך פרופיל",
+        "email_help_text": "לא ניתן לערוך את המייל",
+        "first_name": "שם פרטי",
+        "last_name": "שם",
+        "phone_number_help_text": "לא ניתן לשנות את מספר הטלפון",
+        "save": "שמור",
+        "save_accessibility_label": "שמור פרופיל",
+        "title": "פרופיל",
+        "no_name_provided_accessibility_label": "לא נוספו שמות",
+        "email": "דואר אלקטרוני",
+        "errors": {
+          "name_too_long": "{{fieldName}} ארוך מדי (האורך המרבי הוא 255 תווים)",
+          "name_cannot_contain_url": "{{fieldName}} לא יכול להכיל כתובת אתר",
+          "name_cannot_contain_html_tags": "{{fieldName}} אינו יכול להכיל תגי HTML",
+          "email_cant_be_blank": "הדוא\"ל אינו יכול להיות ריק",
+          "invalid_email_format": "הזן כתובת דוא\"ל חוקית"
+        },
+        "editable_email_help_text": "כתובת דוא\"ל זו משמשת לכניסה ולעדכוני הזמנות."
+      },
+      "profile_update_confirmation_message": "הפרופיל עודכן",
+      "title": "פרופיל",
+      "people": {
+        "pagination": {
+          "load_more": "טען עוד",
+          "load_more_accessibility_label": "טען אנשים נוספים",
+          "loading_accessibility_label": "טוען אנשים"
+        }
+      },
+      "add_button": "הוספה"
+    },
+    "callback": {
+      "try_again": "נסה שוב"
+    },
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "הסתר תפריט חשבון",
+        "show_accessibility_label": "הצגת תפריט החשבון",
+        "nav_accessibility_label": "ניווט בחשבון",
+        "open_menu_accessibility_label": "פתח את ניווט החשבון",
+        "close_menu_accessibility_label": "סגור את ניווט החשבון",
+        "loading_message": "טעינת ניווט חשבון"
+      },
+      "action_menu_accessibility_label": "פעולות נוספות",
+      "close_menu_accessibility_label": "סגור תפריט ראשי",
+      "contact_email_subject": "פרטי יצירת קשר של החנות המקוונת {{shopName}}",
+      "contact_link": "פרטי התקשרות",
+      "delete_confirmation": {
+        "cancel": "בטל",
+        "delete": "מחק"
+      },
+      "dismiss_toast": "התעלם",
+      "document_title": "{{sectionName}} – {{shopName}} – חשבון",
+      "loading_message": "טוען",
+      "log_out_link": "התנתק",
+      "logout_overlay_label": "מתנתק...",
+      "nav_label_accessibility_label": "תפריט ראשי",
+      "navigation_accessibility_message": "נכנסת אל {{sectionName}}",
+      "open_menu_accessibility_label": "פתיחת התפריט הראשי",
+      "shop_logo_accessibility_label": "לוגו {{shopName}}",
+      "settings_link": "הגדרות",
+      "country_switcher_toast_message": "שינוי מדינה בוצע: {{countryName}}",
+      "switch_country": "שנה מדינה",
+      "search": "חיפוש",
+      "location_switcher_toast_message": "מיקום שהועבר ל-{{locationName}}",
+      "switch_location": "שינוי מיקום",
+      "view_details": "ראה פרטים",
+      "company_location": "מיקום החברה",
+      "no_countries_found": "לא נמצאה מדינה",
+      "no_locations_found": "לא נמצאו מיקומים",
+      "try_new_search": "נסה חיפוש חדש",
+      "skip_to_content": "דלג לתוכן",
+      "loading_policy_content_accessibility_label": "טוען תוכן מדיניות",
+      "policy_load_error": "לא ניתן לטעון את {{policyName}}",
+      "policy_try_again": "נסה שוב",
+      "loading_section_accessibility_label": "טוען את המקטע {{sectionName}}"
     }
   }
 }
