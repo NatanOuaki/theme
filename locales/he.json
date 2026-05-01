@@ -1309,7 +1309,8 @@
         "credit_card_start_year": "שנת הנפקה",
         "card_expiration_month_label": "חודש תפוגה",
         "bank_account_type": {
-          "savings": "חיסכון"
+          "savings": "חיסכון",
+          "checking": "בבדיקה"
         },
         "bank_account_choose": "בחר חשבון כדי להשלים את רכישתך בצורה מאובטחת",
         "bank_account_connect_another": "חבר חשבון בנק אחר",
@@ -1360,7 +1361,136 @@
           "other": "%אתרים קודים של הנחה הוסרו או שונו",
           "many": "%אתרים קודים של הנחה הוסרו או שונו"
         },
-        "multiple_primary_payment_not_allowed": "אמצעי תשלום לא תקפים"
+        "multiple_primary_payment_not_allowed": "אמצעי תשלום לא תקפים",
+        "gift_card_wrapper": {
+          "heading": "כרטיס מתנה",
+          "apply_gift_card_label": "מימוש כרטיס מתנה",
+          "payment_tag": "כרטיס מתנה",
+          "apply_another_gift_card_label": "החל כרטיס מתנה נוסף",
+          "gift_card_label": "גיפט קארד %{identifier}",
+          "add_label": "הוסף כרטיס מתנה",
+          "manage_label": "ניהול כרטיסי מתנה"
+        },
+        "custom_onsite_payment_method_modal": {
+          "title": "אישור תשלום מותאם אישית באתר"
+        },
+        "markets_pro_disclaimer_label": "בביצוע ההזמנה, אתם מסכימים לרכוש מ-Global-e כמוכר הרישום, בהתאם ל-%{markets_pro_terms} ול-%{privacy_policy} של Global-e, ולשתף את המידע שלכם עם %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "תנאי שימוש כלליים",
+        "markets_pro_disclaimer_privacy_policy": "מדיניות פרטיות",
+        "markets_pro_disclaimer_terms_and_conditions_title": "תנאי שימוש למוכר מורשה",
+        "markets_pro_disclaimer_privacy_policy_title": "מדיניות פרטיות של המוכר הרשום",
+        "purchase_order_number": {
+          "title": "מספר הזמנת רכש",
+          "label": "מספר הזמנת רכש (אופציונלי)"
+        },
+        "alternative_payment_currency_total_notice": "שים לב/שימי לב: יחויב/תחויב בסכום של %{amount_due}.",
+        "waiting_on_taxes_message": "אם המיסים שלך לא יחושבו בשניות הקרובות, רענן/י את הדף.",
+        "waiting_on_taxes_notice": "חישוב מסים",
+        "order_edit_banner_single_item_returned": "הזמנה הוחזרה",
+        "order_edit_banner_multiple_items_returned": "{{amount}} הוחזרו",
+        "shop_pay_installments_label": "תשלום בתשלומים עם Shop Pay",
+        "add_credit_card_modal": {
+          "title": "הוסף כרטיס",
+          "cancel": "בטל",
+          "save": "שמור"
+        },
+        "delete_credit_card_modal": {
+          "title": "מחק כרטיס",
+          "confirmation": "האם למחוק את {{brandName}} שמסתיים ב-{{lastDigits}}?",
+          "cancel": "בטל",
+          "delete": "מחק"
+        },
+        "order_edit_banner_items_added": {
+          "one": "נוסף",
+          "other": "%‏{count} נוספו",
+          "many": "%‏{count} נוספו"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "הוסר",
+          "with_quantities": "{{delta}} מתוך {{quantity}} הוסר/ו"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "{{quantity}} הוחזרו",
+          "with_quantities": "{{delta}} מתוך {{quantity}} הוחזרו"
+        },
+        "saved_credit_card_actions": {
+          "edit": "שנה",
+          "delete": "מחק"
+        },
+        "edit_credit_card_modal": {
+          "title": "ערוך מפה",
+          "done": "לסיים",
+          "cancel": "בטל",
+          "description": "ניתן לשנות רק את כתובת החיוב של כרטיסכם.",
+          "fields": {
+            "default": "הגדר כברירת מחדל",
+            "card_number": "מספר כרטיס",
+            "expiry": "תאריך תפוגה",
+            "security_code": "קוד אבטחה",
+            "name": "שם על הכרטיס",
+            "billing": "לחייב את"
+          }
+        },
+        "payment_method": "אמצעי תשלום",
+        "expired_payment_method": "אמצעי התשלום שנבחר פג תוקף",
+        "subscription_heading": "הסכם מנוי",
+        "use_order_billing_address_label": "השתמש בכתובת החיוב של ההזמנה",
+        "use_location_billing_address_label": "השתמש בכתובת החיוב של המיקום",
+        "use_location_shipping_address_label": "השתמש בכתובת המשלוח של המיקום",
+        "purchase_options_agreement_label_wallets": "בהמשך התשלום, אתם מסכימים לתשלומים העתידיים המפורטים בדף זה ולמדיניות הביטולים.",
+        "gift_card_store_credit": {
+          "add_label": "הוספת כרטיס מתנה או זיכוי לחנות",
+          "manage_label": "ניהול כרטיסי מתנה או זיכויים בחנות"
+        },
+        "saved_credit_card_cvv_verification": "מטעמי אימות, יש להזין את קוד האבטחה של הכרטיס שלך.",
+        "order_edit_banner_updated_order_label": "הזמנה מעודכנת",
+        "afterpay_label": "אפטרפיי",
+        "cashapppay_label": "תשלום ב-Cash App",
+        "card_nickname_label": "כינוי (אופציונלי)",
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "הוסר מההחזרות",
+          "with_quantities": "מחיקת {{delta}} מההחזרה"
+        },
+        "order_edit_banner_single_item_return_line_item_removed": "הוסר מההחזרות",
+        "order_edit_banner_multiple_items_return_line_item_removed": "מחיקת {{amount}} מההחזר",
+        "proposed_gateway_unavailable": "שער התשלום המוצע אינו זמין",
+        "pay_in_installments_split_pay_short": "4 תשלומים של %{amount}",
+        "payment_method_not_available_for_shipping_address_error": "אמצעי התשלום אינו זמין עבור כתובת המשלוח שנבחרה. אנא בחר אמצעי תשלום אחר.",
+        "shop_pay_ideal_unavailable_error": "iDEAL | Wero אינה זמינה עבור הזמנה זו. בחר אמצעי תשלום אחר.",
+        "paypal_disconnect": "התנתק",
+        "paypal_wallet_label": "ארנק PayPal",
+        "payment_method_update_failed": "עדכון אמצעי התשלום נכשל.",
+        "alternative_payment_currency_total_manual_payment_notice": "הערה: הסכום הכולל שהומר הוא %{amount_due}.",
+        "gift_cards_unavailable": "הכרטיס שלך לא ניתן למימוש בהזמנה זו והוסר",
+        "network_card_payment_options": "בחירת רשת כרטיסים",
+        "payment_flexibility_terms_id_mismatch": "אי-התאמה של מזהה תנאי גמישות תשלום",
+        "offsite_gateway_review_page_redirect_hint": "לאחר בדיקת ההזמנה, תועבר/י אל %{gateway_label} כדי לסיים את הרכישה.",
+        "przelewy24_label": "פשליבי 24",
+        "twint_label": "טווינט",
+        "gift_card_checkbox_label": "מימוש כרטיס מתנה",
+        "blik_label": "בליק",
+        "simulated_express_checkout": "ארנקים אינם זמינים בתצוגה מקדימה של העורך עקב האזור או הדפדפן שלך",
+        "vipps_label": "וויפס",
+        "grabpay_label": "גראבפיי",
+        "kcp_creditcard_label": "כרטיס אשראי KCP",
+        "offsite_gateway_redirect_hint_no_button_label": "תנותבו אל %{gateway_label} להשלמת הרכישה.",
+        "swish_label": "שוויש",
+        "network_card_persistence_description": "הרשת שנבחרה תישמר עם אמצעי התשלום שלך לעסקאות עתידיות.",
+        "payment_method_incompatible_with_payment_terms": "אמצעי התשלום אינו תואם את תנאי התשלום.",
+        "payment_option": {
+          "accessibility_label": "בחר אמצעי תשלום"
+        },
+        "billing_address_rollup_accessibility_label": "אפשרויות כתובת לחיוב",
+        "payment_method_rollup_accessibility_label": "אפשרויות אמצעי תשלום",
+        "crypto_modal": {
+          "header": "שלם %{total_price} USDC ל- %{shop_name}",
+          "error": {
+            "refresh": "לרענן",
+            "close": "לסגור",
+            "sandbox_error": "אירעה שגיאה",
+            "web_component_error": "אירעה שגיאה בטעינת דף זה"
+          }
+        }
       },
       "contact": {
         "title": "פרטים",
