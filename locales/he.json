@@ -3146,6 +3146,10 @@
         "ineligible_return_message": "אף פריט בהזמנה זו אינו זכאי להחזרה.",
         "ineligible_return_message_when_returned": "פריטים אחרים בהזמנה זו אינם זכאים להחזרה.",
         "exchange_header": "פריטי מסחר"
+      },
+      "discount_order_stacking": {
+        "other": "הנחות על הזמנות",
+        "many": "הנחות על הזמנות"
       }
     },
     "payment_methods": {
@@ -3512,7 +3516,19 @@
         "search_location_title": "בחר מיקום",
         "selection_continue_button": "המשך",
         "description_switch_later": "תמיד תוכלו לשנות זאת מאוחר יותר",
-        "title_choose_location": "בחירת מיקום"
+        "title_choose_location": "בחירת מיקום",
+        "description": "אם עגלת הקניות שלך כבר מכילה פריטים, שינוי מיקום עלול להשפיע על המחירים והכמויות שלהם.",
+        "list_accessibility_label": "רשימת מיקומים",
+        "list_item_without_address_accessibility_label": "{{name}}: אין כתובת",
+        "list_loading_accessibility_message": "טוען רשימת מיקומים",
+        "list_loading_address_accessibility_message": "כתובת של {{locationName}} בטעינה",
+        "list_loading_finished_accessibility_message": "רשימת המיקומים נטענה",
+        "loading_store_accessibility_message": "גישה לחנות",
+        "selection_cancel_button": "בטל",
+        "selection_confirmation_button": "בחרו מיקום",
+        "title": "עבור איזה מיקום אתה רוכש?",
+        "continue_to_store": "המשך לחנות",
+        "no_location_title": "הזמנות אישיות בלבד"
       },
       "addresses": {
         "add_billing_address_button": "הוסף כתובת לחיוב",
@@ -3673,6 +3689,42 @@
         "modal_po_number_input_max_length_error": "מספרי הזמנות רכש הם בני {{maxLength}} תווים לכל היותר.",
         "save": "שמור",
         "title": "הזמנת רכש מס' {{poNumber}}"
+      },
+      "account_information": {
+        "company_card_name_label": "שם החברה",
+        "company_card_section_accessibility_label": "חברה"
+      },
+      "locations": {
+        "contact_email": "דואר אלקטרוני",
+        "contact_list_title": "אנשים",
+        "contact_name": "שם",
+        "contact_permissions": "הרשאות",
+        "contact_phone_number": "מספר טלפון",
+        "location_picker_label": "שם המיקום",
+        "net_payment_terms_description": "{{name}}: תשלום נדרש בתוך {{numberOfDays}} ימים",
+        "payment_details_title": "פרטי תשלום",
+        "payment_terms": "תנאי תשלום",
+        "permissions_label": "הרשאותיך",
+        "permissions_title": "הרשאות",
+        "section_title": "מיקום",
+        "shipping_address_required": "הוסף/י כתובת למשלוח למיקום זה כדי להתחיל לבצע הזמנות.",
+        "tax_details_title": "פרטי מס",
+        "tax_id": "מספר זיהוי מס",
+        "tax_exemptions": "פטורים ממס",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} אחרים",
+        "multiple_tax_exemptions_and": "וכן",
+        "tax_exemptions_modal_close": "סגור",
+        "taxes_none": "אף אחד",
+        "tax_exemption_not_applicable": "מישהו/י",
+        "tax_exemptions_modal_button_accessibility_label": "הצג את כל הפטורים ממס",
+        "pagination": {
+          "load_more": "טען עוד",
+          "load_more_accessibility_label": "טען עוד משרות"
+        },
+        "own_role_contact_name": "אתה",
+        "staff_and_permissions_title": "צוות והרשאות",
+        "location_picker_accessibility_label": "שם המיקום: {{locationName}}",
+        "deposit_percentage": "{{percentage}} מקדמה"
       }
     },
     "profile_preview_bar": {
@@ -4008,6 +4060,72 @@
       "policy_load_error": "לא ניתן לטעון את {{policyName}}",
       "policy_try_again": "נסה שוב",
       "loading_section_accessibility_label": "טוען את המקטע {{sectionName}}"
+    },
+    "addresses": {
+      "add_button": "הוספת כתובת",
+      "address_deleted_notification": "הכתובת נמחקה",
+      "cancel_adding_address_accessibility_label": "בטל הוספת כתובת",
+      "cancel_deletion_button": "בטל",
+      "cancel_deletion_button_accessibility_label": "לבטל את מחיקת {{address}}",
+      "default_address": {
+        "title": "כתובת ברירת מחדל",
+        "title_accessibility_label": "כתובת ברירת מחדל: {{address}}"
+      },
+      "delete_button": "מחק",
+      "delete_button_accessibility_label": "מחק את {{address}}",
+      "delete_confirmation_button": "מחק כתובת",
+      "delete_confirmation_button_accessibility_label": "מחק את {{address}}",
+      "delete_confirmation_message": "למחוק את הכתובת? הזמנות שבוצעו כבר לא יושפעו.",
+      "edit_button": "שנה",
+      "edit_button_accessibility_label": "שנה את {{address}}",
+      "edit_section_accessibility_label": "שנה את {{address}}",
+      "loading_accessibility_message": "הכתובת נטענת",
+      "loading_addresses_accessibility_message": "כתובות נטענות",
+      "loading_billing_accessibility_message": "כתובת החיוב נטענת",
+      "loading_finished_accessibility_message": "עמוד הכתובות החדש נטען",
+      "loading_shipping_accessibility_message": "כתובת המשלוח בטעינה",
+      "pagination": {
+        "load_more": "טען עוד",
+        "load_more_accessibility_label": "טען כתובות נוספות"
+      },
+      "save_new_address_accessibility_label": "שמור כתובת",
+      "title": "כתובות",
+      "delete_confirmation_title": "למחוק את הכתובת?",
+      "delete_confirmation_description": "ההזמנות שכבר בוצעו לא יושפעו.",
+      "edit_modal_title": {
+        "default": "שינוי כתובת",
+        "billing": "שינוי כתובת לחיוב",
+        "shipping": "שינוי כתובת למשלוח"
+      },
+      "add_address_banner": "הוספת כתובות לשימוש בקופה",
+      "billing_address_dropdown_placeholder": "כתובת לחיוב",
+      "add_button_text": "הוספה",
+      "add_button_accessibility_label": "הוספת כתובת",
+      "back_button": "חזרה",
+      "back_button_accessibility_label": "חזרה לעריכת כתובת {{address}}",
+      "no_addresses_banner": "לא נוספה כתובת"
+    },
+    "address_form": {
+      "auto_complete_close_accessibility_label": "סגור הצעות",
+      "auto_complete_title": "הצעות",
+      "billing_address": "השתמש ככתובת חיוב",
+      "cancel": "בטל",
+      "cancel_accessibility_label": "בטל את השינוי של הכתובת {{address}}",
+      "creation_success_notification": "הכתובת נוספה",
+      "default_address": "זו כתובת ברירת המחדל שלי",
+      "default_address_creation_success_notification": "כתובת ברירת המחדל נוספה",
+      "default_address_update_success_notification": "כתובת ברירת המחדל עודכנה",
+      "loading_add_form_accessibility_message": "טופס כתובת חדשה נטען",
+      "loading_edit_form_accessibility_message": "טופס שינוי כתובת נטען",
+      "loading_finished_accessibility_message": "טופס הכתובת נטען",
+      "save": "שמור",
+      "save_accessibility_label": "שמור כתובת {{address}}",
+      "section_title_accessibility_label": "הוספת כתובת",
+      "update_success_notification": "כתובת מעודכנת",
+      "attention": "לכבוד",
+      "attention_help_text": "שם אדם או שירות",
+      "loading_form_accessibility_message": "טופס הכתובת נטען",
+      "attention_company": "חברה/לכבוד"
     }
   }
 }
