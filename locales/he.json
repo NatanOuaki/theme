@@ -1638,7 +1638,113 @@
         "thank_you_confirmed_order_with_missing_payment": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
         "thank_you_confirmed_order_with_missing_pick_up": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
         "thank_you_confirmed_order_with_draft_payment": "אנו ניצור עמך קשר אם נזדקק למידע נוסף או כשאישור ההזמנה יתקבל.",
-        "thank_you_confirmed_order_with_draft_pick_up": "אנו ניצור עמך קשר אם נזדקק למידע נוסף או כשאישור ההזמנה יתקבל."
+        "thank_you_confirmed_order_with_draft_pick_up": "אנו ניצור עמך קשר אם נזדקק למידע נוסף או כשאישור ההזמנה יתקבל.",
+        "thank_you_payments_app_failed_pending_payment_payment": "ההזמנה שלך לא חויבה. אנא חזור/חזרי לסל הקניות שלך כדי לבדוק את ההזמנה ולהמשיך שוב לתשלום.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "ההזמנה שלך לא חויבה. אנא חזור/חזרי לסל הקניות שלך כדי לבדוק את ההזמנה ולהמשיך שוב לתשלום.",
+        "order_status_payments_app_pending_payment_description_default_with_missing": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "order_status_payments_app_pending_payment_description_default_with_missing_payment": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "order_status_payments_app_pending_payment_description_default_with_missing_pick_up": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone_payment": "בקרוב תקבל אישור במייל. עקוב אחר ההזמנה שלך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "בקרוב תקבל אישור במייל. עקוב אחר ההזמנה שלך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email_payment": "בקרוב תקבל אישור במייל. עקוב אחר ההזמנה שלך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email_pick_up": "בקרוב תקבל אישור במייל. עקוב אחר ההזמנה שלך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_phone_payment": "בזמן הקרוב תקבלו אישור ב-SMS. עקבו אחר ההזמנה באפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_phone_pick_up": "בזמן הקרוב תקבלו אישור ב-SMS. עקבו אחר ההזמנה באפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "לאחר השלמת התשלום, תקבל אישור במייל. עקוב/עקבי אחר הזמנתך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "לאחר השלמת התשלום, תקבל אישור במייל. עקוב/עקבי אחר הזמנתך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "לאחר השלמת התשלום, תקבל אישור במייל. עקוב/עקבי אחר הזמנתך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "לאחר השלמת התשלום, תקבל אישור במייל. עקוב/עקבי אחר הזמנתך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "לאחר השלמת התשלום, תקבל אישור במייל. עקוב/עקבי אחר הזמנתך באמצעות אפליקציית Shop.",
+        "order_status_payments_app_failed_pending_payment_payment": "ההזמנה שלך לא חויבה. אנא חזור/חזרי לסל הקניות שלך כדי לבדוק את ההזמנה ולהמשיך שוב לתשלום.",
+        "order_status_payments_app_failed_pending_payment_pick_up": "ההזמנה שלך לא חויבה. אנא חזור/חזרי לסל הקניות שלך כדי לבדוק את ההזמנה ולהמשיך שוב לתשלום.",
+        "order_status_confirmed_order_local_pick_up": "אנחנו מכינים כרגע את הזמנתך.",
+        "order_status_confirmed_order_local_payment": "אנחנו מכינים כרגע את הזמנתך.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "תקבל בקרוב הודעת אימייל עם אישור ההזמנה ומספר ההזמנה שלך.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "תקבל בקרוב הודעת אימייל עם אישור ההזמנה ומספר ההזמנה שלך.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "תקבל בקרוב הודעת אימייל עם אישור ההזמנה ומספר ההזמנה שלך.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "תקבל בקרוב הודעת אימייל עם אישור ההזמנה ומספר ההזמנה שלך.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "תקבל בקרוב הודעת אימייל עם אישור ההזמנה ומספר ההזמנה שלך.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "תקבל בקרוב הודעת אימייל עם אישור ההזמנה ומספר ההזמנה שלך.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "בתוך זמן קצר תקבלו הודעת SMS לאישור ובה מספר ההזמנה שלכם.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "בתוך זמן קצר תקבלו הודעת SMS לאישור ובה מספר ההזמנה שלכם.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "בתוך זמן קצר תקבלו הודעת SMS לאישור ובה מספר ההזמנה שלכם.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "צרו עמנו קשר בדוא\"ל או בטלפון לקבלת אישור הזמנה.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "לאחר השלמת התשלום, תישלח אליך הודעת דוא\"ל לאישור ההזמנה, הכוללת את מספר ההזמנה.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "לאחר השלמת התשלום, תישלח אליך הודעת דוא\"ל לאישור ההזמנה, הכוללת את מספר ההזמנה.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "לאחר השלמת התשלום, תישלח אליך הודעת דוא\"ל לאישור ההזמנה, הכוללת את מספר ההזמנה.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email": "לאחר השלמת התשלום, תישלח אליך הודעת דוא\"ל לאישור ההזמנה, הכוללת את מספר ההזמנה.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "לאחר השלמת התשלום, תישלח אליך הודעת דוא\"ל לאישור ההזמנה, הכוללת את מספר ההזמנה.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "לאחר השלמת התשלום, תישלח אליך הודעת דוא\"ל לאישור ההזמנה, הכוללת את מספר ההזמנה.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "לאחר השלמת התשלום, תישלח אליכם הודעת SMS עם מספר ההזמנה שלכם.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "לאחר השלמת התשלום, תישלח אליכם הודעת SMS עם מספר ההזמנה שלכם.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "לאחר השלמת התשלום, תישלח אליכם הודעת SMS עם מספר ההזמנה שלכם.",
+        "vat_invoices": {
+          "title": "חשבוניות מע\"מ"
+        },
+        "thank_you_payments_app_pending_payment_description_provider_action_required_default": "התשלום שלך נמצא בתהליך. תקבל אימייל כשהתשלום יאושר.",
+        "verify_shop_account_title": "אמת את חשבונך ב-Shop",
+        "verify_shop_account_message": "הפרטים שלך נשמרו ב-Shop, אשר/י את חשבונך כדי שתוכל/י להשתמש בהם באופן אוטומטי במיליוני חנויות.",
+        "verify_shop_account_cta": "אמת את חשבונך",
+        "verify_shop_account_confirmation": "פרטי תשלום שמורים",
+        "company_location_section_title": "חברה ומיקום",
+        "announcement": {
+          "close": "סגור",
+          "expand": "לפתח",
+          "collapse": "לצמצם"
+        },
+        "confirmed_items_count": "%{confirmed_count} מתוך %{total_count} פריטים אושרו",
+        "thank_you_confirmed_orders_with_email": "בקרוב תקבלו הודעות אימייל נפרדות לאישור עם מספרי ההזמנה שלכם",
+        "thank_you_confirmed_orders_with_phone": "בקרוב תקבל/י הודעות אישור SMS נפרדות ובהן מספרי ההזמנה שלך",
+        "thank_you_confirmed_orders_with_email_and_phone": "בקרוב תקבלו הודעות אימייל נפרדות לאישור עם מספרי ההזמנה שלכם",
+        "track_your_order_link_text": "מעקב אחר הזמנתך",
+        "checkout_on_remote_shop_link_text": "שלם ב-‏%{remoteShopName}",
+        "confirmed_orders_title": "ההזמנות שלך אושרו",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "פריט אחד לא אושר",
+          "other": "חלק מהמאמרים אינם מאושרים",
+          "many": "חלק מהמאמרים אינם מאושרים"
+        },
+        "thank_you_unconfirmed_items_description": {
+          "one": "לא חויבת עבור זה/זו",
+          "other": "לא חויבת בגין אלו",
+          "many": "לא חויבת בגין אלו"
+        },
+        "thank_you_from_shop": "מאת %{shop_name}",
+        "thank_you_item_label": {
+          "one": "%{count} פריטים",
+          "other": "%{count} כתבות",
+          "many": "%{count} כתבות"
+        },
+        "payment_method_not_charged": "לא מחויב",
+        "items_fulfilled_by_store": {
+          "one": "הפריטים שרכשת יישלחו על ידי %{remote_shop_name}.",
+          "other": "הפריטים שרכשת יישלחו מחנויות אחרות.",
+          "many": "הפריטים שרכשת יישלחו מחנויות אחרות."
+        },
+        "thank_you_from_other_store": "מגיע מחנות אחרת",
+        "checkout_on_another_store": "שלם בחנות אחרת",
+        "thank_you_confirmed_with_email_description": {
+          "single_store": "במהלך הימים הקרובים יישלח אליך דוא\"ל אישור",
+          "multi_store": "תקבל בקרוב הודעות אימייל נפרדות לאישור מכל חנות"
+        },
+        "thank_you_confirmed_with_phone_description": {
+          "single_store": "תקבל בקרוב הודעת אישור ב-SMS",
+          "multi_store": "תקבלו בקרוב הודעות SMS נפרדות לאישור מכל חנות"
+        },
+        "thank_you_confirmed_with_email_and_phone_description": {
+          "single_store": "במהלך הימים הקרובים יישלח אליך דוא\"ל אישור",
+          "multi_store": "תקבל בקרוב הודעות אימייל נפרדות לאישור מכל חנות"
+        },
+        "checkout_again": "תשלום חוזר",
+        "cashback_notice": "תקבל את הקאשבק שלך לאחר 30 יום"
       },
       "payment_errors": {
         "payment_method_billing_address": "אירעה שגיאה בכתובת לחיוב של אמצעי התשלום שנבחר. יש לבדוק את הכתובת ולנסות שוב, או להשתמש באמצעי תשלום אחר.",
@@ -1909,6 +2015,22 @@
       },
       "company_location": {
         "location_title": "מיקום החברה"
+      },
+      "review": {
+        "title": "אישור",
+        "review_title": "סיים את הזמנתך",
+        "checkout_as_guest": "תשלום כאורח/ת",
+        "blocks": {
+          "contact_method_title": "איש קשר",
+          "billing_address_title": "חיוב",
+          "shipping_address_title": "לשלוח ל",
+          "shipping_method_title": "אמצעי משלוח",
+          "payment_method_title": "אמצעי תשלום",
+          "change_link_label": "שנה",
+          "change_contact_method_link_label": "עריכת פרטי יצירת קשר",
+          "change_billing_address_link_label": "שינוי כתובת לחיוב",
+          "change_shipping_address_link_label": "שנה כתובת למשלוח"
+        }
       }
     },
     "collections": {
@@ -2813,7 +2935,21 @@
       "signed_in_state": {
         "greeting_with_name": "שלום, {{first_name}}",
         "greeting_without_name": "חשבון",
-        "orders_button": "הזמנות"
+        "orders_button": "הזמנות",
+        "profile_button": "פרופיל"
+      },
+      "location_picker": {
+        "sheet_title": "מיקומים",
+        "search_field_placeholder": "חיפוש"
+      },
+      "aria_labels": {
+        "close_menu": "סגור תפריט",
+        "back_to_main_menu": "חזרה לתפריט הראשי מתוך {{title}}",
+        "open_submenu": "{{title}}, פתח את תפריט המשנה",
+        "loading_menu": "טוען תפריט",
+        "account": "חשבון",
+        "sign_in_with_email": "התחבר באמצעות דוא\"ל",
+        "sign_in": "התחבר"
       }
     },
     "errors": {
@@ -2882,6 +3018,50 @@
       "not_upgraded": "חשבונות הלקוחות לא משודרגים.",
       "failed_to_revert": "שחזור הגדרות חשבון הלקוח נכשל.",
       "revert_window_expired": "חלון השחזור פג תוקפו."
+    },
+    "intents": {
+      "subscription_replace_payment_method": {
+        "card_number": "מספר כרטיס",
+        "title": "החלף אמצעי תשלום",
+        "replace_with": "החלף ב-",
+        "add_new_payment_method": "הוספה חדשה",
+        "save_button": "שמור",
+        "close_button": "סגור",
+        "loading": "טוען חלון מודאלי להחלפת אמצעי תשלום",
+        "success": "אמצעי התשלום עודכן",
+        "invalid_subscription_contract": "אין אפשרות למצוא את המנוי",
+        "expiry_date": "תוקף: {{expiryDate}}",
+        "edit_current_payment_method": "שינוי אמצעי התשלום הנוכחי",
+        "edit_selected_payment_method": "שינוי אמצעי התשלום שנבחר"
+      }
+    },
+    "sign_in": {
+      "brand_logo_alt_text": "לוגו של %{shop_name}",
+      "processing": "בתהליך…",
+      "step_one": {
+        "page_title": "התחבר - %{shop_name}",
+        "heading": "התחבר",
+        "subheading": "הזן את כתובת הדוא\"ל שלך ואנו נשלח לך קוד אימות",
+        "subheading_with_sign_in_options": "התחבר או צור חשבון",
+        "input_field_label": "כתובת דוא\"ל",
+        "button": "המשך",
+        "or": "או",
+        "consent_agreement": "בהמשך השימוש, הינך מסכים/ה ל %{terms}"
+      },
+      "step_two": {
+        "page_title": "הזן את הקוד - %{shop_name}",
+        "heading": "הזן את הקוד",
+        "subheading": "נשלח אל %{email}",
+        "restart_link": "התחבר באמצעות כתובת אימייל אחרת",
+        "input_field_label": "קוד בן שש ספרות",
+        "button": "שלח"
+      },
+      "error": {
+        "invalid": {
+          "invalid_email": "הזן כתובת דוא\"ל חוקית",
+          "invalid_code": "הכנס את הקוד בן 6 הספרות"
+        }
+      }
     }
   }
 }
