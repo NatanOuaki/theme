@@ -9187,3 +9187,20 @@ featured-collections-carousel {
     flex-direction: column;
   }
 }
+
+
+.mobile-language-switcher {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mobile-language-switcher select {
+  width: 100%;
+  background: transparent;
+  border: 1px solid currentColor;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: inherit;
+}
