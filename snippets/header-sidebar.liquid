@@ -70,6 +70,21 @@
             {%- endif -%}
           </li>
         {%- endfor -%}
+
+        <li class="mobile-language-switcher">
+  <label for="mobile-language-select" class="header-sidebar__linklist-button h6">
+    Langue
+  </label>
+
+  <select id="mobile-language-select" onchange="window.location.href=this.value">
+    <option value="/" {% if request.locale.iso_code == 'fr' %}selected{% endif %}>
+      Français
+    </option>
+    <option value="/he" {% if request.locale.iso_code == 'he' %}selected{% endif %}>
+      עברית
+    </option>
+  </select>
+</li>
       </ul>
     </div>
 
