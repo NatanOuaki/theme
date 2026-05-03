@@ -3159,6 +3159,9 @@ onSectionRerender_fn = function(event) {
  * When the variant changes, we check the alt tags for each media and filter them
  */
 onVariantChange_fn = function(event) {
+  console.log("VARIANT CHANGE", event.detail.variant);
+  console.log("FEATURED MEDIA", event.detail.variant?.featured_media);
+
   if (!event.detail.variant || !event.detail.variant["featured_media"]) {
     return;
   }
