@@ -3159,27 +3159,39 @@ onSectionRerender_fn = function(event) {
  * When the variant changes, we check the alt tags for each media and filter them
  */
 onVariantChange_fn = function(event) {
-  console.log("VARIANT CHANGE", event.detail.variant);
-  console.log("FEATURED MEDIA", event.detail.variant?.featured_media);
+  const variant = event.detail.variant;
 
-  if (!event.detail.variant || !event.detail.variant["featured_media"]) {
+  if (!variant || !variant.featured_media) {
     return;
   }
 
-  const mediaId = event.detail.variant["featured_media"]["id"];
+  const mediaId = variant.featured_media.id;
   const mediaElement = this.querySelector(`[data-media-id="${mediaId}"]`);
 
-  if (!mediaElement) {
-    return;
+  console.log("MEDIA ELEMENT FOUND", mediaElement);
+
+  if (mediaElement) {
+    mediaElement.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+
+    if (this.carousel) {
+      const allMedia = Array.from(this.querySelectorAll("[data-media-id]"));
+      const index = allMedia.indexOf(mediaElement);
+
+      if (index >= 0) {
+        this.carousel.select(index, { instant: true });
+      }
+    }
   }
 
-  const allMedia = Array.from(this.querySelectorAll("[data-media-id]"));
-  const index = allMedia.indexOf(mediaElement);
+  const imageUrl = variant.featured_media.preview_image?.src;
 
-  if (this.carousel && this.carousel.isScrollable) {
-    this.carousel.select(index, { instant: true });
-  } else {
-    mediaElement.scrollIntoView({ block: "start", behavior: "smooth" });
+  if (imageUrl) {
+    const mainImage = this.querySelector("img");
+
+    if (mainImage) {
+      mainImage.src = imageUrl;
+      mainImage.srcset = "";
+    }
   }
 };
 /**
