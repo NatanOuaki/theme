@@ -3145,10 +3145,12 @@ registerLightboxUi_fn = function() {
  */
 onSectionRerender_fn = function(event) {
   const galleryMarkup = deepQuerySelector(event.detail.htmlFragment, `${this.tagName}[form="${this.getAttribute("form")}"]`);
+
   if (!galleryMarkup) {
     return;
   }
-  if (galleryMarkup.filteredIndex !== this.filteredIndexes) {
+
+  if (JSON.stringify(galleryMarkup.filteredIndexes) !== JSON.stringify(this.filteredIndexes)) {
     this.carousel.filter(galleryMarkup.filteredIndexes);
     this.setAttribute("filtered-indexes", galleryMarkup.getAttribute("filtered-indexes"));
   }
