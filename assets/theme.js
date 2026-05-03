@@ -3632,7 +3632,8 @@ onIntersection_fn = function(entries) {
 renderForCombination_fn = async function(optionValues) {
   const optionValuesAsString = optionValues.join(",");
   const hashKey = __privateMethod(this, _VariantPicker_instances, createHashKeyForHtml_fn).call(this, optionValuesAsString);
-  let productUrl = `${Shopify.routes.root}products/${this.productHandle}`;
+  const localeRoot = window.location.pathname.startsWith("/he/") ? "/he/" : Shopify.routes.root;
+  let productUrl = `${localeRoot}products/${this.productHandle}`;
   for (const optionValue of optionValues) {
     const inputForOptionValue = Array.from(__privateGet(this, _form).elements).find((item) => item.matches(`input[value="${optionValue}"]`));
     if (inputForOptionValue?.dataset.productUrl) {
