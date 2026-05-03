@@ -3654,7 +3654,7 @@ renderForCombination_fn = async function(optionValues) {
   return __privateGet(_VariantPicker, _preloadedHtml).get(hashKey).htmlPromise;
 };
 createHashKeyForHtml_fn = function(optionValuesAsString) {
-  return `${optionValuesAsString}-${this.getAttribute("section-id")}`;
+  return `${window.location.pathname}-${optionValuesAsString}-${this.getAttribute("section-id")}`;
 };
 __privateAdd(_VariantPicker, _preloadedHtml, /* @__PURE__ */ new Map());
 var VariantPicker = _VariantPicker;
