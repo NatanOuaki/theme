@@ -72,9 +72,9 @@
         {%- endfor -%}
 
         <li class="mobile-language-switcher">
-  <label for="mobile-language-select" class="header-sidebar__linklist-button h6">
-    Langue
-  </label>
+<label for="mobile-language-select" class="header-sidebar__linklist-button h6">
+  {% if request.locale.iso_code == 'he' %}שפה{% else %}Langue{% endif %}
+</label>
 
   <select id="mobile-language-select" onchange="window.location.href=this.value">
     <option value="/" {% if request.locale.iso_code == 'fr' %}selected{% endif %}>
