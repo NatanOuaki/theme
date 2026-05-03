@@ -278,144 +278,31 @@ document.querySelectorAll('.product-gallery__thumbnail').forEach((thumb) => {
 </script>
 
 <script>
-(function () {
-  const WRAPPER_ID = 'free-shipping-wrapper';
-  const MESSAGE_ID = 'free-shipping-message';
-  const THRESHOLD_DEFAULT = 500;
-
-  function formatAmount(value) {
-    return `₪${Math.ceil(value)}`;
+function getCurrentLang() {
+  if (window.location.pathname === '/he' || window.location.pathname.startsWith('/he/')) {
+    return 'he';
   }
 
-  function getMessageHtml(remaining) {
+  return 'fr';
+}
+
+function getMessageHtml(remaining) {
+  const lang = getCurrentLang();
+
+  if (lang.startsWith('he')) {
     if (remaining > 0) {
-      return `Ajoutez encore <span class="amount">${formatAmount(remaining)}</span> pour débloquer la livraison offerte. `;
+      return `הוסיפו עוד <span class="amount">${formatAmount(remaining)}</span> כדי לקבל משלוח חינם.`;
     } else {
-      return `Parfait ! Vous avez obtenu la livraison gratuite.`;
+      return `מעולה! קיבלתם משלוח חינם.`;
     }
   }
 
-  async function updateFreeShippingBar() {
-    const wrapper = document.getElementById(WRAPPER_ID);
-    const message = document.getElementById(MESSAGE_ID);
-
-    if (!wrapper || !message) return;
-
-    const threshold = Number(wrapper.dataset.threshold || THRESHOLD_DEFAULT);
-
-    try {
-      const response = await fetch('/cart.js', {
-        method: 'GET',
-        cache: 'no-store',
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-
-      const cart = await response.json();
-      const total = cart.total_price / 100;
-      const remaining = threshold - total;
-
-      message.innerHTML = getMessageHtml(remaining);
-    } catch (error) {
-      console.error('Free shipping bar error:', error);
-    }
+  if (remaining > 0) {
+    return `Ajoutez encore <span class="amount">${formatAmount(remaining)}</span> pour débloquer la livraison offerte.`;
+  } else {
+    return `Parfait ! Vous avez obtenu la livraison gratuite.`;
   }
-
-  function debounce(fn, delay) {
-    let timer;
-
-    return function () {
-      clearTimeout(timer);
-      timer = setTimeout(fn, delay);
-    };
-  }
-
-  const debouncedUpdate = debounce(updateFreeShippingBar, 150);
-
-  document.addEventListener('DOMContentLoaded', function () {
-    updateFreeShippingBar();
-  });
-
-  document.addEventListener('cart:updated', debouncedUpdate);
-  document.addEventListener('cart:refresh', debouncedUpdate);
-  document.addEventListener('cart:change', debouncedUpdate);
-  document.addEventListener('ajaxProduct:added', debouncedUpdate);
-
-  const originalFetch = window.fetch;
-
-  window.fetch = async function () {
-    const response = await originalFetch.apply(this, arguments);
-
-    try {
-      const requestUrl = arguments[0];
-      const url = typeof requestUrl === 'string' ? requestUrl : requestUrl.url;
-
-      if (
-        url &&
-        (
-          url.includes('/cart/add') ||
-          url.includes('/cart/change') ||
-          url.includes('/cart/update') ||
-          url.includes('/cart/clear')
-        )
-      ) {
-        setTimeout(updateFreeShippingBar, 250);
-      }
-    } catch (error) {
-      console.error('Fetch interception error:', error);
-    }
-
-    return response;
-  };
-
-  document.addEventListener('change', function (event) {
-    const target = event.target;
-
-    if (!target) return;
-
-    if (
-      target.matches('input[name="updates[]"]') ||
-      target.matches('[name="quantity"]') ||
-      target.matches('.quantity__input')
-    ) {
-      setTimeout(updateFreeShippingBar, 300);
-    }
-  });
-
-  document.addEventListener('click', function (event) {
-    const target = event.target.closest('button, a');
-
-    if (!target) return;
-
-    const text = (target.textContent || '').toLowerCase();
-    const name = (target.getAttribute('name') || '').toLowerCase();
-    const action = (target.getAttribute('data-action') || '').toLowerCase();
-
-    if (
-      name.includes('add') ||
-      action.includes('add') ||
-      action.includes('remove') ||
-      text.includes('add to cart') ||
-      text.includes('remove')
-    ) {
-      setTimeout(updateFreeShippingBar, 300);
-    }
-  });
-
-  const drawerTarget = document.querySelector('cart-drawer, .cart-drawer, #CartDrawer, .drawer');
-
-  if (drawerTarget) {
-    const observer = new MutationObserver(function () {
-      debouncedUpdate();
-    });
-
-    observer.observe(drawerTarget, {
-      childList: true,
-      subtree: true
-    });
-  }
-})();
+}
 </script>
 
 </html>
