@@ -5503,10 +5503,13 @@ var ProductStickyBar = class extends HTMLElement {
   connectedCallback() {
     __privateSet(this, _formElement, document.forms[this.getAttribute("form")]);
     __privateSet(this, _footerElement, document.querySelector(".shopify-section--footer"));
-    if (__privateGet(this, _formElement)) {
-      __privateGet(this, _intersectionObserver3).observe(__privateGet(this, _formElement));
-      __privateGet(this, _intersectionObserver3).observe(__privateGet(this, _footerElement));
-    }
+if (__privateGet(this, _formElement)) {
+  __privateGet(this, _intersectionObserver3).observe(__privateGet(this, _formElement));
+}
+
+if (__privateGet(this, _footerElement)) {
+  __privateGet(this, _intersectionObserver3).observe(__privateGet(this, _footerElement));
+}
   }
   disconnectedCallback() {
     __privateGet(this, _intersectionObserver3).disconnect();
