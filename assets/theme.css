@@ -9283,3 +9283,16 @@ html[lang="he"] .price-list--product {
   unicode-bidi: isolate !important;
   text-align: right !important;
 }
+
+html[lang="he"] .product-card {
+  text-align: center;
+}
+
+html[lang="he"] .product-card .price-list,
+html[lang="he"] .product-card .price-list .price,
+html[lang="he"] .product-card sale-price {
+  direction: ltr !important;
+  text-align: center !important;
+  justify-content: center !important;
+  unicode-bidi: isolate !important;
+}
