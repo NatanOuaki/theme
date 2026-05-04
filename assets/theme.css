@@ -9204,3 +9204,32 @@ featured-collections-carousel {
   font-size: 14px;
   color: inherit;
 }
+
+html[lang="he"] variant-picker,
+html[lang="he"] .variant-picker,
+html[lang="he"] .product-info__block-item:has(variant-picker) {
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang="he"] variant-picker .form__label,
+html[lang="he"] variant-picker .block-label,
+html[lang="he"] variant-picker .text-subdued {
+  text-align: right;
+  justify-content: flex-start;
+}
+
+html[lang="he"] variant-picker .h-stack {
+  justify-content: flex-start;
+}
+
+html[lang="he"] variant-picker .color-swatch-list,
+html[lang="he"] variant-picker .size-swatch-list {
+  justify-content: flex-start;
+}
+
+html[lang="he"] variant-picker .variant-picker__option-values,
+html[lang="he"] variant-picker .variant-picker__option-info {
+  align-items: flex-start;
+  text-align: right;
+}
