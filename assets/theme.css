@@ -9253,5 +9253,5 @@ html[lang="he"] .product-info__title {
 
 html[lang="he"] .product-info__price {
   direction: ltr;
-  text-align: right;
+  text-align: left;
 }
