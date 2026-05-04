@@ -9243,7 +9243,7 @@ html[lang="he"] .product-info__title,
 html[lang="he"] .product-info__price,
 html[lang="he"] .price-list,
 html[lang="he"] .price-list .price {
-  text-align: right;
+  text-align: left;
   justify-content: flex-start;
 }
 
