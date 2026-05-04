@@ -9234,24 +9234,44 @@ html[lang="he"] variant-picker .variant-picker__option-info {
   text-align: right;
 }
 
-html[lang="he"] .product-info {
-  direction: rtl;
-  text-align: right;
-}
-
-html[lang="he"] .product-info__title,
-html[lang="he"] .product-info__price,
+html[lang="he"] .product-info__block-list,
+html[lang="he"] .product-info__block-item,
+html[lang="he"] .product-title,
 html[lang="he"] .price-list,
-html[lang="he"] .price-list .price {
-  text-align: right;
-  justify-content: flex-start;
+html[lang="he"] sale-price,
+html[lang="he"] variant-picker {
+  direction: rtl !important;
+  text-align: right !important;
 }
 
-html[lang="he"] .product-info__title {
-  direction: rtl;
+html[lang="he"] .product-title,
+html[lang="he"] .product-title.h3 {
+  width: 100%;
+  text-align: right !important;
 }
 
-html[lang="he"] .product-info__price {
-  direction: ltr;
-  text-align: right;
+html[lang="he"] .price-list,
+html[lang="he"] .price-list--product,
+html[lang="he"] sale-price.h4 {
+  width: 100%;
+  text-align: right !important;
+  justify-content: flex-start !important;
+}
+
+html[lang="he"] variant-picker .variant-picker__option-info,
+html[lang="he"] variant-picker .variant-picker__option-values {
+  direction: rtl !important;
+  text-align: right !important;
+  justify-content: flex-start !important;
+}
+
+html[lang="he"] variant-picker .h-stack,
+html[lang="he"] variant-picker .v-stack {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+html[lang="he"] variant-picker legend,
+html[lang="he"] variant-picker span {
+  text-align: right !important;
 }
