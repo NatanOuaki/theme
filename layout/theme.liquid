@@ -200,6 +200,9 @@ window.addEventListener('load', initLanguagePopup);
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  const isHebrew = document.documentElement.lang === 'he';
+  const buttonText = isHebrew ? 'צפה במוצר' : 'Voir le produit';
+
   const desktopButtons = document.querySelectorAll(
     '#shopify-section-template--21538757214454__shop_the_look_bgDRzc .shop-the-look__item-content > .button'
   );
@@ -208,12 +211,8 @@ document.addEventListener('DOMContentLoaded', function () {
     '#shopify-section-template--21538757214454__shop_the_look_bgDRzc .md\\:hidden .button.w-full'
   );
 
-  desktopButtons.forEach(button => {
-    button.textContent = 'Voir le produit';
-  });
-
-  mobileButtons.forEach(button => {
-    button.textContent = 'Voir le produit';
+  [...desktopButtons, ...mobileButtons].forEach(button => {
+    button.textContent = buttonText;
   });
 });
 </script>
