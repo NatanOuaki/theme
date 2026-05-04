@@ -9233,3 +9233,25 @@ html[lang="he"] variant-picker .variant-picker__option-info {
   align-items: flex-start;
   text-align: right;
 }
+
+html[lang="he"] .product-info {
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang="he"] .product-info__title,
+html[lang="he"] .product-info__price,
+html[lang="he"] .price-list,
+html[lang="he"] .price-list .price {
+  text-align: right;
+  justify-content: flex-start;
+}
+
+html[lang="he"] .product-info__title {
+  direction: rtl;
+}
+
+html[lang="he"] .product-info__price {
+  direction: ltr;
+  text-align: right;
+}
