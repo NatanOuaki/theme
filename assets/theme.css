@@ -9275,3 +9275,11 @@ html[lang="he"] variant-picker legend,
 html[lang="he"] variant-picker span {
   text-align: right !important;
 }
+
+html[lang="he"] sale-price,
+html[lang="he"] .price-list .price,
+html[lang="he"] .price-list--product {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: right !important;
+}
