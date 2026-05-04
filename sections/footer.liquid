@@ -1,3 +1,9 @@
+{% if request.locale.iso_code == 'he' %}
+  {% assign is_he = true %}
+{% else %}
+  {% assign is_he = false %}
+{% endif %}
+
 <style>
   .km-footer-custom {
     width: 100%;
@@ -206,19 +212,17 @@
       width: 100%;
     }
 
-
     .km-footer-input{
-    margin-top:-30px;
-  }
-
-.km-footer-button{
-    margin-top:-10px;
-  }
-
-      .km-footer-input, .km-footer-button {
-      font-size: 15px;
+      margin-top:-30px;
     }
 
+    .km-footer-button{
+      margin-top:-10px;
+    }
+
+    .km-footer-input, .km-footer-button {
+      font-size: 15px;
+    }
 
     .km-footer-bottom {
       margin-top: 60px;
@@ -233,66 +237,74 @@
       font-size: 12px;
       line-height: 28px;
     }
-
   }
 </style>
 
-<div class="km-footer-custom">
+<div class="km-footer-custom"{% if is_he %} dir="rtl"{% endif %}>
   <div class="km-footer-inner">
     <div class="km-footer-logo">
       <img src="https://cdn.shopify.com/s/files/1/0802/9903/2822/files/LOGOS_R_copy_4_1.png?v=1776969552" alt="Koahatsniout" width="293" height="147">
     </div>
+
     <div class="km-footer-top">
-      
       <div class="km-footer-newsletter">
-        <h2 class="km-footer-title">NEWSLETTER</h2>
+        <h2 class="km-footer-title">{% if is_he %}ניוזלטר{% else %}NEWSLETTER{% endif %}</h2>
+
         <p class="km-footer-text">
-          Rejoignez Koahatsniout et recevez 5% sur votre prochaine commande.
+          {% if is_he %}
+            הצטרפו ל־Koahatsniout וקבלו 5% הנחה על ההזמנה הבאה שלכן.
+          {% else %}
+            Rejoignez Koahatsniout et recevez 5% sur votre prochaine commande.
+          {% endif %}
         </p>
 
         <form class="km-footer-form" method="post" action="/contact#contact_form" accept-charset="UTF-8">
           <input type="hidden" name="form_type" value="customer">
           <input type="hidden" name="utf8" value="✓">
+
           <input 
             type="email"
             name="contact[email]"
             class="km-footer-input"
-            placeholder="E-mail"
+            placeholder="{% if is_he %}אימייל{% else %}E-mail{% endif %}"
             required
           >
-          <button type="submit" class="km-footer-button">REJOINDRE</button>
+
+          <button type="submit" class="km-footer-button">
+            {% if is_he %}הצטרפו{% else %}REJOINDRE{% endif %}
+          </button>
         </form>
       </div>
 
       <div class="km-footer-info">
-        <h2 class="km-footer-title">INFORMATIONS</h2>
+        <h2 class="km-footer-title">{% if is_he %}מידע{% else %}INFORMATIONS{% endif %}</h2>
+
         <ul class="km-footer-menu">
-          <li><a href="/pages/retours-et-echanges">Retours et échanges</a></li>
-          <li><a href="/pages/conditions-d-utilisation">Conditions d’utilisation</a></li>
-          <li><a href="/pages/conditions-generales-de-vente">Conditions générales de vente</a></li>
-          <li><a href="/pages/politique-de-confidentialite">Politique de confidentialité</a></li>
-          <li><a href="/pages/mentions-legales">Mentions légales</a></li>
-          <li><a href="/pages/accessibilite">Accessibilité</a></li>
-          <li><a href="/pages/contact">Contactez-nous</a></li>
+          <li><a href="{% if is_he %}/he/pages/retours-et-echanges{% else %}/pages/retours-et-echanges{% endif %}">{% if is_he %}החזרות והחלפות{% else %}Retours et échanges{% endif %}</a></li>
+          <li><a href="{% if is_he %}/he/pages/conditions-d-utilisation{% else %}/pages/conditions-d-utilisation{% endif %}">{% if is_he %}תנאי שימוש{% else %}Conditions d’utilisation{% endif %}</a></li>
+          <li><a href="{% if is_he %}/he/pages/conditions-generales-de-vente{% else %}/pages/conditions-generales-de-vente{% endif %}">{% if is_he %}תנאי מכירה{% else %}Conditions générales de vente{% endif %}</a></li>
+          <li><a href="{% if is_he %}/he/pages/politique-de-confidentialite{% else %}/pages/politique-de-confidentialite{% endif %}">{% if is_he %}מדיניות פרטיות{% else %}Politique de confidentialité{% endif %}</a></li>
+          <li><a href="{% if is_he %}/he/pages/mentions-legales{% else %}/pages/mentions-legales{% endif %}">{% if is_he %}הצהרה משפטית{% else %}Mentions légales{% endif %}</a></li>
+          <li><a href="{% if is_he %}/he/pages/accessibilite{% else %}/pages/accessibilite{% endif %}">{% if is_he %}נגישות{% else %}Accessibilité{% endif %}</a></li>
+          <li><a href="{% if is_he %}/he/pages/contact{% else %}/pages/contact{% endif %}">{% if is_he %}צרו קשר{% else %}Contactez-nous{% endif %}</a></li>
         </ul>
       </div>
-
     </div>
 
     <div class="km-footer-bottom">
       <div class="km-footer-socials">
-          <a href="https://www.instagram.com/koahatsniout/" target="_blank" rel="noopener" aria-label="Instagram">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0971/5145/1440/files/icon-instagram.svg?v=1776256535"
-              alt="Instagram"
-              width="30"
-              height="30"
-            >
-          </a>
+        <a href="https://www.instagram.com/koahatsniout/" target="_blank" rel="noopener" aria-label="Instagram">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0971/5145/1440/files/icon-instagram.svg?v=1776256535"
+            alt="Instagram"
+            width="30"
+            height="30"
+          >
+        </a>
       </div>
 
       <p class="km-footer-copyright">
-        © 2026 - Koahatsniout | Designed and built by <a href="https://nodev.tech">nodev</a>
+        © 2026 - Koahatsniout | {% if is_he %}עוצב ונבנה על ידי{% else %}Designed and built by{% endif %} <a href="https://nodev.tech">nodev</a>
       </p>
     </div>
   </div>
