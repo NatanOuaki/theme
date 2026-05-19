@@ -88,6 +88,41 @@
                 </cart-note>
               {%- endif -%}
 
+
+              <div class="koa-checkout-fields">
+
+  <h3>Vérification obligatoire</h3>
+
+  <!-- ID -->
+  <div class="koa-field">
+    <label for="id_number">Numéro d’identité (Teoudat Zehout)</label>
+    <input
+      type="text"
+      id="id_number"
+      name="attributes[ID Number]"
+      maxlength="9"
+      inputmode="numeric"
+      placeholder="9 chiffres">
+
+    <div class="koa-error" id="id_error">
+      Numéro d’identité invalide
+    </div>
+  </div>
+
+  <!-- CGV -->
+  <div class="koa-checkbox">
+    <input type="checkbox" id="cgv_checkbox">
+    <label for="cgv_checkbox">
+      J’accepte les CGV et la politique de confidentialité
+    </label>
+  </div>
+
+  <div class="koa-error" id="cgv_error">
+    Vous devez accepter les CGV
+  </div>
+
+</div>
+
               <div class="cart-recap">
                 {%- if section.settings.allow_discount_application -%}
                   {%- render 'cart-discount' -%}

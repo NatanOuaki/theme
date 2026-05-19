@@ -304,4 +304,57 @@ function getMessageHtml(remaining) {
 }
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const idInput = document.getElementById("id_number");
+  const cgv = document.getElementById("cgv_checkbox");
+
+  const idError = document.getElementById("id_error");
+  const cgvError = document.getElementById("cgv_error");
+
+  const checkoutBtn = document.querySelector('button[name="checkout"]');
+
+  function isValidIsraeliID(id) {
+    if (!/^[0-9]{9}$/.test(id)) return false;
+
+    let sum = 0;
+    for (let i = 0; i < 9; i++) {
+      let num = Number(id[i]) * ((i % 2) + 1);
+      if (num > 9) num -= 9;
+      sum += num;
+    }
+    return sum % 10 === 0;
+  }
+
+  function validate() {
+    let validID = isValidIsraeliID(idInput?.value || "");
+    let validCGV = cgv?.checked;
+
+    if (idInput) {
+      idError.style.display = validID ? "none" : "block";
+    }
+
+    if (cgv) {
+      cgvError.style.display = validCGV ? "none" : "block";
+    }
+
+    const ok = validID && validCGV;
+
+    if (checkoutBtn) {
+      checkoutBtn.disabled = !ok;
+      checkoutBtn.style.opacity = ok ? "1" : "0.5";
+      checkoutBtn.style.pointerEvents = ok ? "auto" : "none";
+    }
+  }
+
+  if (idInput && cgv && checkoutBtn) {
+    idInput.addEventListener("input", validate);
+    cgv.addEventListener("change", validate);
+    validate();
+  }
+
+});
+</script>
+
 </html>
