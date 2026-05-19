@@ -307,15 +307,13 @@ function getMessageHtml(remaining) {
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  const idInput = document.getElementById("id_number");
-  const cgv = document.getElementById("cgv_checkbox");
+  const idInput = document.getElementById("koa_id");
+  const cgv = document.getElementById("koa_cgv");
 
-  const idError = document.getElementById("id_error");
-  const cgvError = document.getElementById("cgv_error");
+  const idError = document.getElementById("koa_id_error");
+  const cgvError = document.getElementById("koa_cgv_error");
 
-  const checkoutBtn = document.querySelector('button[name="checkout"]');
-
-  function isValidIsraeliID(id) {
+  function isValidID(id) {
     if (!/^[0-9]{9}$/.test(id)) return false;
 
     let sum = 0;
@@ -328,8 +326,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function validate() {
-    let validID = isValidIsraeliID(idInput?.value || "");
-    let validCGV = cgv?.checked;
+    const validID = isValidID(idInput?.value || "");
+    const validCGV = cgv?.checked;
 
     if (idInput) {
       idError.style.display = validID ? "none" : "block";
@@ -339,20 +337,23 @@ document.addEventListener("DOMContentLoaded", function () {
       cgvError.style.display = validCGV ? "none" : "block";
     }
 
-    const ok = validID && validCGV;
+    return validID && validCGV;
+  }
 
-    if (checkoutBtn) {
-      checkoutBtn.disabled = !ok;
-      checkoutBtn.style.opacity = ok ? "1" : "0.5";
-      checkoutBtn.style.pointerEvents = ok ? "auto" : "none";
+  document.addEventListener("click", function (e) {
+
+    // bouton checkout Shopify (drawer)
+    const btn = e.target.closest('button[name="checkout"]');
+
+    if (!btn) return;
+
+    if (!validate()) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
     }
-  }
 
-  if (idInput && cgv && checkoutBtn) {
-    idInput.addEventListener("input", validate);
-    cgv.addEventListener("change", validate);
-    validate();
-  }
+  }, true);
 
 });
 </script>
