@@ -9296,3 +9296,41 @@ html[lang="he"] .product-card sale-price {
   justify-content: center !important;
   unicode-bidi: isolate !important;
 }
+
+
+.koa-checkout-fields{
+  margin:20px 0;
+  padding:20px;
+  border:1px solid #eee;
+  border-radius:12px;
+  background:#fafafa;
+}
+
+.koa-checkout-fields h3{
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+.koa-field{
+  margin-bottom:15px;
+}
+
+.koa-field input{
+  width:100%;
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:8px;
+}
+
+.koa-checkbox{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+}
+
+.koa-error{
+  display:none;
+  color:red;
+  font-size:13px;
+  margin-top:5px;
+}
