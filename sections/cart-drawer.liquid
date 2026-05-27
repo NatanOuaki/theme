@@ -132,37 +132,76 @@
         {%- endif -%}
 
 <div class="koa-checkout-fields">
-
   <h3>Informations obligatoires</h3>
 
-  <!-- ID NUMBER -->
   <div class="koa-field">
-    <label>Teoudat Zehout</label>
+    <label for="koa_id">Teoudat Zehout</label>
     <input
       type="text"
       id="koa_id"
+      name="attributes[Teoudat Zehout]"
       maxlength="9"
       inputmode="numeric"
+      pattern="[0-9]{9}"
+      required
       placeholder="9 chiffres">
 
-    <div class="koa-error" id="koa_id_error">
+    <div class="koa-error" id="koa_id_error" style="display:none;">
       Teoudat Zehout invalide
     </div>
   </div>
 
-  <!-- CGV -->
   <div class="koa-checkbox">
-    <input type="checkbox" id="koa_cgv">
-    <label>
+    <input 
+      type="checkbox" 
+      id="koa_cgv"
+      name="attributes[CGV acceptées]"
+      value="Oui"
+      required>
+    <label for="koa_cgv">
       J’accepte les CGV et la politique de confidentialité
     </label>
   </div>
 
-  <div class="koa-error" id="koa_cgv_error">
+  <div class="koa-error" id="koa_cgv_error" style="display:none;">
     Vous devez accepter les CGV
   </div>
-
 </div>
+
+<script>
+document.addEventListener('submit', function(e) {
+  const form = e.target;
+
+  if (!form.classList.contains('cart-drawer__footer')) return;
+
+  const idInput = form.querySelector('#koa_id');
+  const cgvInput = form.querySelector('#koa_cgv');
+
+  const idError = form.querySelector('#koa_id_error');
+  const cgvError = form.querySelector('#koa_cgv_error');
+
+  let valid = true;
+
+  if (!idInput.value.match(/^\d{9}$/)) {
+    valid = false;
+    idError.style.display = 'block';
+  } else {
+    idError.style.display = 'none';
+  }
+
+  if (!cgvInput.checked) {
+    valid = false;
+    cgvError.style.display = 'block';
+  } else {
+    cgvError.style.display = 'none';
+  }
+
+  if (!valid) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+});
+</script>
 
 
         <div class="button-group">
