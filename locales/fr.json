@@ -95,12 +95,12 @@
       "view_details": "Voir les détails",
       "add_to_cart_button": "Ajouter au panier",
       "pre_order_button": "Pré-commander",
-      "sold_out_button": "En rupture",
+      "sold_out_button": "Sold out",
       "unavailable_button": "Indisponible",
       "choose_options": "Choisir les options",
       "added_to_cart": "Produit ajouté au panier !",
       "added_to_cart_with_title": "{{ product_title }} a été ajouté au panier.",
-      "sold_out_badge": "En rupture",
+      "sold_out_badge": "Sold out",
       "on_sale_badge": "Promo",
       "discount_badge_html": "Economisez {{ savings }}",
       "sku": "SKU:",
@@ -158,7 +158,7 @@
         "one": "{{ count }} en stock",
         "other": "{{ count }} en stock"
       },
-      "out_of_stock": "En rupture"
+      "out_of_stock": "Sold out"
     },
     "store_availability": {
       "view_store_info": "Afficher les informations de la boutique",

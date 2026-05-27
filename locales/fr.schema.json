@@ -329,7 +329,7 @@
       "product_category": "Produit",
       "product_rating_color": "Etoile des avis",
       "on_sale_accent": "Accent en solde",
-      "sold_out_badge_background": "Badge en rupture",
+      "sold_out_badge_background": "Badge Sold out",
       "custom_badge": "Badge personnalisé",
       "custom_badge_info": "[En savoir plus](https://support.maestrooo.com/article/719-custom-badges)"
     },
@@ -441,7 +441,7 @@
       },
       "promotion_category": "Promotion",
       "show_quick_buy": "Afficher l'achat rapide",
-      "show_sold_out_badge": "Afficher le badge en rupture de stock",
+      "show_sold_out_badge": "Afficher le badge sold out",
       "show_discount_badge": "Afficher le badge de remise",
       "show_discount_as": "Afficher la remise en...",
       "show_discount_as_options": {
@@ -622,7 +622,7 @@
       "show_price_in_checkout_button": "Afficher le prix dans le bouton de caisse",
       "cross_sell_category": "Cross-sell",
       "cross_sell_products": "Produits",
-      "cross_sell_products_info": "Les produits déjà dans le panier ou en rupture sont cachés.",
+      "cross_sell_products_info": "Les produits déjà dans le panier ou sold out sont cachés.",
       "cross_sell_heading": "Titre",
       "cross_sell_stack_products": "Empiler les produits"
     },
@@ -1256,7 +1256,7 @@
         },
         "variant_picker": {
           "name": "Sélecteur de variante",
-          "hide_sold_out_variants": "Cacher les variantes en rupture",
+          "hide_sold_out_variants": "Cacher les variantes sold out",
           "selector_style": "Style des sélecteurs",
           "selector_style_options": {
             "block": "Bloc",
@@ -1313,7 +1313,7 @@
         },
         "quantity_selector": {
           "name": "Sélecteur de quantité",
-          "instructions": "Le sélecteur est automatiquement caché si toutes les variantes sont en rupture. Lorsqu'au moins une variante est disponible, le sélecteur de quantité est toujours visible pour éviter que la page ne bouge lorsque la variante active change."
+          "instructions": "Le sélecteur est automatiquement caché si toutes les variantes sont sold out. Lorsqu'au moins une variante est disponible, le sélecteur de quantité est toujours visible pour éviter que la page ne bouge lorsque la variante active change."
         },
         "volume_pricing": {
           "name": "Tarification sur le volume",
