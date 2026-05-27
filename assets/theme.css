@@ -8433,90 +8433,56 @@ sale-price {
 
 
 
-/* ===== BEST SELLERS LAYOUT FIX ===== */
-
-#shopify-section-template--26517561835824__featured-collections-1 .product-list,
-#shopify-section-template--26517561835824__featured-collections-1 .collection__products {
-  align-items: start !important;
+/* SECTION BEST-SELLERS */
+#shopify-section-template--21538757214454__featured_collections_9Htpmn {
+  overflow: hidden !important;
 }
 
-/* Carte produit */
-#shopify-section-template--26517561835824__featured-collections-1 .product-card {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
+/* Force le carousel à rentrer dans l’écran */
+#shopify-section-template--21538757214454__featured_collections_9Htpmn scroll-carousel.product-list {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 60px !important;
+  overflow: visible !important;
+}
+
+/* Cards */
+#shopify-section-template--21538757214454__featured_collections_9Htpmn product-card {
+  width: 100% !important;
+  min-width: 0 !important;
+  display: block !important;
   text-align: center !important;
 }
 
-/* Image produit */
-#shopify-section-template--26517561835824__featured-collections-1 .product-card__figure,
-#shopify-section-template--26517561835824__featured-collections-1 .product-card img {
+/* Images */
+#shopify-section-template--21538757214454__featured_collections_9Htpmn .product-card__media,
+#shopify-section-template--21538757214454__featured_collections_9Htpmn .product-card__figure {
   width: 100% !important;
-  max-width: 420px !important;
-  margin: 0 auto !important;
+  display: block !important;
+}
+
+#shopify-section-template--21538757214454__featured_collections_9Htpmn .product-card__image {
+  width: 100% !important;
+  height: 520px !important;
   object-fit: contain !important;
 }
 
-/* Infos produit */
-#shopify-section-template--26517561835824__featured-collections-1 .product-card__info,
-#shopify-section-template--26517561835824__featured-collections-1 .product-card__content {
-  width: 100% !important;
-  margin-top: 20px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
+/* Infos sous image */
+#shopify-section-template--21538757214454__featured_collections_9Htpmn .product-card__info {
+  margin-top: 18px !important;
+  text-align: center !important;
 }
 
-/* Titre */
-#shopify-section-template--26517561835824__featured-collections-1 .product-title{
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 500 !important;
-  font-size: 20px !important;
-  line-height: 30px !important;
-  color: #000 !important;
-  text-align:center !important;
-  margin-bottom: 5px !important;
-}
-
-/* Prix */
-#shopify-section-template--26517561835824__featured-collections-1 .price-list,
-#shopify-section-template--26517561835824__featured-collections-1 .price-list .h6,
-#shopify-section-template--26517561835824__featured-collections-1 sale-price {
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 15px !important;
-  line-height: 20px !important;
-  color: #000 !important;
-  text-align:center !important;
-  justify-content:center !important;
-}
-
-/* Swatches */
-#shopify-section-template--26517561835824__featured-collections-1 .color-swatch{
-  border-radius:30px !important;
-  width:20px !important;
-  height:20px !important;
-}
-
-/* Swatches centrés */
-#shopify-section-template--26517561835824__featured-collections-1 .product-card__swatches,
-#shopify-section-template--26517561835824__featured-collections-1 .color-swatch-list {
-  justify-content:center !important;
-}
-
-/* Responsive mobile */
-@media screen and (max-width: 768px) {
-
-  #shopify-section-template--26517561835824__featured-collections-1 .product-card img {
-    max-width: 100% !important;
+/* Mobile */
+@media screen and (max-width: 699px) {
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn scroll-carousel.product-list {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 25px !important;
   }
 
-  #shopify-section-template--26517561835824__featured-collections-1 .product-title {
-    font-size: 16px !important;
-    line-height: 24px !important;
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .product-card__image {
+    height: 300px !important;
   }
-
 }
 
 
