@@ -73,7 +73,7 @@
             "heading_text": "Soyez informé(e) dès son retour en stock",
             "email_placeholder": "Votre adresse mail",
             "button_text": "Recevoir une alerte dès le retour en stock",
-            "terms_prefix_text": "Aucun spam. Vos informations ne seront jamais partagées.",
+            "terms_prefix_text": "",
             "terms_link_text": "",
             "terms_page": "",
             "terms_mandatory": false,
