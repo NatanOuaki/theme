@@ -9535,7 +9535,7 @@ html[lang="he"] .product-card sale-price {
 }
 
 /* BUTTON */
-.email-me-submitButton{
+.email-me-button .email-me-submitButton{
     background: #000000 !important;
     color: #FFFFFF !important;
     font-weight: 700 !important;
