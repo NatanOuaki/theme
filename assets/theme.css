@@ -9494,9 +9494,9 @@ html[lang="he"] .product-card sale-price {
 /* SELECT */
 .selected-unavailable-variant{
     width: 100% !important;
-    height: 52px !important;
+    height: 40px !important;
     padding: 0 16px !important;
-    margin-bottom: 16px !important;
+    margin-bottom: 5px !important;
     border: 1px solid #d9d9d9 !important;
     background: #fff !important;
     border-radius: 0 !important;
@@ -9510,7 +9510,7 @@ html[lang="he"] .product-card sale-price {
 .buyer-name,
 .buyer-email{
     width: 100% !important;
-    height: 52px !important;
+    height: 40px !important;
     padding: 0 16px !important;
     margin-bottom: 5px !important;
     border: 1px solid #d9d9d9 !important;
