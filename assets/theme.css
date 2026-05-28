@@ -9414,8 +9414,8 @@ html[lang="he"] .product-card sale-price {
 
 
 #sealapps-bis-widget .email-me-button {
-    background: #000000 !important;
-    color: #FFFFFF !important;
+    background: #ffffffff !important;
+    color: #000000ff !important;
     font-family: "Montserrat", sans-serif !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
