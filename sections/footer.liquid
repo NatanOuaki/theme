@@ -8,56 +8,43 @@
   .km-footer-custom {
     width: 100%;
     background: white;
-    padding: 70px 60px 40px;
-    border-top: 1px solid black;
+    padding: 70px 24px 40px;
+    border-top: 2px solid #000;
   }
 
   .km-footer-inner {
-    max-width: 1800px;
+    max-width: 900px;
     margin: 0 auto;
+    text-align: center;
   }
 
+  /* LOGO BOTTOM */
   .km-footer-logo {
-    text-align: center;
-    margin-bottom: 60px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: -30px;
-    margin-bottom: 60px;
-}
-
-.km-footer-logo img {
-  display: block;
-  height: auto;
-}
-
-  .km-footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 80px;
   }
 
+  .km-footer-logo img {
+    display: block;
+    width: 180px;
+    height: auto;
+  }
+
+  /* NEWSLETTER */
   .km-footer-newsletter {
-    flex: 1 1 60%;
-    max-width: 900px;
-  }
-
-  .km-footer-info {
-    flex: 0 0 320px;
-    text-align: center;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .km-footer-title {
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: -0.02em;
     color: #000;
-    margin: 0 0 10px;
+    margin: 0 0 12px;
     text-transform: uppercase;
   }
 
@@ -65,29 +52,30 @@
     font-family: 'Montserrat', sans-serif !important;
     font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 28px;
     letter-spacing: -0.02em;
     color: #000;
-    margin: -10px 0 42px;
-    max-width: 900px;
+    margin: 0 auto 35px;
+    max-width: 650px;
   }
 
   .km-footer-form {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 20px;
     flex-wrap: wrap;
   }
 
   .km-footer-input {
-    width: 60%;
-    max-width: 455px;
-    height: 46px;
+    width: 100%;
+    max-width: 420px;
+    height: 48px;
     border: 1px solid #7f7f7f;
     background: transparent;
-    padding: 0 30px;
+    padding: 0 24px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     color: #000;
     outline: none;
@@ -100,18 +88,17 @@
   }
 
   .km-footer-button {
-    min-width: 183px;
-    height:46px;
+    min-width: 180px;
+    height: 48px;
     border: none;
-    background: #000000;
+    background: #000;
     color: #fff;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 0 20px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 37px;
     letter-spacing: -0.02em;
     display: inline-flex;
     align-items: center;
@@ -123,14 +110,19 @@
     opacity: 0.9;
   }
 
+  /* INFORMATIONS */
+  .km-footer-info {
+    margin-top: 60px;
+  }
+
   .km-footer-menu {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 25px 0 0;
   }
 
   .km-footer-menu li {
-    margin-bottom: 2px;
+    margin-bottom: 10px;
   }
 
   .km-footer-menu li:last-child {
@@ -141,9 +133,9 @@
     text-decoration: none;
     color: #000;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 24px;
     letter-spacing: -0.02em;
     transition: opacity 0.2s ease;
   }
@@ -152,8 +144,8 @@
     opacity: 0.7;
   }
 
+  /* BOTTOM */
   .km-footer-bottom {
-    text-align: center;
     margin-top: 40px;
   }
 
@@ -161,15 +153,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 22px;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 
   .km-footer-socials a {
     color: #000;
     text-decoration: none;
-    font-size: 22px;
-    line-height: 1;
   }
 
   .km-footer-copyright {
@@ -182,131 +171,133 @@
     margin: 0;
   }
 
-  @media screen and (max-width: 990px) {
+  .km-footer-copyright a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 768px) {
     .km-footer-custom {
-      padding: 50px 24px 30px;
+      padding: 50px 20px 30px;
     }
 
-    .km-footer-top {
-      flex-direction: column;
-      gap: 50px;
+    .km-footer-title {
+      font-size: 18px;
     }
 
-    .km-footer-newsletter,
-    .km-footer-info {
-      max-width: 100%;
-      flex: 1 1 100%;
-    }
-
-    .km-footer-info {
-      align-self: center;
-      text-align: center;
+    .km-footer-text {
+      font-size: 14px;
+      line-height: 24px;
     }
 
     .km-footer-form {
-      gap: 18px;
+      flex-direction: column;
+      gap: 14px;
     }
 
     .km-footer-input,
     .km-footer-button {
-      max-width: 100%;
       width: 100%;
+      max-width: 100%;
     }
 
-    .km-footer-input{
-      margin-top:-30px;
+    .km-footer-info {
+      margin-top: 45px;
     }
 
-    .km-footer-button{
-      margin-top:-10px;
-    }
-
-    .km-footer-input, .km-footer-button {
-      font-size: 15px;
-    }
-
-    .km-footer-bottom {
-      margin-top: 60px;
-    }
-
-    .km-footer-title {
-      font-size: 16px;
-      line-height: 28px;
-    }
-
-    .km-footer-text {
-      font-size: 12px;
-      line-height: 28px;
+    .km-footer-logo img {
+      width: 140px;
     }
   }
 </style>
 
 <div class="km-footer-custom"{% if is_he %} dir="rtl"{% endif %}>
   <div class="km-footer-inner">
-    <div class="km-footer-logo">
-      <img src="https://cdn.shopify.com/s/files/1/0802/9903/2822/files/LOGOS_R_copy_4_1.png?v=1776969552" alt="Koahatsniout" width="293" height="147">
+
+    <!-- NEWSLETTER -->
+    <div class="km-footer-newsletter">
+      <h2 class="km-footer-title">
+        {% if is_he %}ניוזלטר{% else %}NEWSLETTER{% endif %}
+      </h2>
+
+      <p class="km-footer-text">
+        {% if is_he %}
+          הצטרפו ל־Koahatsniout וקבלו 5% הנחה על ההזמנה הבאה שלכן.
+        {% else %}
+          Rejoignez Koahatsniout et recevez 5% sur votre prochaine commande.
+        {% endif %}
+      </p>
+
+      <form class="km-footer-form" method="post" action="/contact#contact_form" accept-charset="UTF-8">
+        <input type="hidden" name="form_type" value="customer">
+        <input type="hidden" name="utf8" value="✓">
+
+        <input 
+          type="email"
+          name="contact[email]"
+          class="km-footer-input"
+          placeholder="{% if is_he %}אימייל{% else %}E-mail{% endif %}"
+          required
+        >
+
+        <button type="submit" class="km-footer-button">
+          {% if is_he %}הצטרפו{% else %}REJOINDRE{% endif %}
+        </button>
+      </form>
     </div>
 
-    <div class="km-footer-top">
-      <div class="km-footer-newsletter">
-        <h2 class="km-footer-title">{% if is_he %}ניוזלטר{% else %}NEWSLETTER{% endif %}</h2>
+    <!-- INFORMATIONS -->
+    <div class="km-footer-info">
+      <h2 class="km-footer-title">
+        {% if is_he %}מידע{% else %}INFORMATIONS{% endif %}
+      </h2>
 
-        <p class="km-footer-text">
-          {% if is_he %}
-            הצטרפו ל־Koahatsniout וקבלו 5% הנחה על ההזמנה הבאה שלכן.
-          {% else %}
-            Rejoignez Koahatsniout et recevez 5% sur votre prochaine commande.
-          {% endif %}
-        </p>
+      <ul class="km-footer-menu">
+        <li><a href="{% if is_he %}/he/pages/retours-et-echanges{% else %}/pages/retours-et-echanges{% endif %}">{% if is_he %}החזרות והחלפות{% else %}Retours et échanges{% endif %}</a></li>
 
-        <form class="km-footer-form" method="post" action="/contact#contact_form" accept-charset="UTF-8">
-          <input type="hidden" name="form_type" value="customer">
-          <input type="hidden" name="utf8" value="✓">
+        <li><a href="{% if is_he %}/he/pages/conditions-d-utilisation{% else %}/pages/conditions-d-utilisation{% endif %}">{% if is_he %}תנאי שימוש{% else %}Conditions d’utilisation{% endif %}</a></li>
 
-          <input 
-            type="email"
-            name="contact[email]"
-            class="km-footer-input"
-            placeholder="{% if is_he %}אימייל{% else %}E-mail{% endif %}"
-            required
-          >
+        <li><a href="{% if is_he %}/he/pages/conditions-generales-de-vente{% else %}/pages/conditions-generales-de-vente{% endif %}">{% if is_he %}תנאי מכירה{% else %}Conditions générales de vente{% endif %}</a></li>
 
-          <button type="submit" class="km-footer-button">
-            {% if is_he %}הצטרפו{% else %}REJOINDRE{% endif %}
-          </button>
-        </form>
-      </div>
+        <li><a href="{% if is_he %}/he/pages/politique-de-confidentialite{% else %}/pages/politique-de-confidentialite{% endif %}">{% if is_he %}מדיניות פרטיות{% else %}Politique de confidentialité{% endif %}</a></li>
 
-      <div class="km-footer-info">
-        <h2 class="km-footer-title">{% if is_he %}מידע{% else %}INFORMATIONS{% endif %}</h2>
+        <li><a href="{% if is_he %}/he/pages/mentions-legales{% else %}/pages/mentions-legales{% endif %}">{% if is_he %}הצהרה משפטית{% else %}Mentions légales{% endif %}</a></li>
 
-        <ul class="km-footer-menu">
-          <li><a href="{% if is_he %}/he/pages/retours-et-echanges{% else %}/pages/retours-et-echanges{% endif %}">{% if is_he %}החזרות והחלפות{% else %}Retours et échanges{% endif %}</a></li>
-          <li><a href="{% if is_he %}/he/pages/conditions-d-utilisation{% else %}/pages/conditions-d-utilisation{% endif %}">{% if is_he %}תנאי שימוש{% else %}Conditions d’utilisation{% endif %}</a></li>
-          <li><a href="{% if is_he %}/he/pages/conditions-generales-de-vente{% else %}/pages/conditions-generales-de-vente{% endif %}">{% if is_he %}תנאי מכירה{% else %}Conditions générales de vente{% endif %}</a></li>
-          <li><a href="{% if is_he %}/he/pages/politique-de-confidentialite{% else %}/pages/politique-de-confidentialite{% endif %}">{% if is_he %}מדיניות פרטיות{% else %}Politique de confidentialité{% endif %}</a></li>
-          <li><a href="{% if is_he %}/he/pages/mentions-legales{% else %}/pages/mentions-legales{% endif %}">{% if is_he %}הצהרה משפטית{% else %}Mentions légales{% endif %}</a></li>
-          <li><a href="{% if is_he %}/he/pages/accessibilite{% else %}/pages/accessibilite{% endif %}">{% if is_he %}נגישות{% else %}Accessibilité{% endif %}</a></li>
-          <li><a href="{% if is_he %}/he/pages/contact{% else %}/pages/contact{% endif %}">{% if is_he %}צרו קשר{% else %}Contactez-nous{% endif %}</a></li>
-        </ul>
-      </div>
+        <li><a href="{% if is_he %}/he/pages/accessibilite{% else %}/pages/accessibilite{% endif %}">{% if is_he %}נגישות{% else %}Accessibilité{% endif %}</a></li>
+
+        <li><a href="{% if is_he %}/he/pages/contact{% else %}/pages/contact{% endif %}">{% if is_he %}צרו קשר{% else %}Contactez-nous{% endif %}</a></li>
+      </ul>
     </div>
 
+    <!-- BOTTOM -->
     <div class="km-footer-bottom">
       <div class="km-footer-socials">
         <a href="https://www.instagram.com/koahatsniout/" target="_blank" rel="noopener" aria-label="Instagram">
           <img
             src="https://cdn.shopify.com/s/files/1/0971/5145/1440/files/icon-instagram.svg?v=1776256535"
             alt="Instagram"
-            width="30"
-            height="30"
+            width="28"
+            height="28"
           >
         </a>
       </div>
 
       <p class="km-footer-copyright">
-        © 2026 - Koahatsniout | {% if is_he %}עוצב ונבנה על ידי{% else %}Designed and built by{% endif %} <a href="https://nodev.tech">nodev</a>
+        © 2026 - Koahatsniout |
+        {% if is_he %}עוצב ונבנה על ידי{% else %}Designed and built by{% endif %}
+        <a href="https://nodev.tech">nodev</a>
       </p>
     </div>
+
+    <!-- SMALL LOGO -->
+    <div class="km-footer-logo">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0802/9903/2822/files/LOGOS_R_copy_4_1.png?v=1776969552"
+        alt="Koahatsniout"
+        width="180"
+        height="90"
+      >
+    </div>
+
   </div>
 </div>
