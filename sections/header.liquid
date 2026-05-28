@@ -13,6 +13,32 @@
     z-index: 4;
   }
 
+
+/* HAMBURGER DESKTOP + MOBILE */
+.header__hamburger-button {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-right: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* taille icon */
+.header__hamburger-button .header__nav-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* alignement menu desktop */
+.header__primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+
   @media screen and (min-width: 700px) {
     #shopify-section-{{ section.id }} {
       --header-padding-block: {% if section.settings.reduce_padding %}1.2rem{% else %}1.6rem{% endif %};
