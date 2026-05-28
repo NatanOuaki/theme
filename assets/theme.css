@@ -9404,3 +9404,17 @@ html[lang="he"] .product-card sale-price {
   width: 110px;
   height: auto;
 }
+
+/* FORCE CENTRAGE LOGO */
+.drawer__footer-logo,
+.sidebar__logo,
+.menu-drawer__logo {
+  width: 100%;
+  text-align: center;
+}
+
+.drawer__footer-logo img,
+.sidebar__logo img,
+.menu-drawer__logo img {
+  margin-inline: auto;
+}
