@@ -9573,3 +9573,10 @@ html[lang="he"] .product-card sale-price {
 .frame-close::after{
     background: #000 !important;
 }
+
+
+@media screen and (min-width: 768px){
+    .mobile-language-switcher{
+        display: none !important;
+    }
+}
