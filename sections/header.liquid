@@ -111,12 +111,10 @@
         aria-label="{{ 'header.general.primary_navigation' | t | escape }}"
       >
         <button
-          type="button"
-          aria-controls="sidebar-menu"
-          {% unless section.settings.layout == 'drawer' %}
-            class="md:hidden"
-          {% endunless %}
-        >
+  type="button"
+  aria-controls="sidebar-menu"
+  class="header__hamburger-button"
+>
           <span class="sr-only">{{ 'header.general.menu' | t }}</span>
           {%- render 'icon' with 'hamburger', class: 'header__nav-icon' -%}
         </button>
