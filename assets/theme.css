@@ -9485,7 +9485,7 @@ html[lang="he"] .product-card sale-price {
 /* PRODUCT NAME */
 .frame-body-content span{
     display: block !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 5px !important;
     color: #000 !important;
     font-size: 18px !important;
     font-weight: 600 !important;
@@ -9496,7 +9496,7 @@ html[lang="he"] .product-card sale-price {
     width: 100% !important;
     height: 40px !important;
     padding: 0 16px !important;
-    margin-bottom: 5px !important;
+    margin-bottom: 10px !important;
     border: 1px solid #d9d9d9 !important;
     background: #fff !important;
     border-radius: 0 !important;
