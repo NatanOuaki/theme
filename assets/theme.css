@@ -9387,34 +9387,27 @@ html[lang="he"] .product-card sale-price {
 }
 
 
-/* LOGO MENU DRAWER */
-.drawer__footer,
-.sidebar__footer,
-.menu-drawer__footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.drawer__footer img,
-.sidebar__footer img,
-.menu-drawer__footer img {
-  display: block;
-  margin: 0 auto;
-  width: 110px;
-  height: auto;
-}
-
-/* FORCE CENTRAGE LOGO */
-.drawer__footer-logo,
-.sidebar__logo,
-.menu-drawer__logo {
+/* FOOTER MENU DRAWER */
+.custom-mobile-menu-brand {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.drawer__footer-logo img,
-.sidebar__logo img,
-.menu-drawer__logo img {
-  margin-inline: auto;
+/* LOGO */
+.custom-footer__logo {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: auto;
+}
+
+/* INSTAGRAM */
+.custom-footer__social_sidebar {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
 }
