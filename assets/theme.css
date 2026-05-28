@@ -9385,3 +9385,22 @@ html[lang="he"] .product-card sale-price {
   font-size:13px;
   margin-top:5px;
 }
+
+
+/* LOGO MENU DRAWER */
+.drawer__footer,
+.sidebar__footer,
+.menu-drawer__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawer__footer img,
+.sidebar__footer img,
+.menu-drawer__footer img {
+  display: block;
+  margin: 0 auto;
+  width: 110px;
+  height: auto;
+}
