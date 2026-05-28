@@ -9440,118 +9440,108 @@ html[lang="he"] .product-card sale-price {
 }
 
 
-#sealapps-bis-widget .email-frame-content{
+.email-frame-content,
+.email-frame-content *{
     font-family: "Montserrat", sans-serif !important;
+    box-sizing: border-box !important;
+}
+
+/* MODAL */
+.email-frame-content{
     border-radius: 0 !important;
+    overflow: hidden !important;
+    background: #fff !important;
     padding: 0 !important;
-    overflow: hidden;
 }
 
 /* HEADER */
-#sealapps-bis-widget .email-frame-header{
+.email-frame-header{
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
     padding: 24px !important;
-    background: #FFFFFF !important;
+    background: #fff !important;
 }
 
-#sealapps-bis-widget .frame-title{
+.frame-title{
+    color: #000 !important;
     font-size: 20px !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;
     letter-spacing: -0.02em !important;
-    color: #000 !important;
 }
 
-#sealapps-bis-widget .frame-email-logo svg{
-    width: 20px !important;
-    height: 20px !important;
-}
-
-#sealapps-bis-widget .split-line{
+.split-line{
     border: none !important;
-    border-top: 1px solid #E5E5E5 !important;
+    border-top: 1px solid #e5e5e5 !important;
     margin: 0 !important;
 }
 
 /* BODY */
-#sealapps-bis-widget .email-frame-body{
+.email-frame-body{
     padding: 24px !important;
-    background: #FFFFFF !important;
 }
 
-#sealapps-bis-widget .frame-body-content span{
+/* PRODUCT NAME */
+.frame-body-content span{
     display: block !important;
-    font-size: 18px !important;
-    font-weight: 600 !important;
     margin-bottom: 20px !important;
     color: #000 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
 }
 
 /* SELECT */
-#sealapps-bis-widget .selected-unavailable-variant{
+.selected-unavailable-variant{
     width: 100% !important;
     height: 52px !important;
-    border: 1px solid #DADADA !important;
-    border-radius: 0 !important;
     padding: 0 16px !important;
-    font-size: 15px !important;
-    font-family: "Montserrat", sans-serif !important;
     margin-bottom: 16px !important;
-    background: #FFF !important;
+    border: 1px solid #d9d9d9 !important;
+    background: #fff !important;
+    border-radius: 0 !important;
+    font-size: 15px !important;
     color: #000 !important;
     outline: none !important;
-    box-shadow: none !important;
+    appearance: none !important;
 }
 
 /* INPUTS */
-#sealapps-bis-widget .buyer-name,
-#sealapps-bis-widget .buyer-email{
+.buyer-name,
+.buyer-email{
     width: 100% !important;
     height: 52px !important;
-    border: 1px solid #DADADA !important;
-    border-radius: 0 !important;
     padding: 0 16px !important;
-    font-size: 15px !important;
-    font-family: "Montserrat", sans-serif !important;
     margin-bottom: 16px !important;
-    background: #FFF !important;
+    border: 1px solid #d9d9d9 !important;
+    background: #fff !important;
+    border-radius: 0 !important;
+    font-size: 15px !important;
     color: #000 !important;
     outline: none !important;
     box-shadow: none !important;
-    box-sizing: border-box !important;
 }
 
-#sealapps-bis-widget .buyer-name::placeholder,
-#sealapps-bis-widget .buyer-email::placeholder{
+.buyer-name::placeholder,
+.buyer-email::placeholder{
     color: #777 !important;
 }
 
 /* FOCUS */
-#sealapps-bis-widget .buyer-name:focus,
-#sealapps-bis-widget .buyer-email:focus,
-#sealapps-bis-widget .selected-unavailable-variant:focus{
+.buyer-name:focus,
+.buyer-email:focus,
+.selected-unavailable-variant:focus{
     border-color: #000 !important;
 }
 
-/* ERROR */
-#sealapps-bis-widget .invalid-email-tips{
-    font-size: 13px !important;
-    color: #d40000 !important;
-    margin-top: -10px !important;
-    margin-bottom: 16px !important;
-}
-
 /* BUTTON */
-#sealapps-bis-widget .email-me-submitButton{
+.email-me-submitButton{
     background: #000000 !important;
     color: #FFFFFF !important;
-    font-family: "Montserrat", sans-serif !important;
     font-weight: 700 !important;
     font-size: 20px !important;
     line-height: 34px !important;
-    padding: 14px 24px !important;
+    padding: 12px 24px !important;
     letter-spacing: -0.02em !important;
     border: none !important;
     border-radius: 0 !important;
@@ -9563,53 +9553,23 @@ html[lang="he"] .product-card sale-price {
     justify-content: center !important;
 
     width: 100% !important;
+    min-height: 58px !important;
     cursor: pointer !important;
-    transition: opacity 0.2s ease !important;
-    box-sizing: border-box !important;
-}
-
-#sealapps-bis-widget .email-me-submitButton:hover{
-    opacity: 0.9 !important;
 }
 
 /* FOOTER */
-#sealapps-bis-widget .email-frame-footer{
+.email-frame-footer{
     padding: 0 24px 24px !important;
-    background: #FFFFFF !important;
 }
 
-#sealapps-bis-widget .email-footer-tips span{
+.email-footer-tips span{
+    color: #666 !important;
     font-size: 13px !important;
     line-height: 1.5 !important;
-    color: #666 !important;
 }
 
-/* CLOSE BUTTON */
-#sealapps-bis-widget .close-box{
-    cursor: pointer !important;
-}
-
-#sealapps-bis-widget .frame-close{
-    width: 18px !important;
-    height: 18px !important;
-    position: relative !important;
-}
-
-#sealapps-bis-widget .frame-close::before,
-#sealapps-bis-widget .frame-close::after{
-    content: "" !important;
-    position: absolute !important;
-    top: 8px !important;
-    left: 0 !important;
-    width: 18px !important;
-    height: 2px !important;
+/* CLOSE */
+.frame-close::before,
+.frame-close::after{
     background: #000 !important;
-}
-
-#sealapps-bis-widget .frame-close::before{
-    transform: rotate(45deg);
-}
-
-#sealapps-bis-widget .frame-close::after{
-    transform: rotate(-45deg);
 }
