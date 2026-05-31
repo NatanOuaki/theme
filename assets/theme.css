@@ -9607,6 +9607,7 @@ html[lang="he"] .product-card sale-price {
     font-weight: 700 !important;
     text-transform: uppercase !important;
     font-size: 14px !important;
+    margin-top: -20px !important;
     line-height: 20px !important;
     padding: 5px 40px !important;
     letter-spacing: -0.02em !important;
