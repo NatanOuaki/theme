@@ -8821,6 +8821,24 @@ sale-price {
   white-space: nowrap;
 }
 
+/* Bouton SOLD OUT */
+#shopify-section-template--21538767995126__main .buy-buttons > .button:disabled,
+#shopify-section-template--21538767995126__main .buy-buttons button[type="submit"]:disabled,
+#shopify-section-template--21538767995126__main .buy-buttons .button--disabled {
+  background: #FFFFFF !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+  opacity: 1 !important;
+}
+
+#shopify-section-template--21538767995126__main .buy-buttons [aria-disabled="true"] {
+  background: #FFFFFF !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+  opacity: 1 !important;
+}
+
+
 /* BUY NOW BUTTON */
 #shopify-section-template--21538767995126__main .shopify-payment-button__button,
 #shopify-section-template--21538767995126__main .shopify-payment-button__button--unbranded{
