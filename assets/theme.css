@@ -9612,4 +9612,15 @@ html[lang="he"] .product-card sale-price {
     padding: 5px 40px !important;
     letter-spacing: -0.02em !important;
 }
+
+/* BUTTON */
+.email-me-button .email-me-submitButton{
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    line-height: 34px !important;
+    padding: 6px 15px !important;
+    letter-spacing: -0.02em !important;
+}
 }
