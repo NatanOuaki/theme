@@ -16,7 +16,7 @@
       "settings": {
         "color_scheme": "",
         "show_cart_note": true,
-        "allow_discount_application": false,
+        "allow_discount_application": true,
         "show_shipping_text": false,
         "show_view_cart_button": false,
         "show_checkout_button": true,
