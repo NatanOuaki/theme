@@ -9664,13 +9664,6 @@ html[lang="he"] .product-card sale-price {
     margin: 0 !important;
   }
 
-  #shopify-section-template--21538757214454__featured_collections_9Htpmn product-card {
-    flex: 0 0 calc(100vw - 32px) !important;
-    width: calc(100vw - 32px) !important;
-    min-width: calc(100vw - 32px) !important;
-    max-width: calc(100vw - 32px) !important;
-  }
-
   #shopify-section-template--21538757214454__featured_collections_9Htpmn .product-card__media,
   #shopify-section-template--21538757214454__featured_collections_9Htpmn .product-card__figure {
     width: 100% !important;
@@ -9690,5 +9683,45 @@ html[lang="he"] .product-card sale-price {
     transform: none !important;
     white-space: normal !important;
     text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn {
+    overflow: hidden !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .product-list--carousel {
+    display: grid !important;
+    grid-auto-flow: column !important;
+    grid-auto-columns: 100% !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn product-card {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    scroll-snap-align: center !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .product-card__info,
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .product-title,
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .price-list,
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn sale-price {
+    writing-mode: horizontal-tb !important;
+    transform: none !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .product-card__image {
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
   }
 }
