@@ -9667,10 +9667,6 @@ html[lang="he"] .product-card sale-price {
     position: relative !important;
   }
 
-  #shopify-section-template--21538757214454__featured_collections_9Htpmn product-card:not(.is-selected) {
-    visibility: hidden !important;
-  }
-
   #shopify-section-template--21538757214454__featured_collections_9Htpmn product-card.is-selected {
     visibility: visible !important;
   }
