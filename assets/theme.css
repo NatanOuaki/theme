@@ -9624,4 +9624,46 @@ html[lang="he"] .product-card sale-price {
     letter-spacing: -0.02em !important;
 }
 }
+@media screen and (max-width: 699px) {
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .floating-controls-container__control {
+    display: none !important;
+  }
 
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn scroll-carousel.product-list--carousel {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    overflow: visible !important;
+    padding: 0 24px !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn product-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .product-card__image {
+    max-width: 260px !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .product-card__info,
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .product-title,
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .price-list,
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn sale-price {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    writing-mode: horizontal-tb !important;
+    transform: none !important;
+    white-space: normal !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn fieldset {
+    justify-content: center !important;
+  }
+}
