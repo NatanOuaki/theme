@@ -9718,15 +9718,3 @@ html[lang="he"] .product-card sale-price {
     object-fit: contain !important;
   }
 }
-
-@media screen and (max-width: 699px) {
-  #shopify-section-template--21538757214454__featured_collections_9Htpmn .featured-collections-carousel::after {
-    content: "Glissez →";
-    display: block;
-    text-align: center;
-    font-size: 12px;
-    font-style: italic;
-    margin-top: 10px;
-    opacity: 0.55;
-  }
-}
