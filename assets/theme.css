@@ -9625,54 +9625,27 @@ html[lang="he"] .product-card sale-price {
 }
 }
 
+/* Mobile uniquement */
+@media screen and (max-width: 699px) {
 
-@media screen and (max-width: 749px) {
-  .best-sellers,
-  .featured-collection,
-  .product-grid,
-  .collection__products,
-  slider-component {
-    overflow: hidden !important;
+  .featured-collections-carousel .product-list--carousel {
+    overflow-x: auto !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
-  .product-grid,
-  .grid {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    column-gap: 12px !important;
-    row-gap: 28px !important;
-    padding: 0 14px !important;
-    margin: 0 !important;
+  .featured-collections-carousel .product-card {
+    min-width: 80vw !important;
+    width: 80vw !important;
+    flex: 0 0 80vw !important;
   }
 
-  .grid__item,
-  .product-card,
-  .card-wrapper {
+  .featured-collections-carousel .product-card__info {
     width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    transform: none !important;
-  }
-
-  .card__media,
-  .product-card__image,
-  .media {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  .card__media img,
-  .product-card img {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-  }
-
-  .product-card__info,
-  .card__content,
-  .card-information {
     text-align: center !important;
-    padding: 8px 0 0 !important;
+  }
+
+  .featured-collections-carousel fieldset {
+    justify-content: center !important;
   }
 }
