@@ -9718,3 +9718,40 @@ html[lang="he"] .product-card sale-price {
     object-fit: contain !important;
   }
 }
+
+
+@media screen and (max-width: 699px) {
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn carousel-prev-button,
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn carousel-next-button {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    z-index: 50 !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn carousel-prev-button {
+    position: absolute !important;
+    left: 18px !important;
+    top: 45% !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn carousel-next-button {
+    position: absolute !important;
+    right: 18px !important;
+    top: 45% !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .prev-next-button {
+    display: flex !important;
+    width: 44px !important;
+    height: 44px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .prev-next-button[disabled] {
+    opacity: 0.25 !important;
+  }
+}
