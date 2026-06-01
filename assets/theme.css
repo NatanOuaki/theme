@@ -9755,3 +9755,51 @@ html[lang="he"] .product-card sale-price {
     opacity: 0.25 !important;
   }
 }
+
+@media screen and (max-width: 699px) {
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn product-list {
+    position: relative !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .floating-controls-container__control {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn carousel-prev-button,
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn carousel-next-button {
+    display: block !important;
+    position: absolute !important;
+    top: 42% !important;
+    transform: translateY(-50%) !important;
+    z-index: 999 !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn carousel-prev-button {
+    left: 14px !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn carousel-next-button {
+    right: 14px !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .prev-next-button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 44px !important;
+    height: 44px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    background: #fff !important;
+    border-radius: 999px !important;
+    box-shadow: 0 4px 18px rgba(0,0,0,.12) !important;
+  }
+
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .prev-next-button[disabled] {
+    display: none !important;
+  }
+}
