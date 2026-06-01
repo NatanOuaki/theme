@@ -9720,23 +9720,13 @@ html[lang="he"] .product-card sale-price {
 }
 
 @media screen and (max-width: 699px) {
-  #shopify-section-template--21538757214454__featured_collections_9Htpmn carousel-prev-button {
-    display: none !important;
-  }
-
-  #shopify-section-template--21538757214454__featured_collections_9Htpmn carousel-next-button {
-    display: block !important;
-    position: absolute !important;
-    right: 28px !important;
-    top: 42% !important;
-    z-index: 20 !important;
-  }
-
-  #shopify-section-template--21538757214454__featured_collections_9Htpmn .prev-next-button--next {
-    display: flex !important;
-    width: 46px !important;
-    height: 46px !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+  #shopify-section-template--21538757214454__featured_collections_9Htpmn .featured-collections-carousel::after {
+    content: "Glissez →";
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0.55;
   }
 }
