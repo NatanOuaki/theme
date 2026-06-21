@@ -59,6 +59,16 @@
     "featured_collections_9Htpmn": {
       "type": "featured-collections",
       "blocks": {
+        "collection_Ffjwwd": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-collection",
+            "products_count": 8,
+            "title": "NEW COLLECTION",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
         "collection_PX9fQN": {
           "type": "collection",
           "settings": {
@@ -71,6 +81,7 @@
         }
       },
       "block_order": [
+        "collection_Ffjwwd",
         "collection_PX9fQN"
       ],
       "custom_css": [
@@ -93,6 +104,33 @@
     "slideshow_3ArqWA": {
       "type": "slideshow",
       "blocks": {
+        "image_Rw9BFR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NEW_COLLECTION.png",
+            "mobile_image": "shopify://shop_images/NEW_COLLECTION.png",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
         "image_JrbUxr": {
           "type": "image",
           "settings": {
@@ -122,6 +160,7 @@
         }
       },
       "block_order": [
+        "image_Rw9BFR",
         "image_JrbUxr"
       ],
       "name": "t:sections.slideshow.presets.slideshow.name",
