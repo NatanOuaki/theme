@@ -31,12 +31,7 @@
     "blocks": {
       "5043070786800498925": {
         "type": "shopify://apps/sw-back-in-stock/blocks/bis-switch/b190bced-3b7b-47da-a05f-6ea4821c3a77",
-        "disabled": false,
-        "settings": {}
-      },
-      "4599381594862710133": {
-        "type": "shopify://apps/notim/blocks/app-embed/ce956955-2f3f-4a66-96d2-8c88d6e6cd48",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     },
