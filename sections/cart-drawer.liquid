@@ -71,7 +71,7 @@
     {%- endif -%}
 
     <div slot="footer">
-      <form action="{{ routes.cart_url }}" class="cart-drawer__footer" method="POST">
+      <form action="{{ routes.cart_url }}" class="cart-drawer__footer" method="POST" novalidate>
         <input type="hidden" name="attributes[products_mobile_grid_mode]" value="">
         <input type="hidden" name="attributes[products_desktop_grid_mode]" value="">
 
@@ -140,7 +140,7 @@
               {%- endif -%}
             {%- endcapture -%}
 
-            {%- render 'button', type: 'submit', content: checkout_button, name: 'checkout', stretch: true -%}
+           {%- render 'button', href: routes.checkout_url, content: checkout_button, stretch: true -%}
           {%- endif -%}
         </div>
       </form>
