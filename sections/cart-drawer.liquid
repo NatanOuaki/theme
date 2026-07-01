@@ -140,7 +140,9 @@
               {%- endif -%}
             {%- endcapture -%}
 
-           {%- render 'button', href: routes.checkout_url, content: checkout_button, stretch: true -%}
+              <a href="/checkout" class="button button--xl w-full">
+                {{ checkout_button }}
+              </a>
           {%- endif -%}
         </div>
       </form>
